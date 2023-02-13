@@ -2,7 +2,7 @@
 
 <!-- Header section start-->
   <div class="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
-    <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center" />
+    <img src="img/header.jpg" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center" />
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1097 845" aria-hidden="true" class="hidden transform-gpu blur-3xl sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:w-[68.5625rem]">
       <path fill="url(#10724532-9d81-43d2-bb94-866e98dd6e42)" fill-opacity=".2" d="M301.174 646.641 193.541 844.786 0 546.172l301.174 100.469 193.845-356.855c1.241 164.891 42.802 431.935 199.124 180.978 195.402-313.696 143.295-588.18 284.729-419.266 113.148 135.13 124.068 367.989 115.378 467.527L811.753 372.553l20.102 451.119-530.681-177.031Z" />
       <defs>
@@ -37,28 +37,48 @@
   <div class="bg-gray-900 py-24 sm:py-32">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-2xl sm:text-center">
-        <h2 class="text-lg font-semibold leading-8 tracking-tight text-indigo-400">Everything you need</h2>
+        <h2 class="text-lg font-semibold leading-8 tracking-tight text-red-400">Everything you need</h2>
         <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">No server? No problem.</p>
         <p class="mt-6 text-lg leading-8 text-gray-300">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis.</p>
       </div>
     </div>
     <div class="relative overflow-hidden pt-16">
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
-        <img src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png" alt="App screenshot" class="mb-[-12%] rounded-xl shadow-2xl ring-1 ring-white/10" width="2432" height="1442" />
+        <img src="public/img/pizza-burratina.png" alt="App screenshot" class="mb-[-12%] rounded-xl shadow-2xl ring-1 ring-white/10" width="2432" height="1442" />
         <div class="relative" aria-hidden="true">
           <div class="absolute -inset-x-20 bottom-0 bg-gradient-to-t from-gray-900 pt-[7%]" />
         </div>
       </div>
     </div>
+
+<!-- red pizza -->
+    <h2 class="text-3xl font-bold tracking-tight text-white my-12 text-center">Pizze Rosse</h2>
     <div class="mx-auto mt-16 max-w-7xl px-6 sm:mt-20 md:mt-24 lg:px-8">
       <dl class="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-10 text-base leading-7 text-gray-300 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16">
-        <div v-for="feature in features" :key="feature.name" class="relative pl-9">
-          <dt class="inline font-semibold text-white">
-            <component :is="feature.icon" class="absolute top-1 left-1 h-5 w-5 text-indigo-500" aria-hidden="true" />
+        <div v-for="feature in redpizzas" :key="feature.name" class="relative pl-14">
+          <dt class="font-semibold text-white">
+            <img :src="feature.icon" class="absolute top-1 left-1 h-12 w-12 text-red-500" aria-hidden="true" />
             {{ feature.name }}
           </dt>
           {{ ' ' }}
           <dd class="inline">{{ feature.description }}</dd>
+          <dd class="price">€ {{ feature.price }}</dd>
+        </div>
+      </dl>
+    </div>
+
+    <!-- white pizza -->
+    <h2 class="text-3xl font-bold tracking-tight text-white my-12 text-center">Pizze bianche</h2>
+    <div class="mx-auto mt-16 max-w-7xl px-6 sm:mt-20 md:mt-24 lg:px-8">
+      <dl class="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-10 text-base leading-7 text-gray-300 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16">
+        <div v-for="feature in whitepizzas" :key="feature.name" class="relative pl-14">
+          <dt class="font-semibold text-white">
+            <img :src="feature.icon" class="absolute top-1 left-1 h-12 w-12 text-red-500" aria-hidden="true" />
+            {{ feature.name }}
+          </dt>
+          {{ ' ' }}
+          <dd class="inline">{{ feature.description }}</dd>
+          <dd class="price">€ {{ feature.price }}</dd>
         </div>
       </dl>
     </div>
@@ -68,23 +88,20 @@
 <!--  Product start-->
   <div class="bg-gray-900">
     <div class="mx-auto max-w-7xl py-16 px-6 sm:py-20 lg:px-8">
-      <h2 class="text-3xl font-bold tracking-tight text-white">The world's most innovative companies use our app</h2>
+      <h2 class="text-3xl font-bold tracking-tight text-center text-white">The world's most innovative companies use our app</h2>
       <div class="mt-8 flow-root lg:mt-10">
         <div class="-mt-4 -ml-8 flex flex-wrap justify-between lg:-ml-4">
           <div class="mt-4 ml-8 flex flex-shrink-0 flex-grow lg:ml-4 lg:flex-grow-0">
-            <img class="h-12" src="https://tailwindui.com/img/logos/tuple-logo-indigo-300.svg" alt="Tuple" />
+            <img class="h-24" src="public/img/farine-caputo.png" alt="Mirage" />
           </div>
           <div class="mt-4 ml-8 flex flex-shrink-0 flex-grow lg:ml-4 lg:flex-grow-0">
-            <img class="h-12" src="https://tailwindui.com/img/logos/mirage-logo-indigo-300.svg" alt="Mirage" />
+            <img class="h-24" src="public/img/viniveneti.png" alt="StaticKit" />
           </div>
           <div class="mt-4 ml-8 flex flex-shrink-0 flex-grow lg:ml-4 lg:flex-grow-0">
-            <img class="h-12" src="https://tailwindui.com/img/logos/statickit-logo-indigo-300.svg" alt="StaticKit" />
+            <img class="h-24" src="public/img/pomodorinoDOP.png" alt="Transistor" />
           </div>
           <div class="mt-4 ml-8 flex flex-shrink-0 flex-grow lg:ml-4 lg:flex-grow-0">
-            <img class="h-12" src="https://tailwindui.com/img/logos/transistor-logo-indigo-300.svg" alt="Transistor" />
-          </div>
-          <div class="mt-4 ml-8 flex flex-shrink-0 flex-grow lg:ml-4 lg:flex-grow-0">
-            <img class="h-12" src="https://tailwindui.com/img/logos/workcation-logo-indigo-300.svg" alt="Workcation" />
+            <img class="h-24" src="public/img/Birra_peroni_s.r.l._logo.png" alt="Workcation" />
           </div>
         </div>
       </div>
@@ -95,7 +112,7 @@
 <!--Customer review start-->
   <div class="bg-gray-900">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
-      <h2 class="sr-only">Customer Reviews</h2>
+      <h2 class="text-3xl font-bold tracking-tight text-white mb-12 text-center">Votre avis est très important pour nous!</h2>
 
       <div class="-my-10">
         <div v-for="(review, reviewIdx) in reviews" :key="review.id" class="flex space-x-4 text-sm text-gray-500">
@@ -138,33 +155,64 @@ const features = [
   {
     name: 'Push to deploy.',
     description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit aute id magna.',
-    icon: CloudArrowUpIcon,
+    icon: "public/img/pizza-green.png",
   },
   {
     name: 'SSL certificates.',
     description: 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.',
-    icon: LockClosedIcon,
+    icon: "public/img/pizza-white.png",
   },
   {
     name: 'Simple queues.',
     description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus.',
-    icon: ArrowPathIcon,
+    icon: "public/img/pizza-red.png",
   },
   {
     name: 'Advanced security.',
     description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit aute id magna.',
-    icon: FingerPrintIcon,
+    icon: "public/img/pizza-green.png",
   },
   {
     name: 'Powerful API.',
     description: 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.',
-    icon: Cog6ToothIcon,
+    icon: "public/img/pizza-white.png",
   },
   {
     name: 'Database backups.',
     description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. ',
-    icon: ServerIcon,
+    icon: "public/img/pizza-red.png",
   },
+]
+
+const redpizzas = [
+  { name: 'Margherita', description: 'Tomate, Basilic et Mozzarella.', price:'10,00', icon: "public/img/pizza-green.png" },
+  { name: 'Regina', description: 'Tomate, Basilic et Mozzarella de Bufflonne.', price:'14,00', icon: "public/img/pizza-white.png" },
+  { name: 'Principessa', description: 'Tomate, Basilic et Scamorza fumée*. ( Fromage typique italien )', price:'12,00' , icon: "public/img/pizza-red.png"},
+  { name: 'Burrata', description: 'Tomate, Basilic, Tomates Datterini, Burratina d\'Andria*. (  Sœur de la mozzarella, un tendre fromage au lait de vache avec, en son cœur, une épaisse crème de fromage frais )', price:'17,00', icon: "public/img/pizza-green.png" },
+  { name: 'Marinara', description: 'Tomate, Ail, Origan et Basilic.', price:'9,00', icon: "public/img/pizza-white.png" },
+  { name: 'Rucola Reggiano', description: 'Tomate, Mozzarella, Roquette et Parmigiano Reggiano.', price:'13,00', icon: "public/img/pizza-red.png" },
+  { name: 'Porchetta Funghi', description: 'Tomate, Basilic, Mozzarella, Porchetta d\'Ariccia* et Champignons. ( Charcuterie à base de porc rôti aux épices préparée traditionnellement sur l\'ensemble du territoire la commune d\'Ariccia )', price:'15,00', icon: "public/img/pizza-green.png" },
+  { name: 'Quattro Stagioni', description: 'Tomate, Basilic, Mozzarella, Porchetta d\'Ariccia*, Champignons, Olives Noires et Artichauts au four. ( Charcuterie à base de porc rôti aux épices préparée traditionnellement sur l\'ensemble du territoire la commune d\'Ariccia )', price:'16,00', icon: "public/img/pizza-white.png" },
+  { name: 'Napoli', description: 'Tomate, Mozzarella, Câpres, Filets d\'Anchois de Cetara et Origan.', price:'14,00', icon: "public/img/pizza-red.png" },
+  { name: 'Siciliana', description: 'Tomate, Basilic, Mozzarella, Câpres, Filets d\'Anchois de Cetara, Olives Noires et Ail.', price:'15,00', icon: "public/img/pizza-green.png" },
+  { name: 'Capricciosa', description: 'Tomate, Basilic, Mozzarella, Porchetta d\'Ariccia*, Champignons, Olives Noires et Artichauts au four. ( Charcuterie à base de porc rôti aux épices préparée traditionnellement sur l\'ensemble du territoire la commune d\'Ariccia )', price:'16,00', icon: "public/img/pizza-white.png" },
+  { name: 'Diavola', description: 'Tomate, Basilic, Mozzarella et \'Nduja*. ( Saucisse de porc épicée avec du piment fabriquée en Italie, à l\'origine en Calabre )', price:'14,50', icon: "public/img/pizza-red.png" },
+  { name: 'Calabrese', description: 'Tomate, Basilic, Scamorza fumée*, Salami épicé, Oignons rouges de Tropea et Olives Noires. ( Fromage typique italien )', price:'17,00', icon: "public/img/pizza-green.png" },
+  { name: 'Boscaiola', description: 'Tomate, Basilic, Scamorza fumée*, Mascarpone, Champignons, Roquette et copeaux de Parmigiano Reggiano. ( Fromage typique italien )', price:'15,00', icon: "public/img/pizza-white.png" },
+  { name: 'Bresaola e tartufo', description: 'Tomate, Mozzarella, Roquette, Bresaola de Punta d\'Anca, copeaux de Grana Padano* et Truffe Noire. ( Fromage typique italien )', price:'20,00', icon: "public/img/pizza-red.png" },
+  { name: 'Crudaiola', description: 'Tomate, Roquette, Culatello*, Copeaux de Grana Padano, Crème Burrata, Tomates Datterini, Basilic et Origan. ( Il s\'agit d\'un jambon cru salé et séché obtenu à partir de la cuisse de porc  )', price:'19,00', icon: "public/img/pizza-green.png" },
+  { name: 'Vegana', description: 'Tomate, Mélange de légumes, Roquette et Tomates séchées.', price:'14,00', icon: "public/img/pizza-white.png" },
+  { name: 'Vegetariana', description: 'Tomate, Mozzarella et Mélange de légumes.', price:'15,00', icon: "public/img/pizza-red.png" },
+  { name: 'Calzone', description: 'Surprise du pizzaiolo!', price:'18,00', icon: "public/img/pizza-green.png" },
+]
+
+const whitepizzas=[
+  { name: 'Salsiccia Friarelli', description: 'Mozzarella, Basilic, Saucisse and Friarielli*. ( Brocoli-rave ou rapini )', price:'16,00', icon: "public/img/pizza-green.png" },
+  { name: '4 Formaggi', description: 'Mozzarella, Scamorza fumée, Gorgonzola, Copeaux de Parmesan et Basilic.', price:'15,00', icon: "public/img/pizza-white.png" },
+  { name: 'Fresca', description: 'Mozzarella, Tomates datterini jaunes et rouges, Roquette et Copeaux de Parmesan.', price:'15,00', icon: "public/img/pizza-red.png" },
+  { name: 'Patate & Tartufo', description: 'Mozzarella, Basilic, Pommes de terre bouillies et Truffe Noire.', price:'20,00', icon: "public/img/pizza-green.png" },
+  { name: 'Mortadella', description: 'Mozzarella, Roquette, Mortadelle, Copeaux de Pecorino Romano*, Pesto de tomates séchées et Pistaches grillées. (  Fromage traditionnel à base de lait entier de brebis, à pâte pressée cuite )', price:'19,00', icon: "public/img/pizza-white.png" },
+  { name: 'Genovese', description: 'Mozzarella, Pesto Génois, Tomates jaunes et rouges de Piennolo del Vesuvio, Copeaux de Ricotta* et Pignons de pin grillés. ( Fromage à pâte fraîche )', price:'19,00', icon: "public/img/pizza-red.png" },
 ]
 
 const reviews = [
