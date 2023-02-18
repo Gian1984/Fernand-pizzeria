@@ -3,5 +3,14 @@
 @tailwind components;
 @tailwind utilities;
 
+.main-title{
+    font-family: 'Fredericka the Great', cursive;
+    letter-spacing: 6px;
+}
+
+.main-sub-title{
+    font-family: 'Homemade Apple', cursive;
+}
+
 
 

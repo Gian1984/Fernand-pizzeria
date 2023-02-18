@@ -11,7 +11,7 @@ const router = createRouter({
             name: 'home',
             component: Home,
             meta: {
-                title: 'Let You Develop - Home Page',
+                title: 'Pizza Vino - Home Page',
                 metaTags: [
                     {
                         name: 'description',
