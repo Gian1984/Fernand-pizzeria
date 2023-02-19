@@ -34,6 +34,22 @@
         padding-top: 1em;
     }
 }
+.before-title{
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 6px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+.section-title-desc{
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 2px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
 .section-title{
     font-family: 'Fredericka the Great', cursive;
     letter-spacing: 6px;

@@ -31,9 +31,9 @@ import imagePath from '../assets/img/lavagna.png'
   <div class="bg-neutral-900 py-24 sm:py-32">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-2xl sm:text-center">
-        <h2 class="text-lg font-semibold leading-8 tracking-tight text-red-400">Everything you need</h2>
+        <h2 class="text-lg font-semibold leading-8 tracking-tight text-red-400 before-title">Everything you need</h2>
         <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl section-title">No server? No problem.</p>
-        <p class="mt-6 text-lg leading-8 text-neutral-300">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis.</p>
+        <p class="mt-6 text-lg leading-8 text-neutral-300 section-title-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis.</p>
       </div>
     </div>
     <div class="relative overflow-hidden pt-16">
@@ -87,9 +87,9 @@ import imagePath from '../assets/img/lavagna.png'
   <div class="bg-neutral-900 pb-14">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-2xl sm:text-center">
-        <h2 class="text-lg font-semibold leading-8 tracking-tight text-red-400">Everything you need</h2>
+        <h2 class="text-lg font-semibold leading-8 tracking-tight text-red-400 before-title">Everything you need</h2>
         <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl section-title">No server? No problem.</p>
-        <p class="mt-6 text-lg leading-8 text-neutral-300">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis.</p>
+        <p class="mt-6 text-lg leading-8 text-neutral-300 section-title-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis.</p>
       </div>
     </div>
   </div>
@@ -109,7 +109,7 @@ import imagePath from '../assets/img/lavagna.png'
 
   <!--  Product start-->
   <div class="bg-neutral-900">
-    <div class="mx-auto max-w-7xl py-16 px-6 sm:py-20 lg:px-8">
+    <div class="mx-auto max-w-7xl py-44 px-6 sm:py-44 lg:px-8">
       <h2 class="text-3xl font-bold tracking-tight text-center text-white sm:text-4xl section-title">The world's most innovative companies use our app</h2>
       <div class="mt-8 flow-root lg:mt-10">
         <div class="-mt-4 -ml-8 flex flex-wrap justify-between lg:-ml-4">
@@ -133,7 +133,7 @@ import imagePath from '../assets/img/lavagna.png'
 
 <!--Customer review start-->
   <div class="bg-neutral-900">
-    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8 py-44 sm:py-44">
       <h2 class="text-3xl font-bold tracking-tight text-white mb-12 text-center sm:text-4xl section-title">Votre avis est très important pour nous!</h2>
 
       <div class="-my-10">
