@@ -3,14 +3,118 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+
 .main-title{
     font-family: 'Fredericka the Great', cursive;
     letter-spacing: 6px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
 }
 
 .main-sub-title{
     font-family: 'Homemade Apple', cursive;
 }
 
+.nav-lang, .nav-item{
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 4px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+@media (max-width: 992px) {
+    .header-content{
+        display: inline-block !important;
+    }
+    .main-title{
+        padding-top: 1em;
+    }
+}
+.section-title{
+    font-family: 'Fredericka the Great', cursive;
+    letter-spacing: 6px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+.pizza-name{
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 4px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    font-size: 20px!important;
+    font-weight: 600!important;
+}
+
+.pizza-desc{
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 1px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    font-size: 16px!important;
+}
+
+.pizza-price{
+    margin-top: 5px;
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 2px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    font-size: 16px!important;
+    font-weight: 800!important;
+}
+
+.gallery-wrap {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 70vh;
+}
+
+.item {
+    flex: 1;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    transition: flex 0.8s ease;
+}
+
+.item:hover {
+    flex: 7;
+}
+
+
+@media only screen and (max-width: 736px) {
+
+
+    .gallery-wrap {
+        display: flex;
+        flex-direction: column !important;
+        width: 100%;
+        height: 70vh;
+    }
+
+    .item {
+        flex: 1;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: none;
+        transition: flex 0.8s ease;
+    }
+
+    .item:hover {
+        flex: 7;
+    }
+}
 
 
