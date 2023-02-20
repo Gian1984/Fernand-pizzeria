@@ -1,5 +1,6 @@
 <script>
 import imagePath from '../assets/img/lavagna.png'
+
 </script>
 
 <template>
@@ -12,6 +13,16 @@ import imagePath from '../assets/img/lavagna.png'
         <h2 class="text-4xl font-bold tracking-tight text-white sm:text-6xl main-title">Work with us</h2>
         <p class="mt-6 text-lg leading-8 text-gray-300 main-sub-title">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.
         </p>
+        <div class="flex mt-10">
+        <a href="../assets/doc/pizza-vino-it.pdf" class="mr-2 flex items-center border-2 border-black text-black bg-white rounded-full p-1 pr-2 sm:text-base lg:text-sm xl:text-base hover:bg-gray-300">
+          <span class="px-3 py-0.5 text-xs font-semibold leading-5 uppercase tracking-wide rounded-full" lang="it">Scarica menù</span>
+          <ChevronRightIcon class="ml-2 w-5 h-5 text-gray-500" aria-hidden="true" />
+        </a>
+        <a type="button" href="tel:0032494693028" class="flex items-center border-2 border-black text-black bg-white rounded-full p-1 pr-2 sm:text-base lg:text-sm xl:text-base hover:bg-gray-300">
+          <span class="px-3 py-0.5 text-xs font-semibold leading-5 uppercase tracking-wide rounded-full" lang="it">Chiama</span>
+          <PhoneArrowUpRightIcon class="ml-2 w-5 h-5" aria-hidden="true" />
+        </a>
+        </div>
       </div>
       <div class="mx-auto mt-16 flex sm:mt-24 lg:ml-10 lg:mt-0 lg:mr-0 lg:flex-none xl:ml-32">
         <div class="max-w-2xl flex-none sm:max-w-2xl ">
@@ -49,7 +60,7 @@ import imagePath from '../assets/img/lavagna.png'
     </div>
 
 <!-- red pizza -->
-    <h2 class="text-3xl font-bold tracking-tight text-white my-12 text-center sm:text-4xl section-title">Pizze Rosse</h2>
+    <h2 class="text-3xl font-bold tracking-tight text-white my-12 text-center sm:text-4xl section-title" id="pizze-red">Pizze Rosse</h2>
     <div class="mx-auto mt-16 max-w-7xl px-6 sm:mt-20 md:mt-24 lg:px-8">
       <dl class="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-10 text-base leading-7 text-gray-300 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16">
         <div v-for="feature in redpizzas" :key="feature.name" class="relative pl-14">
@@ -164,13 +175,7 @@ import imagePath from '../assets/img/lavagna.png'
 
 <script setup>
 import {
-  ArrowPathIcon,
-  CloudArrowUpIcon,
-  Cog6ToothIcon,
-  FingerPrintIcon,
-  LockClosedIcon,
-  ServerIcon,
-  StarIcon
+  StarIcon, PhoneArrowUpRightIcon,ChevronRightIcon
 } from '@heroicons/vue/20/solid'
 
 const features = [
@@ -264,4 +269,5 @@ const reviews = [
   },
   // More reviews...
 ]
+
 </script>
