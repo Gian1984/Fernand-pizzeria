@@ -10,6 +10,7 @@ import imagePath from '../assets/img/lavagna.png'
     <img src="../assets/img/lavagna.png" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center" />
     <div class="mx-auto max-w-7xl px-6 lg:px-8 flex header-content">
       <div class="mx-auto max-w-6xl lg:mx-0">
+        <img src="../assets/img/pizzain.png"/>
         <h2 class="text-4xl font-bold tracking-tight text-white sm:text-6xl main-title">Work with us</h2>
         <p class="mt-6 text-lg leading-8 text-gray-300 main-sub-title">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.
         </p>
