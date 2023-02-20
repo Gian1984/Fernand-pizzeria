@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 
-
+html{scroll-behavior:smooth}
 
 .main-title{
     font-family: 'Fredericka the Great', cursive;
@@ -24,6 +24,11 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
+}
+
+.nav-item{
+    font-weight: 600;
+    font-size: 18px;
 }
 
 @media (max-width: 992px) {
@@ -117,6 +122,32 @@
     flex: 7;
 }
 
+
+.review-author{
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 4px;
+    font-size: 20px!important;
+}
+
+.review-time{
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 1px;
+}
+
+.review-content{
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 1px;
+}
+
+.contact-desc{
+    margin-top: 5px;
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 2px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
 .footer-copyright{
     margin-top: 5px;
     font-family: 'Josefin Sans', sans-serif;
@@ -125,6 +156,36 @@
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
     font-size: 12px;
+}
+
+
+.font-contact-title{
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 2px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+.font-contact-desc{
+    font-family: 'Josefin Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+.font-time {
+    font-family: 'Josefin Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+.font-day {
+    font-family: 'Josefin Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
 }
 
 

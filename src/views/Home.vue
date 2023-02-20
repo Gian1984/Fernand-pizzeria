@@ -60,7 +60,7 @@ import imagePath from '../assets/img/lavagna.png'
     </div>
 
 <!-- red pizza -->
-    <h2 class="text-3xl font-bold tracking-tight text-white my-12 text-center sm:text-4xl section-title" id="pizze-red">Pizze Rosse</h2>
+    <h2 class="text-3xl font-bold tracking-tight text-white my-12 text-center sm:text-4xl section-title" id="pizze-red" ref="pizze-red">Pizze Rosse</h2>
     <div class="mx-auto mt-16 max-w-7xl px-6 sm:mt-20 md:mt-24 lg:px-8">
       <dl class="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-10 text-base leading-7 text-gray-300 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16">
         <div v-for="feature in redpizzas" :key="feature.name" class="relative pl-14">
@@ -120,21 +120,21 @@ import imagePath from '../assets/img/lavagna.png'
 
   <!--  Product start-->
   <div class="bg-neutral-900">
-    <div class="mx-auto max-w-7xl py-44 px-6 sm:py-44 lg:px-8">
+    <div class="mx-auto max-w-7xl pt-44 px-6 sm:pt-44 lg:px-8">
       <h2 class="text-3xl font-bold tracking-tight text-center text-white sm:text-4xl section-title">The world's most innovative companies use our app</h2>
       <div class="mt-8 flow-root lg:mt-10">
-        <div class="-mt-4 -ml-8 flex flex-wrap justify-between lg:-ml-4">
+        <div class="-mt-4 -ml-8 flex flex-wrap justify-between lg:-ml-4 py-10">
           <div class="mt-4 ml-8 flex flex-shrink-0 flex-grow lg:ml-4 lg:flex-grow-0">
-            <img class="h-24" src="../assets/img/farine-caputo.png" alt="Mirage" />
+            <img class="h-24" src="../assets/img/farine-caputo.png" alt="Farine caputo" />
           </div>
           <div class="mt-4 ml-8 flex flex-shrink-0 flex-grow lg:ml-4 lg:flex-grow-0">
-            <img class="h-24" src="../assets/img/viniveneti.png" alt="StaticKit" />
+            <img class="h-24" src="../assets/img/viniveneti.png" alt="Vini veneti" />
           </div>
           <div class="mt-4 ml-8 flex flex-shrink-0 flex-grow lg:ml-4 lg:flex-grow-0">
-            <img class="h-24" src="../assets/img/pomodorinoDOP.png" alt="Transistor" />
+            <img class="h-24" src="../assets/img/pomodorinoDOP.png" alt="Pomodorino DOP" />
           </div>
           <div class="mt-4 ml-8 flex flex-shrink-0 flex-grow lg:ml-4 lg:flex-grow-0">
-            <img class="h-24" src="../assets/img/Birra_peroni_s.r.l._logo.png" alt="Workcation" />
+            <img class="h-24" src="../assets/img/Birra_peroni_s.r.l._logo.png" alt="Birra Peroni" />
           </div>
         </div>
       </div>
@@ -153,9 +153,9 @@ import imagePath from '../assets/img/lavagna.png'
             <img :src="review.avatarSrc" alt="" class="h-10 w-10 rounded-full bg-gray-100" />
           </div>
           <div :class="[reviewIdx === 0 ? '' : 'border-t border-gray-200', 'flex-1 py-10']">
-            <h3 class="font-medium text-gray-900">{{ review.author }}</h3>
+            <h3 class="font-medium text-red-500 review-author">{{ review.author }}</h3>
             <p>
-              <time :datetime="review.datetime">{{ review.date }}</time>
+              <time class="review-time" :datetime="review.datetime">{{ review.date }}</time>
             </p>
 
             <div class="mt-4 flex items-center">
@@ -163,7 +163,7 @@ import imagePath from '../assets/img/lavagna.png'
             </div>
             <p class="sr-only">{{ review.rating }} out of 5 stars</p>
 
-            <div class="prose prose-sm mt-4 max-w-none text-gray-500" v-html="review.content" />
+            <div class="prose prose-sm mt-4 max-w-none text-white review-content" v-html="review.content" />
           </div>
         </div>
       </div>

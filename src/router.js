@@ -27,11 +27,11 @@ const router = createRouter({
 
 
 
-    ]
+    ],
 })
 
 router.beforeEach((to, from, next) => {
-    window.scrollTo(0, 0)
+
     // This goes through the matched routes from last to first, finding the closest route with a title.
     // e.g., if we have `/some/deep/nested/route` and `/some`, `/deep`, and `/nested` have titles,
     // `/nested`'s will be chosen.

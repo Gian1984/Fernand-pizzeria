@@ -1,9 +1,10 @@
 <script>
-export default {
 
+export default {
 
   data() {
     return {
+      flag: "",
       description: "Cliquez sur les icônes pour nous trouver sur une carte ou sur les réseaux sociaux. Vous souhaitez réserver une table ou commander une pizza ? Cliquez sur le téléphone ! Nous t'attendons!"
     }
   },
@@ -12,9 +13,14 @@ export default {
 
   methods: {
 
-    scrolltopizza() {
-      const element = document.getElementById('pizze-red');
-      element.scrollIntoView({behavior: 'smooth'});
+    homePage() {
+      if(this.$route.path == "/" || this.$route.path == "/home" ) {
+        return (this.flag = './img/flag/belgium.png') && (this.description = 'Cliquez sur les icônes pour nous trouver sur une carte ou sur les réseaux sociaux. Vous souhaitez réserver une table ou commander une pizza ? Cliquez sur le téléphone ! Nous t\'attendons!')
+      } else if(this.$route.path == "/HomeEN") {
+        return (this.flag = './img/flag/british.png') && (this.description = 'Click on the icons to find us on a map or over the social media. Do you want to book a table or order a pizza? Click on the phone! We are waiting for you!')
+      } else {
+        return (this.flag = './img/flag/italy.png') && (this.description = 'Clicca sulle icone per trovarci sulla mappa o sui social media. Vuoi prenotare un tavolo o ordinare una pizza? Clicca sul telefono! Ti stiamo aspettando!')
+      }
     },
 
   }
@@ -28,16 +34,16 @@ export default {
       <div class="flex h-16 items-center justify-between">
         <div class="flex items-center">
           <div class="flex-shrink-0">
-            <img class="block h-8 w-auto lg:hidden" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company" />
-            <img class="hidden h-8 w-auto lg:block" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company" />
+            <img class="block h-8 w-auto lg:hidden" src="./assets/img/pizza-red.png" alt="Pizza-logo" />
+            <img class="hidden h-8 w-auto lg:block" src="./assets/img/pizza-red.png" alt="Pizza-logo" />
           </div>
           <div class="hidden sm:ml-6 sm:block">
             <div class="flex space-x-4">
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-              <a href="#" class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white nav-item" v-on:click="scrolltopizza()">Pizzas</a>
-              <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white nav-item">Team</a>
+              <a href="#pizze-red" class="rounded-md bg-neutral-900 px-3 py-2 text-sm font-medium text-white nav-item" v-on:click="scrolltopizza()">Pizzas</a>
+              <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white nav-item" >Team</a>
               <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white nav-item">Projects</a>
-              <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white nav-item">Calendar</a>
+              <a href="#contact" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white nav-item">Contact</a>
             </div>
           </div>
         </div>
@@ -48,7 +54,7 @@ export default {
               <div>
                 <MenuButton class="flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                   <span class="sr-only">Open user menu</span>
-                  <img class="h-8 w-8 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" />
+                  <img v-if="homePage()" class="h-8 w-8 rounded-full" id="flag" :src="flag" alt="pizza-vino-logo" />
                 </MenuButton>
               </div>
               <transition enter-active-class="transition ease-out duration-100" enter-from-class="transform opacity-0 scale-95" enter-to-class="transform opacity-100 scale-100" leave-active-class="transition ease-in duration-75" leave-from-class="transform opacity-100 scale-100" leave-to-class="transform opacity-0 scale-95">
@@ -81,10 +87,10 @@ export default {
     <DisclosurePanel class="sm:hidden">
       <div class="space-y-1 px-2 pt-2 pb-3">
         <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-        <DisclosureButton as="a" href="#" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white nav-item" v-on:click="scrolltopizza()">Pizzas</DisclosureButton>
+        <DisclosureButton as="a" href="#" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white nav-item">Pizzas</DisclosureButton>
         <DisclosureButton as="a" href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white nav-item">Team</DisclosureButton>
         <DisclosureButton as="a" href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white nav-item">Projects</DisclosureButton>
-        <DisclosureButton as="a" href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white nav-item">Calendar</DisclosureButton>
+        <DisclosureButton as="a" href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white nav-item">Contact</DisclosureButton>
       </div>
       <div class="border-t border-gray-700 pt-4 pb-3">
         <div class="flex items-center px-5">
@@ -113,11 +119,11 @@ export default {
         <div class="relative mt-10 lg:mt-10 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
 
 
-          <div class="relative">
+          <div class="relative" id="contact">
             <h3 class="text-4xl font-extrabold text-white tracking-tight sm:text-3xl section-title" id="sub_contact" lang="en">
               Contact
             </h3>
-            <p class="text-lg text-gray-500 mt-2">
+            <p class="text-lg text-white mt-2 contact-desc">
               {{ description }}
             </p>
             <dl class="mt-14 space-y-3">
@@ -127,10 +133,10 @@ export default {
                     <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-red-700 text-white hover:bg-red-900">
                       <component :is="item.icon" class="h-6 w-6" aria-hidden="true" />
                     </div>
-                    <p class="ml-16 text-lg leading-6 font-medium text-white">{{ item.name }}</p>
+                    <p class="ml-16 text-lg leading-6 font-medium text-white font-contact-title">{{ item.name }}</p>
                   </a>
                 </dt>
-                <dd class="ml-16 text-gray-500 text-sm">
+                <dd class="ml-16 text-gray-500 text-sm font-contact-desc">
                   {{ item.description }}
                 </dd>
               </div>
@@ -146,58 +152,58 @@ export default {
               <div class="mt-10 border-t border-gray-200">
                 <dl class="sm:divide-y sm:divide-gray-200">
                   <div class="py-2 sm:py-3 sm:grid sm:grid-cols-3 sm:gap-4">
-                    <dt class="text-sm font-medium text-gray-500">
+                    <dt class="text-sm font-medium text-gray-500 font-day">
                       MON
                     </dt>
-                    <dd class="mt-1 text-sm text-white sm:mt-0 sm:col-span-2">
+                    <dd class="mt-1 text-sm text-white sm:mt-0 sm:col-span-2 font-time">
                       Closed
                     </dd>
                   </div>
                   <div class="py-2 sm:py-3 sm:grid sm:grid-cols-3 sm:gap-4">
-                    <dt class="text-sm font-medium text-gray-500">
+                    <dt class="text-sm font-medium text-gray-500 font-day">
                       TUE
                     </dt>
-                    <dd class="mt-1 text-sm text-white sm:mt-0 sm:col-span-2">
+                    <dd class="mt-1 text-sm text-white sm:mt-0 sm:col-span-2 font-time">
                       12:00 – 2:30 pm, 6:00 – 10:30 pm
                     </dd>
                   </div>
                   <div class="py-2 sm:py-3 sm:grid sm:grid-cols-3 sm:gap-4">
-                    <dt class="text-sm font-medium text-gray-500">
+                    <dt class="text-sm font-medium text-gray-500 font-day">
                       WED
                     </dt>
-                    <dd class="mt-1 text-sm text-white sm:mt-0 sm:col-span-2">
+                    <dd class="mt-1 text-sm text-white sm:mt-0 sm:col-span-2 font-time">
                       12:00 – 2:30 pm, 6:00 – 10:30 pm
                     </dd>
                   </div>
                   <div class="py-2 sm:py-3 sm:grid sm:grid-cols-3 sm:gap-4">
-                    <dt class="text-sm font-medium text-gray-500">
+                    <dt class="text-sm font-medium text-gray-500 font-day">
                       THU
                     </dt>
-                    <dd class="mt-1 text-sm text-white sm:mt-0 sm:col-span-2">
+                    <dd class="mt-1 text-sm text-white sm:mt-0 sm:col-span-2 font-time">
                       12:00 – 2:30 pm, 6:00 – 10:30 pm
                     </dd>
                   </div>
                   <div class="py-2 sm:py-3 sm:grid sm:grid-cols-3 sm:gap-4">
-                    <dt class="text-sm font-medium text-gray-500">
+                    <dt class="text-sm font-medium text-gray-500 font-day">
                       FRI
                     </dt>
-                    <dd class="mt-1 text-sm text-white sm:mt-0 sm:col-span-2">
+                    <dd class="mt-1 text-sm text-white sm:mt-0 sm:col-span-2 font-time">
                       12:00 – 2:30 pm, 6:00 – 10:30 pm
                     </dd>
                   </div>
                   <div class="py-2 sm:py-3 sm:grid sm:grid-cols-3 sm:gap-4">
-                    <dt class="text-sm font-medium text-gray-500">
+                    <dt class="text-sm font-medium text-gray-500 font-day">
                       SAT
                     </dt>
-                    <dd class="mt-1 text-sm text-white sm:mt-0 sm:col-span-2">
+                    <dd class="mt-1 text-sm text-white sm:mt-0 sm:col-span-2 font-time">
                       12:00 – 2:30 pm, 6:00 – 10:30 pm
                     </dd>
                   </div>
                   <div class="py-2 sm:py-3 sm:grid sm:grid-cols-3 sm:gap-4">
-                    <dt class="text-sm font-medium text-gray-500">
+                    <dt class="text-sm font-medium text-gray-500 font-day">
                       SUN
                     </dt>
-                    <dd class="mt-1 text-sm text-white sm:mt-0 sm:col-span-2">
+                    <dd class="mt-1 text-sm text-white sm:mt-0 sm:col-span-2 font-time">
                       12:00 – 2:30 pm, 6:00 – 10:30 pm
                     </dd>
                   </div>
@@ -258,6 +264,8 @@ import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuIt
 import { Bars3Icon, XMarkIcon, ChevronRightIcon, MapPinIcon, PhoneArrowUpRightIcon } from '@heroicons/vue/24/outline'
 import { defineComponent, h } from 'vue'
 
+
+
 const fooddelivery = [
   {
     name: 'Order now',
@@ -295,7 +303,7 @@ const transferFeatures = [
     name: 'Contact',
     href:'tel:0032494693028',
     description:
-        'TEL: 0494 69 30 28',
+        'Tel: 0494 69 30 28',
     icon: PhoneArrowUpRightIcon,
   },
   {
