@@ -14,13 +14,13 @@ import imagePath from '../assets/img/lavagna.png'
         <p class="mt-6 text-lg leading-8 text-gray-300 main-sub-title">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.
         </p>
         <div class="flex mt-10">
-        <a href="../assets/doc/pizza-vino-it.pdf" class="mr-2 flex items-center border-2 border-black text-black bg-white rounded-full p-1 pr-2 sm:text-base lg:text-sm xl:text-base hover:bg-gray-300">
-          <span class="px-3 py-0.5 text-xs font-semibold leading-5 uppercase tracking-wide rounded-full" lang="it">Scarica menù</span>
-          <ChevronRightIcon class="ml-2 w-5 h-5 text-gray-500" aria-hidden="true" />
+        <a href="../assets/doc/pizza-vino-it.pdf" class="mr-2 flex items-center border-2 border-white text-white bg-transparent rounded-full p-1 pr-2 sm:text-base lg:text-sm xl:text-base hover:bg-gray-300">
+          <span class="px-3 py-0.5 text-xs font-semibold leading-5 uppercase tracking-wide rounded-full button-header" lang="it">Scarica menù</span>
+          <ChevronRightIcon class="ml-2 w-5 h-5 text-white" aria-hidden="true" />
         </a>
-        <a type="button" href="tel:0032494693028" class="flex items-center border-2 border-black text-black bg-white rounded-full p-1 pr-2 sm:text-base lg:text-sm xl:text-base hover:bg-gray-300">
-          <span class="px-3 py-0.5 text-xs font-semibold leading-5 uppercase tracking-wide rounded-full" lang="it">Chiama</span>
-          <PhoneArrowUpRightIcon class="ml-2 w-5 h-5" aria-hidden="true" />
+        <a type="button" href="tel:0032494693028" class="flex items-center border-2 border-white text-white bg-transparent rounded-full p-1 pr-2 sm:text-base lg:text-sm xl:text-base hover:bg-gray-300">
+          <span class="px-3 py-0.5 text-xs font-semibold leading-5 uppercase tracking-wide rounded-full button-header" lang="it">Chiama</span>
+          <PhoneArrowUpRightIcon class="ml-2 w-5 h-5 text-white" aria-hidden="true" />
         </a>
         </div>
       </div>
@@ -216,7 +216,7 @@ const redpizzas = [
   { name: 'Regina', description: 'Tomate, Basilic et Mozzarella de Bufflonne.', price:'14,00', icon: "./img/pizza-white.png" },
   { name: 'Principessa', description: 'Tomate, Basilic et Scamorza fumée*. ( Fromage typique italien )', price:'12,00' , icon: "./img/pizza-red.png"},
   { name: 'Burrata', description: 'Tomate, Basilic, Tomates Datterini, Burratina d\'Andria*. (  Sœur de la mozzarella, un tendre fromage au lait de vache avec, en son cœur, une épaisse crème de fromage frais )', price:'17,00', icon: "./img/pizza-green.png" },
-  { name: 'Marinara', description: 'Tomate, Ail, Origan et Basilic.', price:'9,00', icon: "public/img/pizza-white.png" },
+  { name: 'Marinara', description: 'Tomate, Ail, Origan et Basilic.', price:'9,00', icon: "./img/pizza-white.png" },
   { name: 'Rucola Reggiano', description: 'Tomate, Mozzarella, Roquette et Parmigiano Reggiano.', price:'13,00', icon: "./img/pizza-red.png" },
   { name: 'Porchetta Funghi', description: 'Tomate, Basilic, Mozzarella, Porchetta d\'Ariccia* et Champignons. ( Charcuterie à base de porc rôti aux épices préparée traditionnellement sur l\'ensemble du territoire la commune d\'Ariccia )', price:'15,00', icon: "./img/pizza-green.png" },
   { name: 'Quattro Stagioni', description: 'Tomate, Basilic, Mozzarella, Porchetta d\'Ariccia*, Champignons, Olives Noires et Artichauts au four. ( Charcuterie à base de porc rôti aux épices préparée traditionnellement sur l\'ensemble du territoire la commune d\'Ariccia )', price:'16,00', icon: "./img/pizza-white.png" },

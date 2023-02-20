@@ -214,7 +214,7 @@ export default {
 
     <div class="bg-neutral-900">
       <div class="mx-auto">
-        <div class="bg-gray-50 rounded-2xl pb-5" id="food_delivery_pannel">
+        <div class="bg-gray-50 pb-5" id="food_delivery_pannel">
           <div class="max-w-xl mx-auto lg:max-w-none">
             <div class="mt-5 max-w-sm mx-auto grid grid-cols-1 gap-y-5 gap-x-8 sm:max-w-none xl:grid-cols-3">
               <div v-for="delivery in fooddelivery" :key="delivery.name" class="text-center sm:flex sm:text-left lg:block lg:text-center delivey_pannel">
@@ -237,12 +237,12 @@ export default {
     </div>
 
 
-    <div class="mx-auto max-w-md px-4 overflow-hidden sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
-      <p class="text-center text-base text-gray-400 hover:text-white">
+    <div class="mx-auto max-w-md px-4 overflow-hidden sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8 py-6">
+      <p class="text-center text-base hover:text-gray-400 text-white footer-copyright">
         &copy; 2022 Pizza Vino - Mic.pi.da s.r.l. - Avenue des Saisons 15, 1050 Ixelles - TVA: BE 0727796146 Phone 0494693028.
       </p>
       <a href="https://www.gianlucatiengo.com/">
-        <p class="text-center text-base text-gray-400 hover:text-white underline">
+        <p class="text-center text-base hover:text-gray-400 text-white underline footer-copyright">
           Powered by Gianluca Tiengo.
         </p>
       </a>

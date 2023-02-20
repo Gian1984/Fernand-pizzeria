@@ -34,6 +34,15 @@
         padding-top: 1em;
     }
 }
+
+.button-header{
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 3px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
 .before-title{
     font-family: 'Josefin Sans', sans-serif;
     letter-spacing: 6px;
@@ -106,6 +115,16 @@
 
 .item:hover {
     flex: 7;
+}
+
+.footer-copyright{
+    margin-top: 5px;
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 2px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    font-size: 12px;
 }
 
 
