@@ -144,7 +144,7 @@ export default {
                     <p class="ml-16 text-lg leading-6 font-medium text-white font-contact-title">{{ item.name }}</p>
                   </a>
                 </dt>
-                <dd class="ml-16 text-gray-500 text-sm font-contact-desc">
+                <dd class="ml-16 text-gray-300 text-sm font-contact-desc">
                   {{ item.description }}
                 </dd>
               </div>
@@ -160,7 +160,7 @@ export default {
               <div class="mt-10 border-t border-gray-200">
                 <dl class="sm:divide-y sm:divide-gray-200">
                   <div class="py-2 sm:py-3 sm:grid sm:grid-cols-3 sm:gap-4">
-                    <dt class="text-sm font-medium text-gray-500 font-day">
+                    <dt class="text-sm font-medium text-gray-300 font-day">
                       MON
                     </dt>
                     <dd class="mt-1 text-sm text-white sm:mt-0 sm:col-span-2 font-time">
@@ -168,7 +168,7 @@ export default {
                     </dd>
                   </div>
                   <div class="py-2 sm:py-3 sm:grid sm:grid-cols-3 sm:gap-4">
-                    <dt class="text-sm font-medium text-gray-500 font-day">
+                    <dt class="text-sm font-medium text-gray-300 font-day">
                       TUE
                     </dt>
                     <dd class="mt-1 text-sm text-white sm:mt-0 sm:col-span-2 font-time">
@@ -176,7 +176,7 @@ export default {
                     </dd>
                   </div>
                   <div class="py-2 sm:py-3 sm:grid sm:grid-cols-3 sm:gap-4">
-                    <dt class="text-sm font-medium text-gray-500 font-day">
+                    <dt class="text-sm font-medium text-gray-300 font-day">
                       WED
                     </dt>
                     <dd class="mt-1 text-sm text-white sm:mt-0 sm:col-span-2 font-time">
@@ -184,7 +184,7 @@ export default {
                     </dd>
                   </div>
                   <div class="py-2 sm:py-3 sm:grid sm:grid-cols-3 sm:gap-4">
-                    <dt class="text-sm font-medium text-gray-500 font-day">
+                    <dt class="text-sm font-medium text-gray-300 font-day">
                       THU
                     </dt>
                     <dd class="mt-1 text-sm text-white sm:mt-0 sm:col-span-2 font-time">
@@ -192,7 +192,7 @@ export default {
                     </dd>
                   </div>
                   <div class="py-2 sm:py-3 sm:grid sm:grid-cols-3 sm:gap-4">
-                    <dt class="text-sm font-medium text-gray-500 font-day">
+                    <dt class="text-sm font-medium text-gray-300 font-day">
                       FRI
                     </dt>
                     <dd class="mt-1 text-sm text-white sm:mt-0 sm:col-span-2 font-time">
@@ -200,7 +200,7 @@ export default {
                     </dd>
                   </div>
                   <div class="py-2 sm:py-3 sm:grid sm:grid-cols-3 sm:gap-4">
-                    <dt class="text-sm font-medium text-gray-500 font-day">
+                    <dt class="text-sm font-medium text-gray-300 font-day">
                       SAT
                     </dt>
                     <dd class="mt-1 text-sm text-white sm:mt-0 sm:col-span-2 font-time">
@@ -208,7 +208,7 @@ export default {
                     </dd>
                   </div>
                   <div class="py-2 sm:py-3 sm:grid sm:grid-cols-3 sm:gap-4">
-                    <dt class="text-sm font-medium text-gray-500 font-day">
+                    <dt class="text-sm font-medium text-gray-300 font-day">
                       SUN
                     </dt>
                     <dd class="mt-1 text-sm text-white sm:mt-0 sm:col-span-2 font-time">
@@ -260,7 +260,7 @@ export default {
           Powered by Gianluca Tiengo.
         </p>
       </a>
-      <button class="top-link hide" href="" id="js-top" v-on:click="scrolltotop()">
+      <button class="top-link hide" id="js-top" v-on:click="scrolltotop()">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" id="totop"><path d="M12 6H0l6-6z"/></svg>
       </button>
     </div>
