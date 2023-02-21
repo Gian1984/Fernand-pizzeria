@@ -251,16 +251,16 @@ export default {
       <h2 class="text-3xl font-bold tracking-tight text-center text-white sm:text-4xl section-title">The world's most innovative companies use our app</h2>
       <div class="mt-8 flow-root lg:mt-10">
         <div class=" flex flex-wrap justify-center sm:justify-between py-10">
-          <div class="mt-4 ml-8 flex justify-center flex-shrink-0 flex-grow lg:ml-4 lg:flex-grow-0 ">
+          <div class="mt-4 sm:ml-8 flex justify-center flex-shrink-0 flex-grow lg:ml-4 lg:flex-grow-0 ">
             <img class="h-24 sm:h-32" src="../assets/img/farine-caputo.png" alt="Farine caputo" />
           </div>
-          <div class="mt-4 ml-8 flex justify-center flex-shrink-0 flex-grow lg:ml-4 lg:flex-grow-0">
+          <div class="mt-4 sm:ml-8 flex justify-center flex-shrink-0 flex-grow lg:ml-4 lg:flex-grow-0">
             <img class="h-24 sm:h-32" src="../assets/img/viniveneti.png" alt="Vini veneti" />
           </div>
-          <div class="mt-4 ml-8 flex justify-center flex-shrink-0 flex-grow lg:ml-4 lg:flex-grow-0">
+          <div class="mt-4 sm:ml-8 flex justify-center flex-shrink-0 flex-grow lg:ml-4 lg:flex-grow-0">
             <img class="h-24 sm:h-32" src="../assets/img/pomodorinoDOP.png" alt="Pomodorino DOP" />
           </div>
-          <div class="mt-4 ml-8 flex justify-center flex-shrink-0 flex-grow lg:ml-4 lg:flex-grow-0">
+          <div class="mt-4 sm:ml-8 flex justify-center flex-shrink-0 flex-grow lg:ml-4 lg:flex-grow-0">
             <img class="h-24 sm:h-32" src="../assets/img/Birra_peroni_s.r.l._logo.png" alt="Birra Peroni" />
           </div>
         </div>
