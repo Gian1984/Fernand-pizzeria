@@ -116,7 +116,7 @@ export default {
   <router-view/>
 
   <footer class="bg-neutral-900">
-    <div class="py-18 overflow-hidden lg:py-18 mb-10" id="contact-me">
+    <div class="py-44 overflow-hidden mb-10" id="contact-me">
       <div class="relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-7xl">
         <div class="relative mt-10 lg:mt-10 lg:grid lg:grid-cols-2 pb-1 lg:gap-8 lg:items-center">
 
@@ -221,7 +221,7 @@ export default {
     <!--  Food-delivery parteners-->
 
     <div class="bg-neutral-900">
-      <div class="mx-auto">
+      <div class="mx-auto pt-18">
         <div class="bg-gray-50 pb-5" id="food_delivery_pannel">
           <div class="max-w-xl mx-auto lg:max-w-none">
             <div class="mt-5 max-w-sm mx-auto grid grid-cols-1 gap-y-5 gap-x-8 sm:max-w-none xl:grid-cols-3">
