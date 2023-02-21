@@ -40,8 +40,8 @@ export default {
       <div class="flex h-16 items-center justify-between">
         <div class="flex items-center">
           <div class="flex-shrink-0">
-            <img class="block h-8 w-auto lg:hidden" src="./assets/img/pizza-red.png" alt="Pizza-logo" />
-            <img class="hidden h-8 w-auto lg:block" src="./assets/img/pizza-red.png" alt="Pizza-logo" />
+            <img class="block h-8 w-auto lg:hidden" src="./assets/img/pizza-red.webp" alt="Pizza-logo" />
+            <img class="hidden h-8 w-auto lg:block" src="./assets/img/pizza-red.webp" alt="Pizza-logo" />
           </div>
           <div class="hidden sm:ml-6 sm:block">
             <div class="flex space-x-4">
@@ -296,19 +296,19 @@ const fooddelivery = [
   {
     name: 'Order now',
     link: 'https://deliveroo.be/fr/menu/brussels/boondael/pizza-vino',
-    imageSrc: './img/deliveroo.png',
+    imageSrc: './img/deliveroo.webp',
     description: "Your favourite restaurants and takeaways, delivered to your door.",
   },
   {
     name: 'Order now',
     link: 'https://www.ubereats.com/be/store/pizzavino/FMBh-fUqQLaX1ctZnOTC3w',
-    imageSrc: './img/Uber-Eats-Logo.png',
+    imageSrc: './img/Uber-Eats-Logo.webp',
     description: "Crave it? Get it. Search for a favourite restaurant, cuisine or dish.",
   },
   {
     name: 'Order now',
     link: 'https://www.proxideal.eu/',
-    imageSrc: './img/Proxideal_Logo-01.png',
+    imageSrc: './img/Proxideal_Logo-01.webp',
     description: "Vos plats préférés livrés au prix juste.",
   },
 ]

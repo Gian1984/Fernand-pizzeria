@@ -1,6 +1,6 @@
 <script>
 import imagePath from '../assets/img/lavagna.webp'
-import carrelage from '../assets/img/carrelage.jpg'
+import carrelage from '../assets/img/carrelage.webp'
 import gsap from 'gsap'
 
 export default {
@@ -13,133 +13,133 @@ export default {
           name: 'Margherita',
           description: this.$t('redpizzas.margherita'),
           price: '10,00',
-          icon: "./img/pizza-green.png",
+          icon: "./img/pizza-green.webp",
           alt:'Pizza icon'
         },
         {
           name: 'Regina',
           description: 'Tomate, Basilic et Mozzarella de Bufflonne.',
           price: '14,00',
-          icon: "./img/pizza-white.png",
+          icon: "./img/pizza-white.webp",
           alt:'Pizza icon'
         },
         {
           name: 'Principessa',
           description: 'Tomate, Basilic et Scamorza fumée*. ( Fromage typique italien )',
           price: '12,00',
-          icon: "./img/pizza-red.png",
+          icon: "./img/pizza-red.webp",
           alt:'Pizza icon'
         },
         {
           name: 'Burrata',
           description: 'Tomate, Basilic, Tomates Datterini, Burratina d\'Andria*. (  Sœur de la mozzarella, un tendre fromage au lait de vache avec, en son cœur, une épaisse crème de fromage frais )',
           price: '17,00',
-          icon: "./img/pizza-green.png",
+          icon: "./img/pizza-green.webp",
           alt:'Pizza icon'
         },
         {
           name: 'Marinara',
           description: 'Tomate, Ail, Origan et Basilic.',
           price: '9,00',
-          icon: "./img/pizza-white.png",
+          icon: "./img/pizza-white.webp",
           alt:'Pizza icon'
         },
         {
           name: 'Rucola Reggiano',
           description: 'Tomate, Mozzarella, Roquette et Parmigiano Reggiano.',
           price: '13,00',
-          icon: "./img/pizza-red.png",
+          icon: "./img/pizza-red.webp",
           alt:'Pizza icon'
         },
         {
           name: 'Porchetta Funghi',
           description: 'Tomate, Basilic, Mozzarella, Porchetta d\'Ariccia* et Champignons. ( Charcuterie à base de porc rôti aux épices préparée traditionnellement sur l\'ensemble du territoire la commune d\'Ariccia )',
           price: '15,00',
-          icon: "./img/pizza-green.png",
+          icon: "./img/pizza-green.webp",
           alt:'Pizza icon'
         },
         {
           name: 'Quattro Stagioni',
           description: 'Tomate, Basilic, Mozzarella, Porchetta d\'Ariccia*, Champignons, Olives Noires et Artichauts au four. ( Charcuterie à base de porc rôti aux épices préparée traditionnellement sur l\'ensemble du territoire la commune d\'Ariccia )',
           price: '16,00',
-          icon: "./img/pizza-white.png",
+          icon: "./img/pizza-white.webp",
           alt:'Pizza icon'
         },
         {
           name: 'Napoli',
           description: 'Tomate, Mozzarella, Câpres, Filets d\'Anchois de Cetara et Origan.',
           price: '14,00',
-          icon: "./img/pizza-red.png",
+          icon: "./img/pizza-red.webp",
           alt:'Pizza icon'
         },
         {
           name: 'Siciliana',
           description: 'Tomate, Basilic, Mozzarella, Câpres, Filets d\'Anchois de Cetara, Olives Noires et Ail.',
           price: '15,00',
-          icon: "./img/pizza-green.png",
+          icon: "./img/pizza-green.webp",
           alt:'Pizza icon'
         },
         {
           name: 'Capricciosa',
           description: 'Tomate, Basilic, Mozzarella, Porchetta d\'Ariccia*, Champignons, Olives Noires et Artichauts au four. ( Charcuterie à base de porc rôti aux épices préparée traditionnellement sur l\'ensemble du territoire la commune d\'Ariccia )',
           price: '16,00',
-          icon: "./img/pizza-white.png",
+          icon: "./img/pizza-white.webp",
           alt:'Pizza icon'
         },
         {
           name: 'Diavola',
           description: 'Tomate, Basilic, Mozzarella et \'Nduja*. ( Saucisse de porc épicée avec du piment fabriquée en Italie, à l\'origine en Calabre )',
           price: '14,50',
-          icon: "./img/pizza-red.png",
+          icon: "./img/pizza-red.webp",
           alt:'Pizza icon'
         },
         {
           name: 'Calabrese',
           description: 'Tomate, Basilic, Scamorza fumée*, Salami épicé, Oignons rouges de Tropea et Olives Noires. ( Fromage typique italien )',
           price: '17,00',
-          icon: "./img/pizza-green.png",
+          icon: "./img/pizza-green.webp",
           alt:'Pizza icon'
         },
         {
           name: 'Boscaiola',
           description: 'Tomate, Basilic, Scamorza fumée*, Mascarpone, Champignons, Roquette et copeaux de Parmigiano Reggiano. ( Fromage typique italien )',
           price: '15,00',
-          icon: "./img/pizza-white.png",
+          icon: "./img/pizza-white.webp",
           alt:'Pizza icon'
         },
         {
           name: 'Bresaola e tartufo',
           description: 'Tomate, Mozzarella, Roquette, Bresaola de Punta d\'Anca, copeaux de Grana Padano* et Truffe Noire. ( Fromage typique italien )',
           price: '20,00',
-          icon: "./img/pizza-red.png",
+          icon: "./img/pizza-red.webp",
           alt:'Pizza icon'
         },
         {
           name: 'Crudaiola',
           description: 'Tomate, Roquette, Culatello*, Copeaux de Grana Padano, Crème Burrata, Tomates Datterini, Basilic et Origan. ( Il s\'agit d\'un jambon cru salé et séché obtenu à partir de la cuisse de porc  )',
           price: '19,00',
-          icon: "./img/pizza-green.png",
+          icon: "./img/pizza-green.webp",
           alt:'Pizza icon'
         },
         {
           name: 'Vegana',
           description: 'Tomate, Mélange de légumes, Roquette et Tomates séchées.',
           price: '14,00',
-          icon: "./img/pizza-white.png",
+          icon: "./img/pizza-white.webp",
           alt:'Pizza icon'
         },
         {
           name: 'Vegetariana',
           description: 'Tomate, Mozzarella et Mélange de légumes.',
           price: '15,00',
-          icon: "./img/pizza-red.png",
+          icon: "./img/pizza-red.webp",
           alt:'Pizza icon'
         },
         {
           name: 'Calzone',
           description: 'Surprise du pizzaiolo!',
           price: '18,00',
-          icon: "./img/pizza-green.png",
+          icon: "./img/pizza-green.webp",
           alt:'Pizza icon'
         },
       ]
@@ -151,42 +151,42 @@ export default {
           name: 'Salsiccia Friarelli',
           description: 'Mozzarella, Basilic, Saucisse and Friarielli*. ( Brocoli-rave ou rapini )',
           price:'16,00',
-          icon: "./img/pizza-green.png",
+          icon: "./img/pizza-green.webp",
           alt:'Pizza icon'
         },
         {
           name: '4 Formaggi',
           description: 'Mozzarella, Scamorza fumée, Gorgonzola, Copeaux de Parmesan et Basilic.',
           price:'15,00',
-          icon: "./img/pizza-white.png",
+          icon: "./img/pizza-white.webp",
           alt:'Pizza icon'
         },
         {
           name: 'Fresca',
           description: 'Mozzarella, Tomates datterini jaunes et rouges, Roquette et Copeaux de Parmesan.',
           price:'15,00',
-          icon: "./img/pizza-red.png",
+          icon: "./img/pizza-red.webp",
           alt:'Pizza icon'
         },
         {
           name: 'Patate & Tartufo',
           description: 'Mozzarella, Basilic, Pommes de terre bouillies et Truffe Noire.',
           price:'20,00',
-          icon: "./img/pizza-green.png",
+          icon: "./img/pizza-green.webp",
           alt:'Pizza icon'
         },
         {
           name: 'Mortadella',
           description: 'Mozzarella, Roquette, Mortadelle, Copeaux de Pecorino Romano*, Pesto de tomates séchées et Pistaches grillées. (  Fromage traditionnel à base de lait entier de brebis, à pâte pressée cuite )',
           price:'19,00',
-          icon: "./img/pizza-white.png",
+          icon: "./img/pizza-white.webp",
           alt:'Pizza icon'
         },
         {
           name: 'Genovese',
           description: 'Mozzarella, Pesto Génois, Tomates jaunes et rouges de Piennolo del Vesuvio, Copeaux de Ricotta* et Pignons de pin grillés. ( Fromage à pâte fraîche )',
           price:'19,00',
-          icon: "./img/pizza-red.png",
+          icon: "./img/pizza-red.webp",
           alt:'Pizza icon'
         },
       ]
@@ -204,7 +204,7 @@ export default {
     <div class="mx-auto max-w-7xl px-6 lg:px-8 flex header-content">
       <div class="mx-auto max-w-6xl lg:mx-0">
         <transition appear @before-enter="beforeEnter" @enter="enter">
-          <img src="../assets/img/pizzain.png" alt="logo-pizza-in" />
+          <img src="../assets/img/pizzain.webp" alt="logo-pizza-in" />
         </transition>
         <h2 class="text-4xl font-bold tracking-tight text-white sm:text-6xl main-title">{{ $t("header.title") }}</h2>
         <p class="mt-6 text-lg leading-8 text-gray-300 main-sub-title">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.
@@ -250,7 +250,7 @@ export default {
         <div class="relative" aria-hidden="true">
           <div class="absolute -inset-x-20 top-0 bg-gradient-to-b from-neutral-900 pt-[12%]" />
         </div>
-        <img src="../assets/img/pizza-burratina.png" alt="App screenshot" class="mb-[-16%] rounded-xl shadow-2xl h-80 w-full sm:h-auto sm:w-full object-cover" />
+        <img src="../assets/img/pizza-burratina.webp" alt="App screenshot" class="mb-[-16%] rounded-xl shadow-2xl h-80 w-full sm:h-auto sm:w-full object-cover" />
         <div class="relative" aria-hidden="true">
           <div class="absolute -inset-x-20 bottom-0 bg-gradient-to-t from-neutral-900 pt-[7%]" />
         </div>
@@ -323,16 +323,16 @@ export default {
       <div class="mt-8 flow-root lg:mt-10">
         <div class=" flex flex-wrap justify-center sm:justify-between py-10">
           <div class="mt-4 sm:ml-8 flex justify-center flex-shrink-0 flex-grow lg:ml-4 lg:flex-grow-0 ">
-            <img class="h-24 sm:h-32" src="../assets/img/farine-caputo.png" alt="Farine caputo" />
+            <img class="h-24 sm:h-32" src="../assets/img/farine-caputo.webp" alt="Farine caputo" />
           </div>
           <div class="mt-4 sm:ml-8 flex justify-center flex-shrink-0 flex-grow lg:ml-4 lg:flex-grow-0 img-veneti">
-            <img class="h-24 sm:h-32" src="../assets/img/viniveneti.png" alt="Vini veneti" />
+            <img class="h-24 sm:h-32" src="../assets/img/viniveneti.webp" alt="Vini veneti" />
           </div>
           <div class="mt-4 sm:ml-8 flex justify-center flex-shrink-0 flex-grow lg:ml-4 lg:flex-grow-0">
-            <img class="h-24 sm:h-32" src="../assets/img/pomodorinoDOP.png" alt="Pomodorino DOP" />
+            <img class="h-24 sm:h-32" src="../assets/img/pomodorinoDOP.webp" alt="Pomodorino DOP" />
           </div>
           <div class="mt-4 sm:ml-8 flex justify-center flex-shrink-0 flex-grow lg:ml-4 lg:flex-grow-0">
-            <img class="h-24 sm:h-32" src="../assets/img/Birra_peroni_s.r.l._logo.png" alt="Birra Peroni" />
+            <img class="h-24 sm:h-32" src="../assets/img/Birra_peroni_s.r.l._logo.webp" alt="Birra Peroni" />
           </div>
         </div>
       </div>
