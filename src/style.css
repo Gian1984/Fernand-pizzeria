@@ -91,6 +91,10 @@ html{scroll-behavior:smooth}
     font-size: 16px!important;
 }
 
+.img-veneti{
+    filter: brightness(10);
+}
+
 .pizza-price{
     margin-top: 5px;
     font-family: 'Josefin Sans', sans-serif;

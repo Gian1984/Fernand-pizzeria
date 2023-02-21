@@ -13,111 +13,182 @@ export default {
           name: 'Margherita',
           description: this.$t('redpizzas.margherita'),
           price: '10,00',
-          icon: "./img/pizza-green.png"
+          icon: "./img/pizza-green.png",
+          alt:'Pizza icon'
         },
         {
           name: 'Regina',
           description: 'Tomate, Basilic et Mozzarella de Bufflonne.',
           price: '14,00',
-          icon: "./img/pizza-white.png"
+          icon: "./img/pizza-white.png",
+          alt:'Pizza icon'
         },
         {
           name: 'Principessa',
           description: 'Tomate, Basilic et Scamorza fumée*. ( Fromage typique italien )',
           price: '12,00',
-          icon: "./img/pizza-red.png"
+          icon: "./img/pizza-red.png",
+          alt:'Pizza icon'
         },
         {
           name: 'Burrata',
           description: 'Tomate, Basilic, Tomates Datterini, Burratina d\'Andria*. (  Sœur de la mozzarella, un tendre fromage au lait de vache avec, en son cœur, une épaisse crème de fromage frais )',
           price: '17,00',
-          icon: "./img/pizza-green.png"
+          icon: "./img/pizza-green.png",
+          alt:'Pizza icon'
         },
         {
           name: 'Marinara',
           description: 'Tomate, Ail, Origan et Basilic.',
           price: '9,00',
-          icon: "./img/pizza-white.png"
+          icon: "./img/pizza-white.png",
+          alt:'Pizza icon'
         },
         {
           name: 'Rucola Reggiano',
           description: 'Tomate, Mozzarella, Roquette et Parmigiano Reggiano.',
           price: '13,00',
-          icon: "./img/pizza-red.png"
+          icon: "./img/pizza-red.png",
+          alt:'Pizza icon'
         },
         {
           name: 'Porchetta Funghi',
           description: 'Tomate, Basilic, Mozzarella, Porchetta d\'Ariccia* et Champignons. ( Charcuterie à base de porc rôti aux épices préparée traditionnellement sur l\'ensemble du territoire la commune d\'Ariccia )',
           price: '15,00',
-          icon: "./img/pizza-green.png"
+          icon: "./img/pizza-green.png",
+          alt:'Pizza icon'
         },
         {
           name: 'Quattro Stagioni',
           description: 'Tomate, Basilic, Mozzarella, Porchetta d\'Ariccia*, Champignons, Olives Noires et Artichauts au four. ( Charcuterie à base de porc rôti aux épices préparée traditionnellement sur l\'ensemble du territoire la commune d\'Ariccia )',
           price: '16,00',
-          icon: "./img/pizza-white.png"
+          icon: "./img/pizza-white.png",
+          alt:'Pizza icon'
         },
         {
           name: 'Napoli',
           description: 'Tomate, Mozzarella, Câpres, Filets d\'Anchois de Cetara et Origan.',
           price: '14,00',
-          icon: "./img/pizza-red.png"
+          icon: "./img/pizza-red.png",
+          alt:'Pizza icon'
         },
         {
           name: 'Siciliana',
           description: 'Tomate, Basilic, Mozzarella, Câpres, Filets d\'Anchois de Cetara, Olives Noires et Ail.',
           price: '15,00',
-          icon: "./img/pizza-green.png"
+          icon: "./img/pizza-green.png",
+          alt:'Pizza icon'
         },
         {
           name: 'Capricciosa',
           description: 'Tomate, Basilic, Mozzarella, Porchetta d\'Ariccia*, Champignons, Olives Noires et Artichauts au four. ( Charcuterie à base de porc rôti aux épices préparée traditionnellement sur l\'ensemble du territoire la commune d\'Ariccia )',
           price: '16,00',
-          icon: "./img/pizza-white.png"
+          icon: "./img/pizza-white.png",
+          alt:'Pizza icon'
         },
         {
           name: 'Diavola',
           description: 'Tomate, Basilic, Mozzarella et \'Nduja*. ( Saucisse de porc épicée avec du piment fabriquée en Italie, à l\'origine en Calabre )',
           price: '14,50',
-          icon: "./img/pizza-red.png"
+          icon: "./img/pizza-red.png",
+          alt:'Pizza icon'
         },
         {
           name: 'Calabrese',
           description: 'Tomate, Basilic, Scamorza fumée*, Salami épicé, Oignons rouges de Tropea et Olives Noires. ( Fromage typique italien )',
           price: '17,00',
-          icon: "./img/pizza-green.png"
+          icon: "./img/pizza-green.png",
+          alt:'Pizza icon'
         },
         {
           name: 'Boscaiola',
           description: 'Tomate, Basilic, Scamorza fumée*, Mascarpone, Champignons, Roquette et copeaux de Parmigiano Reggiano. ( Fromage typique italien )',
           price: '15,00',
-          icon: "./img/pizza-white.png"
+          icon: "./img/pizza-white.png",
+          alt:'Pizza icon'
         },
         {
           name: 'Bresaola e tartufo',
           description: 'Tomate, Mozzarella, Roquette, Bresaola de Punta d\'Anca, copeaux de Grana Padano* et Truffe Noire. ( Fromage typique italien )',
           price: '20,00',
-          icon: "./img/pizza-red.png"
+          icon: "./img/pizza-red.png",
+          alt:'Pizza icon'
         },
         {
           name: 'Crudaiola',
           description: 'Tomate, Roquette, Culatello*, Copeaux de Grana Padano, Crème Burrata, Tomates Datterini, Basilic et Origan. ( Il s\'agit d\'un jambon cru salé et séché obtenu à partir de la cuisse de porc  )',
           price: '19,00',
-          icon: "./img/pizza-green.png"
+          icon: "./img/pizza-green.png",
+          alt:'Pizza icon'
         },
         {
           name: 'Vegana',
           description: 'Tomate, Mélange de légumes, Roquette et Tomates séchées.',
           price: '14,00',
-          icon: "./img/pizza-white.png"
+          icon: "./img/pizza-white.png",
+          alt:'Pizza icon'
         },
         {
           name: 'Vegetariana',
           description: 'Tomate, Mozzarella et Mélange de légumes.',
           price: '15,00',
-          icon: "./img/pizza-red.png"
+          icon: "./img/pizza-red.png",
+          alt:'Pizza icon'
         },
-        {name: 'Calzone', description: 'Surprise du pizzaiolo!', price: '18,00', icon: "./img/pizza-green.png"},
+        {
+          name: 'Calzone',
+          description: 'Surprise du pizzaiolo!',
+          price: '18,00',
+          icon: "./img/pizza-green.png",
+          alt:'Pizza icon'
+        },
+      ]
+    },
+
+    whitepizzas() {
+      return [
+        {
+          name: 'Salsiccia Friarelli',
+          description: 'Mozzarella, Basilic, Saucisse and Friarielli*. ( Brocoli-rave ou rapini )',
+          price:'16,00',
+          icon: "./img/pizza-green.png",
+          alt:'Pizza icon'
+        },
+        {
+          name: '4 Formaggi',
+          description: 'Mozzarella, Scamorza fumée, Gorgonzola, Copeaux de Parmesan et Basilic.',
+          price:'15,00',
+          icon: "./img/pizza-white.png",
+          alt:'Pizza icon'
+        },
+        {
+          name: 'Fresca',
+          description: 'Mozzarella, Tomates datterini jaunes et rouges, Roquette et Copeaux de Parmesan.',
+          price:'15,00',
+          icon: "./img/pizza-red.png",
+          alt:'Pizza icon'
+        },
+        {
+          name: 'Patate & Tartufo',
+          description: 'Mozzarella, Basilic, Pommes de terre bouillies et Truffe Noire.',
+          price:'20,00',
+          icon: "./img/pizza-green.png",
+          alt:'Pizza icon'
+        },
+        {
+          name: 'Mortadella',
+          description: 'Mozzarella, Roquette, Mortadelle, Copeaux de Pecorino Romano*, Pesto de tomates séchées et Pistaches grillées. (  Fromage traditionnel à base de lait entier de brebis, à pâte pressée cuite )',
+          price:'19,00',
+          icon: "./img/pizza-white.png",
+          alt:'Pizza icon'
+        },
+        {
+          name: 'Genovese',
+          description: 'Mozzarella, Pesto Génois, Tomates jaunes et rouges de Piennolo del Vesuvio, Copeaux de Ricotta* et Pignons de pin grillés. ( Fromage à pâte fraîche )',
+          price:'19,00',
+          icon: "./img/pizza-red.png",
+          alt:'Pizza icon'
+        },
       ]
     }
   }
@@ -133,7 +204,7 @@ export default {
     <div class="mx-auto max-w-7xl px-6 lg:px-8 flex header-content">
       <div class="mx-auto max-w-6xl lg:mx-0">
         <transition appear @before-enter="beforeEnter" @enter="enter">
-          <img src="../assets/img/pizzain.png"/>
+          <img src="../assets/img/pizzain.png" alt="logo-pizza-in" />
         </transition>
         <h2 class="text-4xl font-bold tracking-tight text-white sm:text-6xl main-title">{{ $t("header.title") }}</h2>
         <p class="mt-6 text-lg leading-8 text-gray-300 main-sub-title">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.
@@ -192,7 +263,7 @@ export default {
       <dl class="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-10 text-base leading-7 text-gray-300 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16">
         <div v-for="feature in redpizzas" :key="feature.name" class="relative pl-14">
           <dt class="font-semibold text-white pizza-name">
-            <img :src="feature.icon" class="absolute top-1 left-1 h-8 w-8 sm:h-12 sm:w-12 text-red-500" aria-hidden="true" />
+            <img :src="feature.icon" class="absolute top-1 left-1 h-8 w-8 sm:h-12 sm:w-12 text-red-500" :alt="feature.alt" aria-hidden="true" />
             {{ feature.name }}
           </dt>
           {{ ' ' }}
@@ -208,7 +279,7 @@ export default {
       <dl class="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-10 text-base leading-7 text-gray-300 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16">
         <div v-for="feature in whitepizzas" :key="feature.name" class="relative pl-14">
           <dt class="font-semibold text-white pizza-name">
-            <img :src="feature.icon" class="absolute top-1 left-1 h-8 w-8 sm:h-12 sm:w-12 text-red-500" aria-hidden="true" />
+            <img :src="feature.icon" class="absolute top-1 left-1 h-8 w-8 sm:h-12 sm:w-12 text-red-500" :alt="feature.alt" aria-hidden="true" />
             {{ feature.name }}
           </dt>
           {{ ' ' }}
@@ -254,7 +325,7 @@ export default {
           <div class="mt-4 sm:ml-8 flex justify-center flex-shrink-0 flex-grow lg:ml-4 lg:flex-grow-0 ">
             <img class="h-24 sm:h-32" src="../assets/img/farine-caputo.png" alt="Farine caputo" />
           </div>
-          <div class="mt-4 sm:ml-8 flex justify-center flex-shrink-0 flex-grow lg:ml-4 lg:flex-grow-0">
+          <div class="mt-4 sm:ml-8 flex justify-center flex-shrink-0 flex-grow lg:ml-4 lg:flex-grow-0 img-veneti">
             <img class="h-24 sm:h-32" src="../assets/img/viniveneti.png" alt="Vini veneti" />
           </div>
           <div class="mt-4 sm:ml-8 flex justify-center flex-shrink-0 flex-grow lg:ml-4 lg:flex-grow-0">
@@ -277,7 +348,7 @@ export default {
       <div class="-my-10">
         <div v-for="(review, reviewIdx) in reviews" :key="review.id" class="flex space-x-4 text-sm text-gray-500">
           <div class="flex-none py-10">
-            <img :src="review.avatarSrc" alt="" class="h-10 w-10 rounded-full bg-gray-100" />
+            <img :src="review.avatarSrc" :alt="review.alt" class="h-10 w-10 rounded-full bg-gray-100" />
           </div>
           <div :class="[reviewIdx === 0 ? '' : 'border-t border-gray-200', 'flex-1 py-10']">
             <h3 class="font-medium text-red-500 review-author">{{ review.author }}</h3>
@@ -340,51 +411,6 @@ const slide = (el, done) => {
 }
 
 
-
-const features = [
-  {
-    name: 'Push to deploy.',
-    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit aute id magna.',
-    icon: "./img/pizza-green.png",
-  },
-  {
-    name: 'SSL certificates.',
-    description: 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.',
-    icon: "./img/pizza-white.png",
-  },
-  {
-    name: 'Simple queues.',
-    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus.',
-    icon: "./img/pizza-red.png",
-  },
-  {
-    name: 'Advanced security.',
-    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit aute id magna.',
-    icon: "./img/pizza-green.png",
-  },
-  {
-    name: 'Powerful API.',
-    description: 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.',
-    icon: "./img/pizza-white.png",
-  },
-  {
-    name: 'Database backups.',
-    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. ',
-    icon: "./img/pizza-red.png",
-  },
-]
-
-
-
-const whitepizzas=[
-  { name: 'Salsiccia Friarelli', description: 'Mozzarella, Basilic, Saucisse and Friarielli*. ( Brocoli-rave ou rapini )', price:'16,00', icon: "./img/pizza-green.png" },
-  { name: '4 Formaggi', description: 'Mozzarella, Scamorza fumée, Gorgonzola, Copeaux de Parmesan et Basilic.', price:'15,00', icon: "./img/pizza-white.png" },
-  { name: 'Fresca', description: 'Mozzarella, Tomates datterini jaunes et rouges, Roquette et Copeaux de Parmesan.', price:'15,00', icon: "./img/pizza-red.png" },
-  { name: 'Patate & Tartufo', description: 'Mozzarella, Basilic, Pommes de terre bouillies et Truffe Noire.', price:'20,00', icon: "./img/pizza-green.png" },
-  { name: 'Mortadella', description: 'Mozzarella, Roquette, Mortadelle, Copeaux de Pecorino Romano*, Pesto de tomates séchées et Pistaches grillées. (  Fromage traditionnel à base de lait entier de brebis, à pâte pressée cuite )', price:'19,00', icon: "./img/pizza-white.png" },
-  { name: 'Genovese', description: 'Mozzarella, Pesto Génois, Tomates jaunes et rouges de Piennolo del Vesuvio, Copeaux de Ricotta* et Pignons de pin grillés. ( Fromage à pâte fraîche )', price:'19,00', icon: "./img/pizza-red.png" },
-]
-
 const reviews = [
   {
     id: 1,
@@ -397,6 +423,7 @@ const reviews = [
     author: 'Emily Selman',
     avatarSrc:
         'https://images.unsplash.com/photo-1502685104226-ee32379fefbe?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=256&h=256&q=80',
+    alt:'user-photo'
   },
   {
     id: 2,
@@ -409,6 +436,7 @@ const reviews = [
     author: 'Hector Gibbons',
     avatarSrc:
         'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=256&h=256&q=80',
+    alt:'user-photo'
   },
   // More reviews...
 ]
