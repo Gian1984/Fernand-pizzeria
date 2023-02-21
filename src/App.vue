@@ -262,6 +262,7 @@ export default {
       </a>
       <button class="top-link hide" id="js-top" v-on:click="scrolltotop()">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" id="totop"><path d="M12 6H0l6-6z"/></svg>
+        <span class="sr-only">Back to top</span>
       </button>
     </div>
   </footer>
