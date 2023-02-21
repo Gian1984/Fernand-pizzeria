@@ -1,5 +1,5 @@
 <script>
-import imagePath from '../assets/img/lavagna.png'
+import imagePath from '../assets/img/lavagna.webp'
 import carrelage from '../assets/img/carrelage.jpg'
 import gsap from 'gsap'
 
@@ -200,7 +200,7 @@ export default {
 
 <!-- Header section start-->
   <div class="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-24">
-    <img src="../assets/img/lavagna.png" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center" />
+    <img src="../assets/img/lavagna.webp" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center" />
     <div class="mx-auto max-w-7xl px-6 lg:px-8 flex header-content">
       <div class="mx-auto max-w-6xl lg:mx-0">
         <transition appear @before-enter="beforeEnter" @enter="enter">
