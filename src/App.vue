@@ -13,6 +13,12 @@ export default {
 
   methods: {
 
+    scrolltotop(){
+      {
+        window.scrollTo(0,0);
+      }
+    },
+
     homePage() {
       if(this.$i18n.locale == "fr" ) {
         return (this.flag = './img/flag/belgium.png') && (this.description = 'Cliquez sur les icônes pour nous trouver sur une carte ou sur les réseaux sociaux. Vous souhaitez réserver une table ou commander une pizza ? Cliquez sur le téléphone ! Nous t\'attendons!')
@@ -254,9 +260,9 @@ export default {
           Powered by Gianluca Tiengo.
         </p>
       </a>
-      <a class="top-link hide" href="" id="js-top" v-on:click="scrolltotop()">
+      <button class="top-link hide" href="" id="js-top" v-on:click="scrolltotop()">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" id="totop"><path d="M12 6H0l6-6z"/></svg>
-      </a>
+      </button>
     </div>
   </footer>
 </template>
