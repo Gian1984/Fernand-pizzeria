@@ -179,7 +179,7 @@ export default {
         <div class="relative" aria-hidden="true">
           <div class="absolute -inset-x-20 top-0 bg-gradient-to-b from-neutral-900 pt-[12%]" />
         </div>
-        <img src="../assets/img/pizza-burratina.png" alt="App screenshot" class="mb-[-16%] rounded-xl shadow-2xl" width="2432" height="1442" />
+        <img src="../assets/img/pizza-burratina.png" alt="App screenshot" class="mb-[-16%] rounded-xl shadow-2xl h-80 w-full sm:h-auto sm:w-full object-cover" />
         <div class="relative" aria-hidden="true">
           <div class="absolute -inset-x-20 bottom-0 bg-gradient-to-t from-neutral-900 pt-[7%]" />
         </div>
@@ -247,21 +247,21 @@ export default {
 
   <!--  Product start-->
   <div class="bg-neutral-900" :style="{ backgroundImage: `url(${carrelage})` }">
-    <div class="mx-auto max-w-7xl py-32 px-6 sm:pt-44 lg:px-8">
+    <div class="mx-auto max-w-7xl px-6 py-12 sm:py-44 lg:px-8">
       <h2 class="text-3xl font-bold tracking-tight text-center text-white sm:text-4xl section-title">The world's most innovative companies use our app</h2>
       <div class="mt-8 flow-root lg:mt-10">
-        <div class="-mt-4 -ml-8 flex flex-wrap justify-between lg:-ml-4 py-10">
-          <div class="mt-4 ml-8 flex flex-shrink-0 flex-grow lg:ml-4 lg:flex-grow-0">
-            <img class="h-24" src="../assets/img/farine-caputo.png" alt="Farine caputo" />
+        <div class=" flex flex-wrap justify-center sm:justify-between py-10">
+          <div class="mt-4 ml-8 flex justify-center flex-shrink-0 flex-grow lg:ml-4 lg:flex-grow-0 ">
+            <img class="h-24 sm:h-32" src="../assets/img/farine-caputo.png" alt="Farine caputo" />
           </div>
-          <div class="mt-4 ml-8 flex flex-shrink-0 flex-grow lg:ml-4 lg:flex-grow-0">
-            <img class="h-24" src="../assets/img/viniveneti.png" alt="Vini veneti" />
+          <div class="mt-4 ml-8 flex justify-center flex-shrink-0 flex-grow lg:ml-4 lg:flex-grow-0">
+            <img class="h-24 sm:h-32" src="../assets/img/viniveneti.png" alt="Vini veneti" />
           </div>
-          <div class="mt-4 ml-8 flex flex-shrink-0 flex-grow lg:ml-4 lg:flex-grow-0">
-            <img class="h-24" src="../assets/img/pomodorinoDOP.png" alt="Pomodorino DOP" />
+          <div class="mt-4 ml-8 flex justify-center flex-shrink-0 flex-grow lg:ml-4 lg:flex-grow-0">
+            <img class="h-24 sm:h-32" src="../assets/img/pomodorinoDOP.png" alt="Pomodorino DOP" />
           </div>
-          <div class="mt-4 ml-8 flex flex-shrink-0 flex-grow lg:ml-4 lg:flex-grow-0">
-            <img class="h-24" src="../assets/img/Birra_peroni_s.r.l._logo.png" alt="Birra Peroni" />
+          <div class="mt-4 ml-8 flex justify-center flex-shrink-0 flex-grow lg:ml-4 lg:flex-grow-0">
+            <img class="h-24 sm:h-32" src="../assets/img/Birra_peroni_s.r.l._logo.png" alt="Birra Peroni" />
           </div>
         </div>
       </div>
@@ -271,7 +271,7 @@ export default {
 
 <!--Customer review start-->
   <div class="bg-neutral-900" :style="{ backgroundImage: `url(${imagePath})` }">
-    <div class="mx-auto max-w-7xl px-6 lg:px-8 py-44 sm:py-44">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8 py-12 sm:py-44">
       <h2 class="text-3xl font-bold tracking-tight text-white mb-12 text-center sm:text-4xl section-title">Votre avis est très important pour nous!</h2>
 
       <div class="-my-10">

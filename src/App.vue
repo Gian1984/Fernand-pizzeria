@@ -116,7 +116,7 @@ export default {
   <router-view/>
 
   <footer class="bg-neutral-900">
-    <div class="py-44 overflow-hidden mb-10" id="contact-me">
+    <div class="py-12 sm:py-44 overflow-hidden mb-10" id="contact-me">
       <div class="relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-7xl">
         <div class="relative mt-10 lg:mt-10 lg:grid lg:grid-cols-2 pb-1 lg:gap-8 lg:items-center">
 
