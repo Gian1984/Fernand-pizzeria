@@ -175,7 +175,7 @@ export default {
       </div>
     </div>
     <div class="relative overflow-hidden pt-16">
-      <div class="mx-auto max-w-7xl px-0 sm:px-6 lg:px-8">
+      <div class="mx-auto px-0">
         <div class="relative" aria-hidden="true">
           <div class="absolute -inset-x-20 top-0 bg-gradient-to-b from-neutral-900 pt-[12%]" />
         </div>
