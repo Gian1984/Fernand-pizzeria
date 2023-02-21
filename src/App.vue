@@ -14,9 +14,9 @@ export default {
   methods: {
 
     homePage() {
-      if(this.$route.path == "/" || this.$route.path == "/home" ) {
+      if(this.$i18n.locale == "fr" ) {
         return (this.flag = './img/flag/belgium.png') && (this.description = 'Cliquez sur les icônes pour nous trouver sur une carte ou sur les réseaux sociaux. Vous souhaitez réserver une table ou commander une pizza ? Cliquez sur le téléphone ! Nous t\'attendons!')
-      } else if(this.$route.path == "/HomeEN") {
+      } else if(this.$i18n.locale == "en") {
         return (this.flag = './img/flag/british.png') && (this.description = 'Click on the icons to find us on a map or over the social media. Do you want to book a table or order a pizza? Click on the phone! We are waiting for you!')
       } else {
         return (this.flag = './img/flag/italy.png') && (this.description = 'Clicca sulle icone per trovarci sulla mappa o sui social media. Vuoi prenotare un tavolo o ordinare una pizza? Clicca sul telefono! Ti stiamo aspettando!')
@@ -40,7 +40,7 @@ export default {
           <div class="hidden sm:ml-6 sm:block">
             <div class="flex space-x-4">
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-              <a href="#pizze-red" class="rounded-md bg-neutral-900 px-3 py-2 text-sm font-medium text-white nav-item" v-on:click="scrolltopizza()">Pizzas</a>
+              <a href="#pizze-red" class="rounded-md bg-neutral-900 px-3 py-2 text-sm font-medium text-white nav-item">Pizzas</a>
               <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white nav-item" >Team</a>
               <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white nav-item">Projects</a>
               <a href="#contact" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white nav-item">Contact</a>
