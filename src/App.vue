@@ -41,8 +41,7 @@ export default {
             <div class="flex space-x-4">
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
               <a href="#pizze-red" class="rounded-md bg-neutral-900 px-3 py-2 text-sm font-medium text-white nav-item">Pizzas</a>
-              <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white nav-item" >Team</a>
-              <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white nav-item">Projects</a>
+              <a href="#vini" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white nav-item" >Vins</a>
               <a href="#contact" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white nav-item">Contact</a>
             </div>
           </div>
@@ -76,7 +75,7 @@ export default {
           <!-- Mobile menu button -->
           <DisclosureButton class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
             <span class="sr-only">Open main menu</span>
-            <Bars3Icon v-if="!open" class="block h-6 w-6" aria-hidden="true" />
+            <Bars2Icon v-if="!open" class="block h-6 w-6 text-white" aria-hidden="true" />
             <XMarkIcon v-else class="block h-6 w-6" aria-hidden="true" />
           </DisclosureButton>
         </div>
@@ -86,25 +85,29 @@ export default {
     <DisclosurePanel class="sm:hidden">
       <div class="space-y-1 px-2 pt-2 pb-3">
         <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-        <DisclosureButton as="a" href="#" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white nav-item">Pizzas</DisclosureButton>
-        <DisclosureButton as="a" href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white nav-item">Team</DisclosureButton>
-        <DisclosureButton as="a" href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white nav-item">Projects</DisclosureButton>
-        <DisclosureButton as="a" href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white nav-item">Contact</DisclosureButton>
+        <DisclosureButton as="a" href="#pizze-red" class="block rounded-md bg-neutral-900 px-3 py-2 text-base font-medium text-white nav-item">Pizzas</DisclosureButton>
+        <DisclosureButton as="a" href="#vini" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white nav-item">Vins</DisclosureButton>
+        <DisclosureButton as="a" href="#contact" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white nav-item">Contact</DisclosureButton>
       </div>
       <div class="border-t border-gray-700 pt-4 pb-3">
         <div class="flex items-center px-5">
           <div class="flex-shrink-0">
-            <img class="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" />
+            <img v-if="homePage()" class="h-10 w-10 rounded-full" id="flag" :src="flag" alt="pizza-vino-language-flag" />
           </div>
           <div class="ml-3">
-            <div class="text-base font-medium text-white">Tom Cook</div>
-            <div class="text-sm font-medium text-gray-400">tom@example.com</div>
+            <form>
+              <div class="mt-1">
+                <label for="desktop-currency" class="sr-only">Languages</label>
+                <div class="ml-2 group relative bg-transparent border-transparent rounded-md outline-none focus:outline-none">
+                  <select v-model="$i18n.locale" id="desktop-currency" name="currency" class="bg-none bg-transparent border-transparent rounded-md py-0.5 pl-2 pr-1 flex items-center text-sm font-medium text-white group-hover:text-gray-100 outline-none focus:outline-none focus:border-transparent">
+                    <option value="fr">FR</option>
+                    <option value="en">EN</option>
+                    <option value="it">IT</option>
+                  </select>
+                </div>
+              </div>
+            </form>
           </div>
-        </div>
-        <div class="mt-3 space-y-1 px-2">
-          <DisclosureButton as="a" href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white nav-lang">Your Profile</DisclosureButton>
-          <DisclosureButton as="a" href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white nav-lang">Settings</DisclosureButton>
-          <DisclosureButton as="a" href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white nav-lang">Sign out</DisclosureButton>
         </div>
       </div>
     </DisclosurePanel>
@@ -115,7 +118,7 @@ export default {
   <footer class="bg-neutral-900">
     <div class="py-18 overflow-hidden lg:py-18 mb-10" id="contact-me">
       <div class="relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-7xl">
-        <div class="relative mt-10 lg:mt-10 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
+        <div class="relative mt-10 lg:mt-10 lg:grid lg:grid-cols-2 pb-1 lg:gap-8 lg:items-center">
 
 
           <div class="relative" id="contact">
@@ -129,7 +132,7 @@ export default {
               <div v-for="item in transferFeatures" :key="item.id" class="relative">
                 <dt>
                   <a :href="item.href" class="hover:text-gray-300">
-                    <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-red-700 text-white hover:bg-red-900">
+                    <div class="absolute flex items-center justify-center h-12 w-12 rounded-md border-2 border-red-700 text-white hover:bg-red-900">
                       <component :is="item.icon" class="h-6 w-6" aria-hidden="true" />
                     </div>
                     <p class="ml-16 text-lg leading-6 font-medium text-white font-contact-title">{{ item.name }}</p>
@@ -259,8 +262,8 @@ export default {
 </template>
 
 <script setup>
-import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/vue'
-import { Bars3Icon, XMarkIcon, ChevronRightIcon, MapPinIcon, PhoneArrowUpRightIcon } from '@heroicons/vue/24/outline'
+import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, } from '@headlessui/vue'
+import { XMarkIcon, ChevronRightIcon, MapPinIcon, PhoneArrowUpRightIcon, Bars2Icon } from '@heroicons/vue/24/outline'
 import { defineComponent, h } from 'vue'
 
 const languages =
