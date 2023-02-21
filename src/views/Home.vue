@@ -1,5 +1,123 @@
 <script>
 import imagePath from '../assets/img/lavagna.png'
+export default {
+  computed: {
+    redpizzas() {
+      return [
+
+        {
+          name: 'Margherita',
+          description: this.$t('redpizzas.margherita'),
+          price: '10,00',
+          icon: "./img/pizza-green.png"
+        },
+        {
+          name: 'Regina',
+          description: 'Tomate, Basilic et Mozzarella de Bufflonne.',
+          price: '14,00',
+          icon: "./img/pizza-white.png"
+        },
+        {
+          name: 'Principessa',
+          description: 'Tomate, Basilic et Scamorza fumée*. ( Fromage typique italien )',
+          price: '12,00',
+          icon: "./img/pizza-red.png"
+        },
+        {
+          name: 'Burrata',
+          description: 'Tomate, Basilic, Tomates Datterini, Burratina d\'Andria*. (  Sœur de la mozzarella, un tendre fromage au lait de vache avec, en son cœur, une épaisse crème de fromage frais )',
+          price: '17,00',
+          icon: "./img/pizza-green.png"
+        },
+        {
+          name: 'Marinara',
+          description: 'Tomate, Ail, Origan et Basilic.',
+          price: '9,00',
+          icon: "./img/pizza-white.png"
+        },
+        {
+          name: 'Rucola Reggiano',
+          description: 'Tomate, Mozzarella, Roquette et Parmigiano Reggiano.',
+          price: '13,00',
+          icon: "./img/pizza-red.png"
+        },
+        {
+          name: 'Porchetta Funghi',
+          description: 'Tomate, Basilic, Mozzarella, Porchetta d\'Ariccia* et Champignons. ( Charcuterie à base de porc rôti aux épices préparée traditionnellement sur l\'ensemble du territoire la commune d\'Ariccia )',
+          price: '15,00',
+          icon: "./img/pizza-green.png"
+        },
+        {
+          name: 'Quattro Stagioni',
+          description: 'Tomate, Basilic, Mozzarella, Porchetta d\'Ariccia*, Champignons, Olives Noires et Artichauts au four. ( Charcuterie à base de porc rôti aux épices préparée traditionnellement sur l\'ensemble du territoire la commune d\'Ariccia )',
+          price: '16,00',
+          icon: "./img/pizza-white.png"
+        },
+        {
+          name: 'Napoli',
+          description: 'Tomate, Mozzarella, Câpres, Filets d\'Anchois de Cetara et Origan.',
+          price: '14,00',
+          icon: "./img/pizza-red.png"
+        },
+        {
+          name: 'Siciliana',
+          description: 'Tomate, Basilic, Mozzarella, Câpres, Filets d\'Anchois de Cetara, Olives Noires et Ail.',
+          price: '15,00',
+          icon: "./img/pizza-green.png"
+        },
+        {
+          name: 'Capricciosa',
+          description: 'Tomate, Basilic, Mozzarella, Porchetta d\'Ariccia*, Champignons, Olives Noires et Artichauts au four. ( Charcuterie à base de porc rôti aux épices préparée traditionnellement sur l\'ensemble du territoire la commune d\'Ariccia )',
+          price: '16,00',
+          icon: "./img/pizza-white.png"
+        },
+        {
+          name: 'Diavola',
+          description: 'Tomate, Basilic, Mozzarella et \'Nduja*. ( Saucisse de porc épicée avec du piment fabriquée en Italie, à l\'origine en Calabre )',
+          price: '14,50',
+          icon: "./img/pizza-red.png"
+        },
+        {
+          name: 'Calabrese',
+          description: 'Tomate, Basilic, Scamorza fumée*, Salami épicé, Oignons rouges de Tropea et Olives Noires. ( Fromage typique italien )',
+          price: '17,00',
+          icon: "./img/pizza-green.png"
+        },
+        {
+          name: 'Boscaiola',
+          description: 'Tomate, Basilic, Scamorza fumée*, Mascarpone, Champignons, Roquette et copeaux de Parmigiano Reggiano. ( Fromage typique italien )',
+          price: '15,00',
+          icon: "./img/pizza-white.png"
+        },
+        {
+          name: 'Bresaola e tartufo',
+          description: 'Tomate, Mozzarella, Roquette, Bresaola de Punta d\'Anca, copeaux de Grana Padano* et Truffe Noire. ( Fromage typique italien )',
+          price: '20,00',
+          icon: "./img/pizza-red.png"
+        },
+        {
+          name: 'Crudaiola',
+          description: 'Tomate, Roquette, Culatello*, Copeaux de Grana Padano, Crème Burrata, Tomates Datterini, Basilic et Origan. ( Il s\'agit d\'un jambon cru salé et séché obtenu à partir de la cuisse de porc  )',
+          price: '19,00',
+          icon: "./img/pizza-green.png"
+        },
+        {
+          name: 'Vegana',
+          description: 'Tomate, Mélange de légumes, Roquette et Tomates séchées.',
+          price: '14,00',
+          icon: "./img/pizza-white.png"
+        },
+        {
+          name: 'Vegetariana',
+          description: 'Tomate, Mozzarella et Mélange de légumes.',
+          price: '15,00',
+          icon: "./img/pizza-red.png"
+        },
+        {name: 'Calzone', description: 'Surprise du pizzaiolo!', price: '18,00', icon: "./img/pizza-green.png"},
+      ]
+    }
+  }
+}
 
 </script>
 
@@ -11,7 +129,7 @@ import imagePath from '../assets/img/lavagna.png'
     <div class="mx-auto max-w-7xl px-6 lg:px-8 flex header-content">
       <div class="mx-auto max-w-6xl lg:mx-0">
         <img src="../assets/img/pizzain.png"/>
-        <h2 class="text-4xl font-bold tracking-tight text-white sm:text-6xl main-title">Work with us</h2>
+        <h2 class="text-4xl font-bold tracking-tight text-white sm:text-6xl main-title">{{ $t("header.title") }}</h2>
         <p class="mt-6 text-lg leading-8 text-gray-300 main-sub-title">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.
         </p>
         <div class="flex mt-10">
@@ -179,6 +297,7 @@ import {
   StarIcon, PhoneArrowUpRightIcon,ChevronRightIcon
 } from '@heroicons/vue/20/solid'
 
+
 const features = [
   {
     name: 'Push to deploy.',
@@ -212,27 +331,7 @@ const features = [
   },
 ]
 
-const redpizzas = [
-  { name: 'Margherita', description: 'Tomate, Basilic et Mozzarella.', price:'10,00', icon: "./img/pizza-green.png" },
-  { name: 'Regina', description: 'Tomate, Basilic et Mozzarella de Bufflonne.', price:'14,00', icon: "./img/pizza-white.png" },
-  { name: 'Principessa', description: 'Tomate, Basilic et Scamorza fumée*. ( Fromage typique italien )', price:'12,00' , icon: "./img/pizza-red.png"},
-  { name: 'Burrata', description: 'Tomate, Basilic, Tomates Datterini, Burratina d\'Andria*. (  Sœur de la mozzarella, un tendre fromage au lait de vache avec, en son cœur, une épaisse crème de fromage frais )', price:'17,00', icon: "./img/pizza-green.png" },
-  { name: 'Marinara', description: 'Tomate, Ail, Origan et Basilic.', price:'9,00', icon: "./img/pizza-white.png" },
-  { name: 'Rucola Reggiano', description: 'Tomate, Mozzarella, Roquette et Parmigiano Reggiano.', price:'13,00', icon: "./img/pizza-red.png" },
-  { name: 'Porchetta Funghi', description: 'Tomate, Basilic, Mozzarella, Porchetta d\'Ariccia* et Champignons. ( Charcuterie à base de porc rôti aux épices préparée traditionnellement sur l\'ensemble du territoire la commune d\'Ariccia )', price:'15,00', icon: "./img/pizza-green.png" },
-  { name: 'Quattro Stagioni', description: 'Tomate, Basilic, Mozzarella, Porchetta d\'Ariccia*, Champignons, Olives Noires et Artichauts au four. ( Charcuterie à base de porc rôti aux épices préparée traditionnellement sur l\'ensemble du territoire la commune d\'Ariccia )', price:'16,00', icon: "./img/pizza-white.png" },
-  { name: 'Napoli', description: 'Tomate, Mozzarella, Câpres, Filets d\'Anchois de Cetara et Origan.', price:'14,00', icon: "./img/pizza-red.png" },
-  { name: 'Siciliana', description: 'Tomate, Basilic, Mozzarella, Câpres, Filets d\'Anchois de Cetara, Olives Noires et Ail.', price:'15,00', icon: "./img/pizza-green.png" },
-  { name: 'Capricciosa', description: 'Tomate, Basilic, Mozzarella, Porchetta d\'Ariccia*, Champignons, Olives Noires et Artichauts au four. ( Charcuterie à base de porc rôti aux épices préparée traditionnellement sur l\'ensemble du territoire la commune d\'Ariccia )', price:'16,00', icon: "./img/pizza-white.png" },
-  { name: 'Diavola', description: 'Tomate, Basilic, Mozzarella et \'Nduja*. ( Saucisse de porc épicée avec du piment fabriquée en Italie, à l\'origine en Calabre )', price:'14,50', icon: "./img/pizza-red.png" },
-  { name: 'Calabrese', description: 'Tomate, Basilic, Scamorza fumée*, Salami épicé, Oignons rouges de Tropea et Olives Noires. ( Fromage typique italien )', price:'17,00', icon: "./img/pizza-green.png" },
-  { name: 'Boscaiola', description: 'Tomate, Basilic, Scamorza fumée*, Mascarpone, Champignons, Roquette et copeaux de Parmigiano Reggiano. ( Fromage typique italien )', price:'15,00', icon: "./img/pizza-white.png" },
-  { name: 'Bresaola e tartufo', description: 'Tomate, Mozzarella, Roquette, Bresaola de Punta d\'Anca, copeaux de Grana Padano* et Truffe Noire. ( Fromage typique italien )', price:'20,00', icon: "./img/pizza-red.png" },
-  { name: 'Crudaiola', description: 'Tomate, Roquette, Culatello*, Copeaux de Grana Padano, Crème Burrata, Tomates Datterini, Basilic et Origan. ( Il s\'agit d\'un jambon cru salé et séché obtenu à partir de la cuisse de porc  )', price:'19,00', icon: "./img/pizza-green.png" },
-  { name: 'Vegana', description: 'Tomate, Mélange de légumes, Roquette et Tomates séchées.', price:'14,00', icon: "./img/pizza-white.png" },
-  { name: 'Vegetariana', description: 'Tomate, Mozzarella et Mélange de légumes.', price:'15,00', icon: "./img/pizza-red.png" },
-  { name: 'Calzone', description: 'Surprise du pizzaiolo!', price:'18,00', icon: "./img/pizza-green.png" },
-]
+
 
 const whitepizzas=[
   { name: 'Salsiccia Friarelli', description: 'Mozzarella, Basilic, Saucisse and Friarielli*. ( Brocoli-rave ou rapini )', price:'16,00', icon: "./img/pizza-green.png" },

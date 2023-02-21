@@ -8,17 +8,41 @@ import { createI18n } from 'vue-i18n'
  */
 function loadLocaleMessages() {
   const messages = {
-    fr: {
 
+
+
+    fr: {
       header: {
-        button: 'I want a website'
+        title: "Je suis le titre"
       },
+      redpizzas:{
+        margherita:"Tomate, Basilic et Mozzarella.",
+      }
     },
+
+
+
+
     en: {
 
       header: {
-        button: 'I want a website'
+        title: "I'm the title"
       },
+      redpizzas:{
+        margherita:"Tomate, Basilic et Mozzarella.",
+      }
+
+    },
+
+    it: {
+
+      header: {
+        title: "Sono il titolo"
+      },
+
+      redpizzas:{
+        margherita:"Pomodoro, Basilico e Mozzarella.",
+      }
     },
 
 
@@ -29,7 +53,7 @@ function loadLocaleMessages() {
 }
 
 export default createI18n({
-  locale: import.meta.env.VUE_APP_I18N_LOCALE || 'en',
-  fallbackLocale: import.meta.env.VUE_APP_I18N_FALLBACK_LOCALE || 'en',
+  locale: import.meta.env.VUE_APP_I18N_LOCALE || 'fr',
+  fallbackLocale: import.meta.env.VUE_APP_I18N_FALLBACK_LOCALE || 'fr',
   messages: loadLocaleMessages()
 })

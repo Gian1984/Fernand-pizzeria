@@ -51,25 +51,24 @@ export default {
           <div class="flex items-center">
             <!-- Profile dropdown -->
             <Menu as="div" class="relative ml-3">
-              <div>
+              <div class="flex">
                 <MenuButton class="flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                   <span class="sr-only">Open user menu</span>
                   <img v-if="homePage()" class="h-8 w-8 rounded-full" id="flag" :src="flag" alt="pizza-vino-logo" />
                 </MenuButton>
+                <form>
+                  <div class="mt-1">
+                    <label for="desktop-currency" class="sr-only">Languages</label>
+                    <div class="ml-2 group relative bg-transparent border-transparent rounded-md outline-none focus:outline-none">
+                      <select v-model="$i18n.locale" id="desktop-currency" name="currency" class="bg-none bg-transparent border-transparent rounded-md py-0.5 pl-2 pr-1 flex items-center text-sm font-medium text-white group-hover:text-gray-100 outline-none focus:outline-none focus:border-transparent">
+                        <option value="fr">FR</option>
+                        <option value="en">EN</option>
+                        <option value="it">IT</option>
+                      </select>
+                    </div>
+                  </div>
+                </form>
               </div>
-              <transition enter-active-class="transition ease-out duration-100" enter-from-class="transform opacity-0 scale-95" enter-to-class="transform opacity-100 scale-100" leave-active-class="transition ease-in duration-75" leave-from-class="transform opacity-100 scale-100" leave-to-class="transform opacity-0 scale-95">
-                <MenuItems class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-                  <MenuItem v-slot="{ active }">
-                    <a href="#" :class="[active ? 'bg-gray-100 nav-lang' : '', 'block px-4 py-2 text-sm text-gray-700']">Your Profile</a>
-                  </MenuItem>
-                  <MenuItem v-slot="{ active }">
-                    <a href="#" :class="[active ? 'bg-gray-100 nav-lang' : '', 'block px-4 py-2 text-sm text-gray-700']">Settings</a>
-                  </MenuItem>
-                  <MenuItem v-slot="{ active }">
-                    <a href="#" :class="[active ? 'bg-gray-100 nav-lang' : '', 'block px-4 py-2 text-sm text-gray-700']">Sign out</a>
-                  </MenuItem>
-                </MenuItems>
-              </transition>
             </Menu>
           </div>
         </div>
@@ -264,7 +263,24 @@ import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuIt
 import { Bars3Icon, XMarkIcon, ChevronRightIcon, MapPinIcon, PhoneArrowUpRightIcon } from '@heroicons/vue/24/outline'
 import { defineComponent, h } from 'vue'
 
-
+const languages =
+    [
+      {
+        id: 1,
+        name: "FR",
+        value: "fr"
+      },
+      {
+        id: 2,
+        name: "EN",
+        value: "en"
+      },
+      {
+        id: 3,
+        name: "IT",
+        value: "it"
+      },
+    ]
 
 const fooddelivery = [
   {
