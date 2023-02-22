@@ -8,6 +8,7 @@ html{scroll-behavior:smooth}
 
 .main-title{
     font-family: 'Fredericka the Great', cursive;
+    font-size: 74px!important;
     letter-spacing: 6px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -16,6 +17,11 @@ html{scroll-behavior:smooth}
 
 .main-sub-title{
     font-family: 'Homemade Apple', cursive;
+}
+
+.take-away{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 40px!important;
 }
 
 .nav-lang, .nav-item{
@@ -37,10 +43,19 @@ html{scroll-behavior:smooth}
     }
     .main-title{
         padding-top: 1em;
+        line-height: 75px;
     }
 }
 
 .button-header{
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 3px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+.button-cta{
     font-family: 'Josefin Sans', sans-serif;
     letter-spacing: 3px;
     -webkit-font-smoothing: antialiased;

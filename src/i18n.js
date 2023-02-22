@@ -26,8 +26,8 @@ function loadLocaleMessages() {
       },
 
       cta:{
-        description:"Gravida quam mi erat tortor neque molestie. Auctor aliquet at porttitor a enim nunc suscipit tincidunt nunc. Et non lorem tortor posuere. Nunc eu scelerisque interdum eget tellus non nibh scelerisque bibendum.",
-        button:"DISCOVER",
+        description:"De l'expérience de Pizza Vino naît le 'nome', la garantie d'une excellente pizza avec des produits de qualité au juste prix. Cette fois-ci, il s'agit uniquement de pizzas à emporter, mais on peut aussi les commander à la part. Vous préférez vous asseoir ? Nous vous attendons chez Pizza Vino ! ",
+        button:"Pizza Vino",
       },
 
       short:{
@@ -139,8 +139,8 @@ function loadLocaleMessages() {
       },
 
       cta:{
-        description:"Gravida quam mi erat tortor neque molestie. Auctor aliquet at porttitor a enim nunc suscipit tincidunt nunc. Et non lorem tortor posuere. Nunc eu scelerisque interdum eget tellus non nibh scelerisque bibendum.",
-        button:"DISCOVER",
+        description:"From the experience of Pizza Vino comes 'nome', the guarantee of an excellent pizza with quality products at the right price. This time only takeaway and also orderable by the slice. Would you rather sit down? We are waiting for you at Pizza Vino! ",
+        button:"Pizza Vino",
       },
 
       short:{
@@ -246,8 +246,8 @@ function loadLocaleMessages() {
       },
 
       cta:{
-        description:"Gravida quam mi erat tortor neque molestie. Auctor aliquet at porttitor a enim nunc suscipit tincidunt nunc. Et non lorem tortor posuere. Nunc eu scelerisque interdum eget tellus non nibh scelerisque bibendum.",
-        button:"DISCOVER",
+        description:"Dall'esperienza di Pizza Vino nasce \"nome\", la garanzia ti un ottima pizza con prodotti di qualità e al giusto prezzo. Questa volta solo da asporto e ordinabile anche al trancio. Preferisci accomodarti? Ti aspettiamo da Pizza Vino! ",
+        button:"Pizza Vino",
       },
 
       short:{

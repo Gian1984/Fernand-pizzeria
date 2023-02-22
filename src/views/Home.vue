@@ -234,8 +234,8 @@ export default {
           <img src="../assets/img/pizzain.webp" alt="logo-pizza-in" />
         </transition>
         <h2 class="text-4xl font-bold tracking-tight text-white sm:text-6xl main-title">{{ $t("header.title") }}</h2>
-        <p class="mt-6 text-lg leading-8 text-gray-300 main-sub-title">{{ $t("header.subtitle") }}
-        </p>
+        <p class="mt-6 text-lg leading-8 text-gray-300 take-away">TAKE-AWAY</p>
+        <p class="mt-6 text-lg leading-8 text-gray-300 main-sub-title">{{ $t("header.subtitle") }}</p>
         <div class="flex mt-10">
         <a href="../assets/doc/pizza-vino-it.pdf" class="mr-2 flex items-center border-2 border-white text-white bg-transparent rounded-full p-1 pr-2 sm:text-base lg:text-sm xl:text-base hover:bg-gray-300">
           <span class="px-3 py-0.5 text-xs font-semibold leading-5 uppercase tracking-wide rounded-full button-header" lang="it">{{ $t("header.download") }}</span>
@@ -283,8 +283,9 @@ export default {
               <p>{{ $t("cta.description") }}</p>
             </blockquote>
             <figcaption class="mt-8 text-base">
-              <a href="https://www.pizzavino.be/" class="bg-transparent hover:bg-red-500 text-white hover:text-white py-2 px-10 border-2 border-red-500 hover:border-transparent">
+              <a href="https://www.pizzavino.be/" class="bg-transparent hover:bg-red-500 flex max-w-xs justify-center text-white hover:text-white py-2 px-10 border-2 border-red-500 hover:border-transparent button-cta">
                 {{ $t("cta.button") }}
+                <ChevronRightIcon class="ml-2 w-5 h-5 text-white" aria-hidden="true" />
               </a>
             </figcaption>
           </figure>
@@ -318,9 +319,11 @@ export default {
     </div>
 
 <!-- red pizza -->
-    <div class="mx-auto max-w-2xl sm:text-center">
-      <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl section-title" id="pizze-red">{{ $t("redpizzas.title") }}</p>
-      <p class="mt-6 text-lg leading-8 text-neutral-300 section-title-desc">{{ $t("redpizzas.subtitle") }}</p>
+    <div class="mx-auto max-w-7xl px-6 lg:px-8 mt-16">
+      <div class="mx-auto max-w-2xl sm:text-center">
+        <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl section-title" id="pizze-red">{{ $t("redpizzas.title") }}</p>
+        <p class="mt-6 text-lg leading-8 text-neutral-300 section-title-desc">{{ $t("redpizzas.subtitle") }}</p>
+      </div>
     </div>
     <div class="mx-auto mt-16 max-w-7xl px-6 sm:mt-20 md:mt-24 lg:px-8">
       <dl class="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-10 text-base leading-7 text-gray-300 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16">
@@ -337,9 +340,11 @@ export default {
     </div>
 
     <!-- white pizza -->
-    <div class="mx-auto max-w-2xl sm:text-center pt-16">
-      <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl section-title">{{ $t("whitepizzas.title") }}</p>
-      <p class="mt-6 text-lg leading-8 text-neutral-300 section-title-desc">{{ $t("whitepizzas.subtitle") }}</p>
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto max-w-2xl sm:text-center pt-16">
+        <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl section-title">{{ $t("whitepizzas.title") }}</p>
+        <p class="mt-6 text-lg leading-8 text-neutral-300 section-title-desc">{{ $t("whitepizzas.subtitle") }}</p>
+      </div>
     </div>
     <div class="mx-auto mt-16 max-w-7xl px-6 sm:mt-20 md:mt-24 lg:px-8">
       <dl class="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-10 text-base leading-7 text-gray-300 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16">
