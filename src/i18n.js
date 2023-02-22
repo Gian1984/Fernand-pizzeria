@@ -26,8 +26,8 @@ function loadLocaleMessages() {
       },
 
       cta:{
-        description:"",
-        button:"",
+        description:"Gravida quam mi erat tortor neque molestie. Auctor aliquet at porttitor a enim nunc suscipit tincidunt nunc. Et non lorem tortor posuere. Nunc eu scelerisque interdum eget tellus non nibh scelerisque bibendum.",
+        button:"DISCOVER",
       },
 
       short:{
@@ -82,6 +82,7 @@ function loadLocaleMessages() {
       },
 
       review:{
+        over:"title",
         title:"Votre avis est très important pour nous!",
         subtitle:"Nous vous demandons de laisser un commentaire. Parce que vos commentaires sont notre meilleure publicité. Merci !",
         dateOne:"July 16, 2021",
@@ -135,8 +136,8 @@ function loadLocaleMessages() {
       },
 
       cta:{
-        description:"",
-        button:"",
+        description:"Gravida quam mi erat tortor neque molestie. Auctor aliquet at porttitor a enim nunc suscipit tincidunt nunc. Et non lorem tortor posuere. Nunc eu scelerisque interdum eget tellus non nibh scelerisque bibendum.",
+        button:"DISCOVER",
       },
 
       short:{
@@ -191,6 +192,7 @@ function loadLocaleMessages() {
       },
 
       review:{
+        over:"title",
         title:"Votre avis est très important pour nous!",
         subtitle:"Nous vous demandons de laisser un commentaire. Parce que vos commentaires sont notre meilleure publicité. Merci !",
         dateOne:"July 16, 2021",
@@ -238,8 +240,8 @@ function loadLocaleMessages() {
       },
 
       cta:{
-        description:"",
-        button:"",
+        description:"Gravida quam mi erat tortor neque molestie. Auctor aliquet at porttitor a enim nunc suscipit tincidunt nunc. Et non lorem tortor posuere. Nunc eu scelerisque interdum eget tellus non nibh scelerisque bibendum.",
+        button:"DISCOVER",
       },
 
       short:{
@@ -294,6 +296,7 @@ function loadLocaleMessages() {
       },
 
       review:{
+        over:"title",
         title:"Votre avis est très important pour nous!",
         subtitle:"Nous vous demandons de laisser un commentaire. Parce que vos commentaires sont notre meilleure publicité. Merci !",
         dateOne:"July 16, 2021",

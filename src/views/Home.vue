@@ -145,6 +145,33 @@ export default {
       ]
     },
 
+    reviews() {
+      return [
+          {
+            id: 1,
+            rating: 5,
+            content: this.$t('review.revOne'),
+            date: this.$t('review.dateOne'),
+            datetime: '2021-07-16',
+            author: 'Emily Selman',
+            avatarSrc:
+                'https://images.unsplash.com/photo-1502685104226-ee32379fefbe?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=256&h=256&q=80',
+            alt:'user-photo'
+          },
+          {
+            id: 2,
+            rating: 5,
+            content: this.$t('review.revTwo'),
+            date: this.$t('review.dateTwo'),
+            datetime: '2021-07-12',
+            author: 'Hector Gibbons',
+            avatarSrc:
+                'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=256&h=256&q=80',
+            alt:'user-photo'
+          },
+        ]
+    },
+
     whitepizzas() {
       return [
         {
@@ -207,15 +234,15 @@ export default {
           <img src="../assets/img/pizzain.webp" alt="logo-pizza-in" />
         </transition>
         <h2 class="text-4xl font-bold tracking-tight text-white sm:text-6xl main-title">{{ $t("header.title") }}</h2>
-        <p class="mt-6 text-lg leading-8 text-gray-300 main-sub-title">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.
+        <p class="mt-6 text-lg leading-8 text-gray-300 main-sub-title">{{ $t("header.subtitle") }}
         </p>
         <div class="flex mt-10">
         <a href="../assets/doc/pizza-vino-it.pdf" class="mr-2 flex items-center border-2 border-white text-white bg-transparent rounded-full p-1 pr-2 sm:text-base lg:text-sm xl:text-base hover:bg-gray-300">
-          <span class="px-3 py-0.5 text-xs font-semibold leading-5 uppercase tracking-wide rounded-full button-header" lang="it">Scarica menù</span>
+          <span class="px-3 py-0.5 text-xs font-semibold leading-5 uppercase tracking-wide rounded-full button-header" lang="it">{{ $t("header.download") }}</span>
           <ChevronRightIcon class="ml-2 w-5 h-5 text-white" aria-hidden="true" />
         </a>
         <a type="button" href="tel:0032494693028" class="flex items-center border-2 border-white text-white bg-transparent rounded-full p-1 pr-2 sm:text-base lg:text-sm xl:text-base hover:bg-gray-300">
-          <span class="px-3 py-0.5 text-xs font-semibold leading-5 uppercase tracking-wide rounded-full button-header" lang="it">Chiama</span>
+          <span class="px-3 py-0.5 text-xs font-semibold leading-5 uppercase tracking-wide rounded-full button-header" lang="it">{{ $t("header.call") }}</span>
           <PhoneArrowUpRightIcon class="ml-2 w-5 h-5 text-white" aria-hidden="true" />
         </a>
         </div>
@@ -253,11 +280,11 @@ export default {
               <use href="#b56e9dab-6ccb-4d32-ad02-6b4bb5d9bbeb" x="86" />
             </svg>
             <blockquote class="text-xl font-semibold leading-8 text-white sm:text-2xl sm:leading-9 pizza-vino-cta-title">
-              <p>Gravida quam mi erat tortor neque molestie. Auctor aliquet at porttitor a enim nunc suscipit tincidunt nunc. Et non lorem tortor posuere. Nunc eu scelerisque interdum eget tellus non nibh scelerisque bibendum.</p>
+              <p>{{ $t("cta.description") }}</p>
             </blockquote>
             <figcaption class="mt-8 text-base">
               <a href="https://www.pizzavino.be/" class="bg-transparent hover:bg-red-500 text-white hover:text-white py-2 px-10 border-2 border-red-500 hover:border-transparent">
-                Discover
+                {{ $t("cta.button") }}
               </a>
             </figcaption>
           </figure>
@@ -273,9 +300,9 @@ export default {
   <div class="bg-neutral-900 py-24 sm:py-32">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-2xl sm:text-center">
-        <h2 class="text-lg font-semibold leading-8 tracking-tight text-red-400 before-title">Everything you need</h2>
-        <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl section-title">No server? No problem.</p>
-        <p class="mt-6 text-lg leading-8 text-neutral-300 section-title-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis.</p>
+        <h2 class="text-lg font-semibold leading-8 tracking-tight text-red-400 before-title">{{ $t("short.over") }}</h2>
+        <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl section-title">{{ $t("short.title") }}</p>
+        <p class="mt-6 text-lg leading-8 text-neutral-300 section-title-desc">{{ $t("short.subtitle") }}</p>
       </div>
     </div>
     <div class="relative overflow-hidden pt-16">
@@ -292,8 +319,8 @@ export default {
 
 <!-- red pizza -->
     <div class="mx-auto max-w-2xl sm:text-center">
-      <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl section-title" id="pizze-red">Pizze Rosse</p>
-      <p class="mt-6 text-lg leading-8 text-neutral-300 section-title-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis.</p>
+      <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl section-title" id="pizze-red">{{ $t("redpizzas.title") }}</p>
+      <p class="mt-6 text-lg leading-8 text-neutral-300 section-title-desc">{{ $t("redpizzas.subtitle") }}</p>
     </div>
     <div class="mx-auto mt-16 max-w-7xl px-6 sm:mt-20 md:mt-24 lg:px-8">
       <dl class="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-10 text-base leading-7 text-gray-300 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16">
@@ -311,8 +338,8 @@ export default {
 
     <!-- white pizza -->
     <div class="mx-auto max-w-2xl sm:text-center">
-      <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl section-title" id="pizze-red">Pizze Bianche</p>
-      <p class="mt-6 text-lg leading-8 text-neutral-300 section-title-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis.</p>
+      <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl section-title">{{ $t("whitepizzas.title") }}</p>
+      <p class="mt-6 text-lg leading-8 text-neutral-300 section-title-desc">{{ $t("whitepizzas.subtitle") }}</p>
     </div>
     <div class="mx-auto mt-16 max-w-7xl px-6 sm:mt-20 md:mt-24 lg:px-8">
       <dl class="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-10 text-base leading-7 text-gray-300 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16">
@@ -335,9 +362,9 @@ export default {
   <div class="bg-neutral-900 pb-14">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-2xl sm:text-center">
-        <h2 class="text-lg font-semibold leading-8 tracking-tight text-red-400 before-title">Everything you need</h2>
-        <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl section-title">No server? No problem.</p>
-        <p class="mt-6 text-lg leading-8 text-neutral-300 section-title-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis.</p>
+        <h2 class="text-lg font-semibold leading-8 tracking-tight text-red-400 before-title">{{ $t("secondShort.over") }}</h2>
+        <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl section-title">{{ $t("secondShort.title") }}</p>
+        <p class="mt-6 text-lg leading-8 text-neutral-300 section-title-desc">{{ $t("secondShort.subtitle") }}</p>
       </div>
     </div>
   </div>
@@ -359,8 +386,9 @@ export default {
   <div class="bg-neutral-900" :style="{ backgroundImage: `url(${carrelage})` }">
     <div class="mx-auto max-w-7xl px-6 py-12 sm:py-44 lg:px-8">
       <div class="mx-auto max-w-2xl sm:text-center">
-        <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl section-title" id="pizze-red">Pizze Bianche</p>
-        <p class="mt-6 text-lg leading-8 text-neutral-300 section-title-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis.</p>
+        <h2 class="text-lg font-semibold leading-8 tracking-tight text-red-400 before-title">{{ $t("product.over") }}</h2>
+        <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl section-title">{{ $t("product.title") }}</p>
+        <p class="mt-6 text-lg leading-8 text-neutral-300 section-title-desc">{{ $t("product.subtitle") }}</p>
       </div>
       <div class="mt-8 flow-root lg:mt-10">
         <div class=" flex flex-wrap justify-center sm:justify-between py-10">
@@ -386,8 +414,9 @@ export default {
   <div class="bg-neutral-900" :style="{ backgroundImage: `url(${imagePath})` }">
     <div class="mx-auto max-w-7xl px-6 lg:px-8 py-12 sm:py-44">
       <div class="mx-auto max-w-2xl sm:text-center mb-24">
-        <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl section-title" id="pizze-red">Pizze Bianche</p>
-        <p class="mt-6 text-lg leading-8 text-neutral-300 section-title-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis.</p>
+        <h2 class="text-lg font-semibold leading-8 tracking-tight text-red-400 before-title">{{ $t("review.over") }}</h2>
+        <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl section-title">{{ $t("review.title") }}</p>
+        <p class="mt-6 text-lg leading-8 text-neutral-300 section-title-desc">{{ $t("review.subtitle") }}</p>
       </div>
       <div class="-my-10">
         <div v-for="(review, reviewIdx) in reviews" :key="review.id" class="flex space-x-4 text-sm text-gray-500">
@@ -405,7 +434,9 @@ export default {
             </div>
             <p class="sr-only">{{ review.rating }} out of 5 stars</p>
 
-            <div class="prose prose-sm mt-4 max-w-none text-white review-content" v-html="review.content" />
+            <div class="prose prose-sm mt-4 max-w-none text-white review-content">
+              <p>{{review.content}}</p>
+            </div>
           </div>
         </div>
       </div>
@@ -453,36 +484,5 @@ const slide = (el, done) => {
     rotation: 360,
   })
 }
-
-
-const reviews = [
-  {
-    id: 1,
-    rating: 5,
-    content: `
-      <p>This icon pack is just what I need for my latest project. There's an icon for just about anything I could ever need. Love the playful look!</p>
-    `,
-    date: 'July 16, 2021',
-    datetime: '2021-07-16',
-    author: 'Emily Selman',
-    avatarSrc:
-        'https://images.unsplash.com/photo-1502685104226-ee32379fefbe?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=256&h=256&q=80',
-    alt:'user-photo'
-  },
-  {
-    id: 2,
-    rating: 5,
-    content: `
-      <p>Blown away by how polished this icon pack is. Everything looks so consistent and each SVG is optimized out of the box so I can use it directly with confidence. It would take me several hours to create a single icon this good, so it's a steal at this price.</p>
-    `,
-    date: 'July 12, 2021',
-    datetime: '2021-07-12',
-    author: 'Hector Gibbons',
-    avatarSrc:
-        'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=256&h=256&q=80',
-    alt:'user-photo'
-  },
-  // More reviews...
-]
 
 </script>
