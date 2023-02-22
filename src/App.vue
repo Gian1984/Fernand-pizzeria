@@ -153,13 +153,13 @@ export default {
     <DisclosurePanel class="sm:hidden">
       <div class="space-y-1 px-2 pt-2 pb-3">
         <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-        <DisclosureButton as="a" href="#pizze-red" class="block rounded-md bg-neutral-900 px-3 py-2 text-base font-medium text-white nav-item">{{ $t("nav.pizzas") }}</DisclosureButton>
-        <DisclosureButton as="a" href="#vini" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white nav-item">{{ $t("nav.wines") }}</DisclosureButton>
-        <DisclosureButton as="a" href="#contact" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white nav-item">{{ $t("nav.contact") }}</DisclosureButton>
+        <DisclosureButton as="a" href="#pizze-red" class="block rounded-md bg-neutral-800 px-3 py-2 text-base font-medium text-white nav-item hover:bg-gray-700">{{ $t("nav.pizzas") }}</DisclosureButton>
+        <DisclosureButton as="a" href="#vini" class="block rounded-md bg-neutral-800 px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white nav-item">{{ $t("nav.wines") }}</DisclosureButton>
+        <DisclosureButton as="a" href="#contact" class="block rounded-md bg-neutral-800 px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white nav-item">{{ $t("nav.contact") }}</DisclosureButton>
       </div>
       <div class="border-t border-gray-700 pt-4 pb-3">
-        <div class="flex items-center px-5">
-          <div class="flex-shrink-0">
+        <div class="flex items-center mx-2.5 bg-neutral-800 hover:bg-gray-700 py-1.5 rounded-md">
+          <div class="flex-shrink-0 ml-2">
             <img v-if="homePage()" class="h-10 w-10 rounded-full" id="flag" :src="flag" alt="pizza-vino-language-flag" />
           </div>
           <div class="ml-3">

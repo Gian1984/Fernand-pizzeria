@@ -300,7 +300,7 @@ export default {
   <div class="bg-neutral-900 py-24 sm:py-32">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-2xl sm:text-center">
-        <h2 class="text-lg font-semibold leading-8 tracking-tight text-red-400 before-title">{{ $t("short.over") }}</h2>
+        <h2 class="text-lg font-semibold leading-8 tracking-tight text-red-500 before-title uppercase">{{ $t("short.over") }}</h2>
         <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl section-title">{{ $t("short.title") }}</p>
         <p class="mt-6 text-lg leading-8 text-neutral-300 section-title-desc">{{ $t("short.subtitle") }}</p>
       </div>
@@ -337,7 +337,7 @@ export default {
     </div>
 
     <!-- white pizza -->
-    <div class="mx-auto max-w-2xl sm:text-center">
+    <div class="mx-auto max-w-2xl sm:text-center pt-16">
       <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl section-title">{{ $t("whitepizzas.title") }}</p>
       <p class="mt-6 text-lg leading-8 text-neutral-300 section-title-desc">{{ $t("whitepizzas.subtitle") }}</p>
     </div>
@@ -362,7 +362,7 @@ export default {
   <div class="bg-neutral-900 pb-14">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-2xl sm:text-center">
-        <h2 class="text-lg font-semibold leading-8 tracking-tight text-red-400 before-title">{{ $t("secondShort.over") }}</h2>
+        <h2 class="text-lg font-semibold leading-8 tracking-tight text-red-500 before-title uppercase">{{ $t("secondShort.over") }}</h2>
         <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl section-title">{{ $t("secondShort.title") }}</p>
         <p class="mt-6 text-lg leading-8 text-neutral-300 section-title-desc">{{ $t("secondShort.subtitle") }}</p>
       </div>
@@ -386,7 +386,7 @@ export default {
   <div class="bg-neutral-900" :style="{ backgroundImage: `url(${carrelage})` }">
     <div class="mx-auto max-w-7xl px-6 py-12 sm:py-44 lg:px-8">
       <div class="mx-auto max-w-2xl sm:text-center">
-        <h2 class="text-lg font-semibold leading-8 tracking-tight text-red-400 before-title">{{ $t("product.over") }}</h2>
+        <h2 class="text-lg font-semibold leading-8 tracking-tight text-red-500 before-title uppercase">{{ $t("product.over") }}</h2>
         <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl section-title">{{ $t("product.title") }}</p>
         <p class="mt-6 text-lg leading-8 text-neutral-300 section-title-desc">{{ $t("product.subtitle") }}</p>
       </div>
@@ -414,7 +414,7 @@ export default {
   <div class="bg-neutral-900" :style="{ backgroundImage: `url(${imagePath})` }">
     <div class="mx-auto max-w-7xl px-6 lg:px-8 py-12 sm:py-44">
       <div class="mx-auto max-w-2xl sm:text-center mb-24">
-        <h2 class="text-lg font-semibold leading-8 tracking-tight text-red-400 before-title">{{ $t("review.over") }}</h2>
+        <h2 class="text-lg font-semibold leading-8 tracking-tight text-red-500 before-title uppercase">{{ $t("review.over") }}</h2>
         <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl section-title">{{ $t("review.title") }}</p>
         <p class="mt-6 text-lg leading-8 text-neutral-300 section-title-desc">{{ $t("review.subtitle") }}</p>
       </div>
