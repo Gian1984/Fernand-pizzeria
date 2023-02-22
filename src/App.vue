@@ -1,11 +1,73 @@
 <script>
 
+import {defineComponent, h} from "vue";
+
 export default {
 
   data() {
     return {
       flag: "",
       description: "Cliquez sur les icônes pour nous trouver sur une carte ou sur les réseaux sociaux. Vous souhaitez réserver une table ou commander une pizza ? Cliquez sur le téléphone ! Nous t'attendons!"
+    }
+  },
+
+  computed: {
+    transferFeatures() {
+      return [
+        {
+          id: 1,
+          name: this.$t('contact.address'),
+          href:'https://www.google.be/maps/place/PizzaVino/@50.8199996,4.3833578,17z/data=!3m1!4b1!4m5!3m4!1s0x47c3c518e8b6ab6b:0xfd6daa37c3d4bc26!8m2!3d50.8200407!4d4.3856159',
+          description:
+              'Avenue des Saisons 15\n' +
+              '1050 Ixelles',
+          icon: MapPinIcon,
+        },
+        {
+          id: 2,
+          name: this.$t('contact.contact'),
+          href:'tel:0032494693028',
+          description:
+              'Tel: 0494 69 30 28',
+          icon: PhoneArrowUpRightIcon,
+        },
+        {
+          id: 3,
+          name: 'Facebook',
+          description:
+              ' Pizza Vino Facebook ',
+          href: 'https://www.facebook.com/pizzavinobxl',
+          icon: defineComponent({
+            render: () =>
+                h('svg', { fill: 'currentColor', viewBox: '0 0 24 24' }, [
+                  h('path', {
+                    'fill-rule': 'evenodd',
+                    d:
+                        'M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z',
+                    'clip-rule': 'evenodd',
+                  }),
+                ]),
+          }),
+        },
+        {
+          id: 3,
+          name: 'Instagram',
+          description:
+              ' Pizza Vino Instagram ',
+          href: 'https://www.instagram.com/pizzavinobxl/',
+          icon: defineComponent({
+            render: () =>
+                h('svg', { fill: 'currentColor', viewBox: '0 0 24 24' }, [
+                  h('path', {
+                    'fill-rule': 'evenodd',
+                    d:
+                        'M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z',
+                    'clip-rule': 'evenodd',
+                  }),
+                ]),
+          }),
+        },
+      ]
     }
   },
 
@@ -46,9 +108,9 @@ export default {
           <div class="hidden sm:ml-6 sm:block">
             <div class="flex space-x-4">
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-              <a href="#pizze-red" class="rounded-md bg-neutral-900 px-3 py-2 text-sm font-medium text-white nav-item">Pizzas</a>
-              <a href="#vini" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white nav-item" >Vins</a>
-              <a href="#contact" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white nav-item">Contact</a>
+              <a href="#pizze-red" class="rounded-md bg-neutral-900 px-3 py-2 text-sm font-medium text-white nav-item">{{ $t("nav.pizzas") }}</a>
+              <a href="#vini" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white nav-item" >{{ $t("nav.wines") }}</a>
+              <a href="#contact" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white nav-item">{{ $t("nav.contact") }}</a>
             </div>
           </div>
         </div>
@@ -91,9 +153,9 @@ export default {
     <DisclosurePanel class="sm:hidden">
       <div class="space-y-1 px-2 pt-2 pb-3">
         <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-        <DisclosureButton as="a" href="#pizze-red" class="block rounded-md bg-neutral-900 px-3 py-2 text-base font-medium text-white nav-item">Pizzas</DisclosureButton>
-        <DisclosureButton as="a" href="#vini" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white nav-item">Vins</DisclosureButton>
-        <DisclosureButton as="a" href="#contact" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white nav-item">Contact</DisclosureButton>
+        <DisclosureButton as="a" href="#pizze-red" class="block rounded-md bg-neutral-900 px-3 py-2 text-base font-medium text-white nav-item">{{ $t("nav.pizzas") }}</DisclosureButton>
+        <DisclosureButton as="a" href="#vini" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white nav-item">{{ $t("nav.wines") }}</DisclosureButton>
+        <DisclosureButton as="a" href="#contact" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white nav-item">{{ $t("nav.contact") }}</DisclosureButton>
       </div>
       <div class="border-t border-gray-700 pt-4 pb-3">
         <div class="flex items-center px-5">
@@ -129,10 +191,10 @@ export default {
 
           <div class="relative" id="contact">
             <h3 class="text-4xl font-extrabold text-white tracking-tight sm:text-3xl section-title" id="sub_contact" lang="en">
-              Contact
+              {{ $t("contact.title") }}
             </h3>
             <p class="text-lg text-white mt-2 contact-desc">
-              {{ description }}
+              {{ $t("contact.desc") }}
             </p>
             <dl class="mt-14 space-y-3">
               <div v-for="item in transferFeatures" :key="item.id" class="relative">
@@ -155,61 +217,61 @@ export default {
           <div class="mt-10 -mx-4 relative lg:mt-0 gap-8" aria-hidden="true">
             <div class="relative mx-5">
               <h3 class="text-4xl font-extrabold text-white tracking-tight sm:text-3xl section-title" id="sub_opening" lang="en">
-                Opening Hours
+                {{ $t("opening.title") }}
               </h3>
               <div class="mt-10 border-t border-gray-200">
                 <dl class="sm:divide-y sm:divide-gray-200">
                   <div class="py-2 sm:py-3 sm:grid sm:grid-cols-3 sm:gap-4">
-                    <dt class="text-sm font-medium text-gray-300 font-day">
-                      MON
+                    <dt class="text-sm font-medium text-gray-300 font-day uppercase">
+                      {{ $t("opening.mon") }}
                     </dt>
                     <dd class="mt-1 text-sm text-white sm:mt-0 sm:col-span-2 font-time">
-                      Closed
+                      {{ $t("opening.close") }}
                     </dd>
                   </div>
                   <div class="py-2 sm:py-3 sm:grid sm:grid-cols-3 sm:gap-4">
-                    <dt class="text-sm font-medium text-gray-300 font-day">
-                      TUE
-                    </dt>
-                    <dd class="mt-1 text-sm text-white sm:mt-0 sm:col-span-2 font-time">
-                      12:00 – 2:30 pm, 6:00 – 10:30 pm
-                    </dd>
-                  </div>
-                  <div class="py-2 sm:py-3 sm:grid sm:grid-cols-3 sm:gap-4">
-                    <dt class="text-sm font-medium text-gray-300 font-day">
-                      WED
+                    <dt class="text-sm font-medium text-gray-300 font-day uppercase">
+                      {{ $t("opening.tue") }}
                     </dt>
                     <dd class="mt-1 text-sm text-white sm:mt-0 sm:col-span-2 font-time">
                       12:00 – 2:30 pm, 6:00 – 10:30 pm
                     </dd>
                   </div>
                   <div class="py-2 sm:py-3 sm:grid sm:grid-cols-3 sm:gap-4">
-                    <dt class="text-sm font-medium text-gray-300 font-day">
-                      THU
+                    <dt class="text-sm font-medium text-gray-300 font-day uppercase">
+                      {{ $t("opening.wed") }}
                     </dt>
                     <dd class="mt-1 text-sm text-white sm:mt-0 sm:col-span-2 font-time">
                       12:00 – 2:30 pm, 6:00 – 10:30 pm
                     </dd>
                   </div>
                   <div class="py-2 sm:py-3 sm:grid sm:grid-cols-3 sm:gap-4">
-                    <dt class="text-sm font-medium text-gray-300 font-day">
-                      FRI
+                    <dt class="text-sm font-medium text-gray-300 font-day uppercase">
+                      {{ $t("opening.thu") }}
                     </dt>
                     <dd class="mt-1 text-sm text-white sm:mt-0 sm:col-span-2 font-time">
                       12:00 – 2:30 pm, 6:00 – 10:30 pm
                     </dd>
                   </div>
                   <div class="py-2 sm:py-3 sm:grid sm:grid-cols-3 sm:gap-4">
-                    <dt class="text-sm font-medium text-gray-300 font-day">
-                      SAT
+                    <dt class="text-sm font-medium text-gray-300 font-day uppercase">
+                      {{ $t("opening.fri") }}
                     </dt>
                     <dd class="mt-1 text-sm text-white sm:mt-0 sm:col-span-2 font-time">
                       12:00 – 2:30 pm, 6:00 – 10:30 pm
                     </dd>
                   </div>
                   <div class="py-2 sm:py-3 sm:grid sm:grid-cols-3 sm:gap-4">
-                    <dt class="text-sm font-medium text-gray-300 font-day">
-                      SUN
+                    <dt class="text-sm font-medium text-gray-300 font-day uppercase">
+                      {{ $t("opening.sat") }}
+                    </dt>
+                    <dd class="mt-1 text-sm text-white sm:mt-0 sm:col-span-2 font-time">
+                      12:00 – 2:30 pm, 6:00 – 10:30 pm
+                    </dd>
+                  </div>
+                  <div class="py-2 sm:py-3 sm:grid sm:grid-cols-3 sm:gap-4">
+                    <dt class="text-sm font-medium text-gray-300 font-day uppercase">
+                      {{ $t("opening.sun") }}
                     </dt>
                     <dd class="mt-1 text-sm text-white sm:mt-0 sm:col-span-2 font-time">
                       12:00 – 2:30 pm, 6:00 – 10:30 pm
@@ -310,63 +372,6 @@ const fooddelivery = [
     link: 'https://www.proxideal.eu/',
     imageSrc: './img/Proxideal_Logo-01.webp',
     description: "Vos plats préférés livrés au prix juste.",
-  },
-]
-
-
-const transferFeatures = [
-  {
-    id: 1,
-    name: 'Address',
-    href:'https://www.google.be/maps/place/PizzaVino/@50.8199996,4.3833578,17z/data=!3m1!4b1!4m5!3m4!1s0x47c3c518e8b6ab6b:0xfd6daa37c3d4bc26!8m2!3d50.8200407!4d4.3856159',
-    description:
-        'Avenue des Saisons 15\n' +
-        '1050 Ixelles',
-    icon: MapPinIcon,
-  },
-  {
-    id: 2,
-    name: 'Contact',
-    href:'tel:0032494693028',
-    description:
-        'Tel: 0494 69 30 28',
-    icon: PhoneArrowUpRightIcon,
-  },
-  {
-    id: 3,
-    name: 'Facebook',
-    description:
-        ' Pizza Vino Facebook ',
-    href: 'https://www.facebook.com/pizzavinobxl',
-    icon: defineComponent({
-      render: () =>
-          h('svg', { fill: 'currentColor', viewBox: '0 0 24 24' }, [
-            h('path', {
-              'fill-rule': 'evenodd',
-              d:
-                  'M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z',
-              'clip-rule': 'evenodd',
-            }),
-          ]),
-    }),
-  },
-  {
-    id: 3,
-    name: 'Instagram',
-    description:
-        ' Pizza Vino Instagram ',
-    href: 'https://www.instagram.com/pizzavinobxl/',
-    icon: defineComponent({
-      render: () =>
-          h('svg', { fill: 'currentColor', viewBox: '0 0 24 24' }, [
-            h('path', {
-              'fill-rule': 'evenodd',
-              d:
-                  'M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z',
-              'clip-rule': 'evenodd',
-            }),
-          ]),
-    }),
   },
 ]
 

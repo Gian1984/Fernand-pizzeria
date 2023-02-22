@@ -11,133 +11,133 @@ export default {
 
         {
           name: 'Margherita',
-          description: this.$t('redpizzas.margherita'),
+          description: this.$t('redpizzas.Margherita'),
           price: '10,00',
           icon: "./img/pizza-green.webp",
           alt:'Pizza icon'
         },
         {
           name: 'Regina',
-          description: 'Tomate, Basilic et Mozzarella de Bufflonne.',
+          description: this.$t('redpizzas.Regina'),
           price: '14,00',
           icon: "./img/pizza-white.webp",
           alt:'Pizza icon'
         },
         {
           name: 'Principessa',
-          description: 'Tomate, Basilic et Scamorza fumée*. ( Fromage typique italien )',
+          description: this.$t('redpizzas.Principessa'),
           price: '12,00',
           icon: "./img/pizza-red.webp",
           alt:'Pizza icon'
         },
         {
           name: 'Burrata',
-          description: 'Tomate, Basilic, Tomates Datterini, Burratina d\'Andria*. (  Sœur de la mozzarella, un tendre fromage au lait de vache avec, en son cœur, une épaisse crème de fromage frais )',
+          description: this.$t('redpizzas.Burrata'),
           price: '17,00',
           icon: "./img/pizza-green.webp",
           alt:'Pizza icon'
         },
         {
           name: 'Marinara',
-          description: 'Tomate, Ail, Origan et Basilic.',
+          description: this.$t('redpizzas.Marinara'),
           price: '9,00',
           icon: "./img/pizza-white.webp",
           alt:'Pizza icon'
         },
         {
           name: 'Rucola Reggiano',
-          description: 'Tomate, Mozzarella, Roquette et Parmigiano Reggiano.',
+          description: this.$t('redpizzas.RucolaReggiano'),
           price: '13,00',
           icon: "./img/pizza-red.webp",
           alt:'Pizza icon'
         },
         {
           name: 'Porchetta Funghi',
-          description: 'Tomate, Basilic, Mozzarella, Porchetta d\'Ariccia* et Champignons. ( Charcuterie à base de porc rôti aux épices préparée traditionnellement sur l\'ensemble du territoire la commune d\'Ariccia )',
+          description: this.$t('redpizzas.PorchettaFunghi'),
           price: '15,00',
           icon: "./img/pizza-green.webp",
           alt:'Pizza icon'
         },
         {
           name: 'Quattro Stagioni',
-          description: 'Tomate, Basilic, Mozzarella, Porchetta d\'Ariccia*, Champignons, Olives Noires et Artichauts au four. ( Charcuterie à base de porc rôti aux épices préparée traditionnellement sur l\'ensemble du territoire la commune d\'Ariccia )',
+          description: this.$t('redpizzas.QuattroStagioni'),
           price: '16,00',
           icon: "./img/pizza-white.webp",
           alt:'Pizza icon'
         },
         {
           name: 'Napoli',
-          description: 'Tomate, Mozzarella, Câpres, Filets d\'Anchois de Cetara et Origan.',
+          description: this.$t('redpizzas.Napoli'),
           price: '14,00',
           icon: "./img/pizza-red.webp",
           alt:'Pizza icon'
         },
         {
           name: 'Siciliana',
-          description: 'Tomate, Basilic, Mozzarella, Câpres, Filets d\'Anchois de Cetara, Olives Noires et Ail.',
+          description: this.$t('redpizzas.Siciliana'),
           price: '15,00',
           icon: "./img/pizza-green.webp",
           alt:'Pizza icon'
         },
         {
           name: 'Capricciosa',
-          description: 'Tomate, Basilic, Mozzarella, Porchetta d\'Ariccia*, Champignons, Olives Noires et Artichauts au four. ( Charcuterie à base de porc rôti aux épices préparée traditionnellement sur l\'ensemble du territoire la commune d\'Ariccia )',
+          description: this.$t('redpizzas.Capricciosa'),
           price: '16,00',
           icon: "./img/pizza-white.webp",
           alt:'Pizza icon'
         },
         {
           name: 'Diavola',
-          description: 'Tomate, Basilic, Mozzarella et \'Nduja*. ( Saucisse de porc épicée avec du piment fabriquée en Italie, à l\'origine en Calabre )',
+          description: this.$t('redpizzas.Diavola'),
           price: '14,50',
           icon: "./img/pizza-red.webp",
           alt:'Pizza icon'
         },
         {
           name: 'Calabrese',
-          description: 'Tomate, Basilic, Scamorza fumée*, Salami épicé, Oignons rouges de Tropea et Olives Noires. ( Fromage typique italien )',
+          description: this.$t('redpizzas.Calabrese'),
           price: '17,00',
           icon: "./img/pizza-green.webp",
           alt:'Pizza icon'
         },
         {
           name: 'Boscaiola',
-          description: 'Tomate, Basilic, Scamorza fumée*, Mascarpone, Champignons, Roquette et copeaux de Parmigiano Reggiano. ( Fromage typique italien )',
+          description: this.$t('redpizzas.Boscaiola'),
           price: '15,00',
           icon: "./img/pizza-white.webp",
           alt:'Pizza icon'
         },
         {
           name: 'Bresaola e tartufo',
-          description: 'Tomate, Mozzarella, Roquette, Bresaola de Punta d\'Anca, copeaux de Grana Padano* et Truffe Noire. ( Fromage typique italien )',
+          description: this.$t('redpizzas.BresaolaTartufo'),
           price: '20,00',
           icon: "./img/pizza-red.webp",
           alt:'Pizza icon'
         },
         {
           name: 'Crudaiola',
-          description: 'Tomate, Roquette, Culatello*, Copeaux de Grana Padano, Crème Burrata, Tomates Datterini, Basilic et Origan. ( Il s\'agit d\'un jambon cru salé et séché obtenu à partir de la cuisse de porc  )',
+          description: this.$t('redpizzas.Crudaiola'),
           price: '19,00',
           icon: "./img/pizza-green.webp",
           alt:'Pizza icon'
         },
         {
           name: 'Vegana',
-          description: 'Tomate, Mélange de légumes, Roquette et Tomates séchées.',
+          description: this.$t('redpizzas.Vegana'),
           price: '14,00',
           icon: "./img/pizza-white.webp",
           alt:'Pizza icon'
         },
         {
           name: 'Vegetariana',
-          description: 'Tomate, Mozzarella et Mélange de légumes.',
+          description: this.$t('redpizzas.Vegetariana'),
           price: '15,00',
           icon: "./img/pizza-red.webp",
           alt:'Pizza icon'
         },
         {
           name: 'Calzone',
-          description: 'Surprise du pizzaiolo!',
+          description: this.$t('redpizzas.Calzone'),
           price: '18,00',
           icon: "./img/pizza-green.webp",
           alt:'Pizza icon'
@@ -256,7 +256,7 @@ export default {
               <p>Gravida quam mi erat tortor neque molestie. Auctor aliquet at porttitor a enim nunc suscipit tincidunt nunc. Et non lorem tortor posuere. Nunc eu scelerisque interdum eget tellus non nibh scelerisque bibendum.</p>
             </blockquote>
             <figcaption class="mt-8 text-base">
-              <a href="https://www.pizzavino.be/" class="bg-transparent hover:bg-red-500 text-white hover:text-white py-2 px-10 border border-red-500 hover:border-transparent">
+              <a href="https://www.pizzavino.be/" class="bg-transparent hover:bg-red-500 text-white hover:text-white py-2 px-10 border-2 border-red-500 hover:border-transparent">
                 Discover
               </a>
             </figcaption>
@@ -291,12 +291,15 @@ export default {
     </div>
 
 <!-- red pizza -->
-    <h2 class="text-3xl font-bold tracking-tight text-white my-12 text-center sm:text-4xl section-title" id="pizze-red" ref="pizze-red">Pizze Rosse</h2>
+    <div class="mx-auto max-w-2xl sm:text-center">
+      <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl section-title" id="pizze-red">Pizze Rosse</p>
+      <p class="mt-6 text-lg leading-8 text-neutral-300 section-title-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis.</p>
+    </div>
     <div class="mx-auto mt-16 max-w-7xl px-6 sm:mt-20 md:mt-24 lg:px-8">
       <dl class="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-10 text-base leading-7 text-gray-300 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16">
         <div v-for="feature in redpizzas" :key="feature.name" class="relative pl-14">
           <dt class="font-semibold text-white pizza-name">
-            <img :src="feature.icon" class="absolute top-1 left-1 h-8 w-8 sm:h-12 sm:w-12 text-red-500" :alt="feature.alt" aria-hidden="true" />
+            <img :src="feature.icon" class="absolute top-1 left-1 h-8 w-8 sm:h-8 sm:w-8 text-red-500" :alt="feature.alt" aria-hidden="true" />
             {{ feature.name }}
           </dt>
           {{ ' ' }}
@@ -307,7 +310,10 @@ export default {
     </div>
 
     <!-- white pizza -->
-    <h2 class="text-3xl font-bold tracking-tight text-white my-12 text-center sm:text-4xl section-title">Pizze bianche</h2>
+    <div class="mx-auto max-w-2xl sm:text-center">
+      <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl section-title" id="pizze-red">Pizze Bianche</p>
+      <p class="mt-6 text-lg leading-8 text-neutral-300 section-title-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis.</p>
+    </div>
     <div class="mx-auto mt-16 max-w-7xl px-6 sm:mt-20 md:mt-24 lg:px-8">
       <dl class="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-10 text-base leading-7 text-gray-300 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16">
         <div v-for="feature in whitepizzas" :key="feature.name" class="relative pl-14">
@@ -352,7 +358,10 @@ export default {
   <!--  Product start-->
   <div class="bg-neutral-900" :style="{ backgroundImage: `url(${carrelage})` }">
     <div class="mx-auto max-w-7xl px-6 py-12 sm:py-44 lg:px-8">
-      <h2 class="text-3xl font-bold tracking-tight text-center text-white sm:text-4xl section-title">The world's most innovative companies use our app</h2>
+      <div class="mx-auto max-w-2xl sm:text-center">
+        <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl section-title" id="pizze-red">Pizze Bianche</p>
+        <p class="mt-6 text-lg leading-8 text-neutral-300 section-title-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis.</p>
+      </div>
       <div class="mt-8 flow-root lg:mt-10">
         <div class=" flex flex-wrap justify-center sm:justify-between py-10">
           <div class="mt-4 sm:ml-8 flex justify-center flex-shrink-0 flex-grow lg:ml-4 lg:flex-grow-0 ">
@@ -376,8 +385,10 @@ export default {
 <!--Customer review start-->
   <div class="bg-neutral-900" :style="{ backgroundImage: `url(${imagePath})` }">
     <div class="mx-auto max-w-7xl px-6 lg:px-8 py-12 sm:py-44">
-      <h2 class="text-3xl font-bold tracking-tight text-white mb-12 text-center sm:text-4xl section-title">Votre avis est très important pour nous!</h2>
-
+      <div class="mx-auto max-w-2xl sm:text-center mb-24">
+        <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl section-title" id="pizze-red">Pizze Bianche</p>
+        <p class="mt-6 text-lg leading-8 text-neutral-300 section-title-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis.</p>
+      </div>
       <div class="-my-10">
         <div v-for="(review, reviewIdx) in reviews" :key="review.id" class="flex space-x-4 text-sm text-gray-500">
           <div class="flex-none py-10">
