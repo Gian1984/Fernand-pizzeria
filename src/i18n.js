@@ -85,7 +85,7 @@ function loadLocaleMessages() {
       },
 
       review:{
-        over:"title",
+        over:"tripadvisor",
         title:"Votre avis est très important pour nous!",
         subtitle:"Nous vous demandons de laisser un commentaire. Parce que vos commentaires sont notre meilleure publicité. Merci !",
         dateOne:"July 16, 2021",
@@ -198,7 +198,7 @@ function loadLocaleMessages() {
       },
 
       review:{
-        over:"title",
+        over:"tripadvisor",
         title:"To give importance to our customers",
         subtitle:"we ask you to leave a comment. Because your comments are our best advertisement. Thanks!.",
         dateOne:"July 16, 2021",
@@ -305,7 +305,7 @@ function loadLocaleMessages() {
       },
 
       review:{
-        over:"title",
+        over:"tripadvisor",
         title:"La tua opinione conta!",
         subtitle:"Ti chiediamo di lasciare un commento. Perché i tuoi commenti sono la nostra migliore pubblicità. Grazie!",
         dateOne:"July 16, 2021",

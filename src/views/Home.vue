@@ -419,7 +419,13 @@ export default {
   <div class="bg-neutral-900" :style="{ backgroundImage: `url(${imagePath})` }">
     <div class="mx-auto max-w-7xl px-6 lg:px-8 py-12 sm:py-44">
       <div class="mx-auto max-w-2xl sm:text-center mb-24">
-        <h2 class="text-lg font-semibold leading-8 tracking-tight text-red-500 before-title uppercase">{{ $t("review.over") }}</h2>
+        <a href="https://fr.tripadvisor.be/Restaurant_Review-g1136493-d19872077-Reviews-PizzaVino-Ixelles_Brussels.html"
+           class="text-lg font-semibold leading-8 tracking-tight text-center justify-center flex border-2 border-red-500 mx-auto max-w-xs bg-transparent rounded-full text-red-500 before-title uppercase mb-5"
+           target="_blank"
+        >
+          <span class="mt-0.5">{{ $t("review.over") }}</span>
+          <ChevronRightIcon class="ml-2 w-5 h-5 mt-1.5 text-red-500" aria-hidden="true" />
+        </a>
         <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl section-title">{{ $t("review.title") }}</p>
         <p class="mt-6 text-lg leading-8 text-neutral-300 section-title-desc">{{ $t("review.subtitle") }}</p>
       </div>
