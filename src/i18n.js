@@ -19,7 +19,7 @@ function loadLocaleMessages() {
       },
 
       header: {
-        title: "Je suis le titre",
+        title: "Pizza Vino",
         subtitle:"Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.",
         download:"Télécharger carte",
         call:"Appel",
@@ -132,10 +132,10 @@ function loadLocaleMessages() {
       },
 
       header: {
-        title: "I'm the title",
+        title: "Pizza Vino",
         subtitle:"Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.",
-        download:"Télécharger carte",
-        call:"Appel",
+        download:"Download menu",
+        call:"Call",
       },
 
       cta:{
@@ -239,7 +239,7 @@ function loadLocaleMessages() {
       },
 
       header: {
-        title: "Sono il titolo",
+        title: "Pizza Vino",
         subtitle:"Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.",
         download:"Scarica il menu",
         call:"Chiama",
