@@ -178,42 +178,95 @@ export default {
           name: 'Salsiccia Friarelli',
           description: 'Mozzarella, Basilic, Saucisse and Friarielli*. ( Brocoli-rave ou rapini )',
           price:'16,00',
-          icon: "./img/pizza-green.webp",
+          icon: "./img/newrounded.png",
+          iconSlice: "./img/slice.png",
           alt:'Pizza icon'
         },
         {
           name: '4 Formaggi',
           description: 'Mozzarella, Scamorza fumée, Gorgonzola, Copeaux de Parmesan et Basilic.',
           price:'15,00',
-          icon: "./img/pizza-white.webp",
+          icon: "./img/newrounded.png",
+          iconSlice: "./img/slice.png",
           alt:'Pizza icon'
         },
         {
           name: 'Fresca',
           description: 'Mozzarella, Tomates datterini jaunes et rouges, Roquette et Copeaux de Parmesan.',
           price:'15,00',
-          icon: "./img/pizza-red.webp",
+          icon: "./img/newrounded.png",
+          iconSlice: "./img/slice.png",
           alt:'Pizza icon'
         },
         {
           name: 'Patate & Tartufo',
           description: 'Mozzarella, Basilic, Pommes de terre bouillies et Truffe Noire.',
           price:'20,00',
-          icon: "./img/pizza-green.webp",
+          icon: "./img/newrounded.png",
+          iconSlice: "./img/slice.png",
           alt:'Pizza icon'
         },
         {
           name: 'Mortadella',
           description: 'Mozzarella, Roquette, Mortadelle, Copeaux de Pecorino Romano*, Pesto de tomates séchées et Pistaches grillées. (  Fromage traditionnel à base de lait entier de brebis, à pâte pressée cuite )',
           price:'19,00',
-          icon: "./img/pizza-white.webp",
+          icon: "./img/newrounded.png",
+          iconSlice: "./img/slice.png",
           alt:'Pizza icon'
         },
         {
           name: 'Genovese',
           description: 'Mozzarella, Pesto Génois, Tomates jaunes et rouges de Piennolo del Vesuvio, Copeaux de Ricotta* et Pignons de pin grillés. ( Fromage à pâte fraîche )',
           price:'19,00',
-          icon: "./img/pizza-red.webp",
+          icon: "./img/newrounded.png",
+          iconSlice: "./img/slice.png",
+          alt:'Pizza icon'
+        },
+      ]
+    },
+
+    paninis() {
+      return [
+        {
+          name: 'Salsiccia Friarelli',
+          description: 'Mozzarella, Basilic, Saucisse and Friarielli*. ( Brocoli-rave ou rapini )',
+          price:'16,00',
+          icon: "./img/sanswitch.png",
+          alt:'Pizza icon'
+        },
+        {
+          name: '4 Formaggi',
+          description: 'Mozzarella, Scamorza fumée, Gorgonzola, Copeaux de Parmesan et Basilic.',
+          price:'15,00',
+          icon: "./img/sanswitch.png",
+          alt:'Pizza icon'
+        },
+        {
+          name: 'Fresca',
+          description: 'Mozzarella, Tomates datterini jaunes et rouges, Roquette et Copeaux de Parmesan.',
+          price:'15,00',
+          icon: "./img/sanswitch.png",
+          alt:'Pizza icon'
+        },
+        {
+          name: 'Patate & Tartufo',
+          description: 'Mozzarella, Basilic, Pommes de terre bouillies et Truffe Noire.',
+          price:'20,00',
+          icon: "./img/sanswitch.png",
+          alt:'Pizza icon'
+        },
+        {
+          name: 'Mortadella',
+          description: 'Mozzarella, Roquette, Mortadelle, Copeaux de Pecorino Romano*, Pesto de tomates séchées et Pistaches grillées. (  Fromage traditionnel à base de lait entier de brebis, à pâte pressée cuite )',
+          price:'19,00',
+          icon: "./img/sanswitch.png",
+          alt:'Pizza icon'
+        },
+        {
+          name: 'Genovese',
+          description: 'Mozzarella, Pesto Génois, Tomates jaunes et rouges de Piennolo del Vesuvio, Copeaux de Ricotta* et Pignons de pin grillés. ( Fromage à pâte fraîche )',
+          price:'19,00',
+          icon: "./img/sanswitch.png",
           alt:'Pizza icon'
         },
       ]
@@ -348,7 +401,34 @@ export default {
     </div>
     <div class="mx-auto mt-16 max-w-7xl px-6 sm:mt-20 md:mt-24 lg:px-8">
       <dl class="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-10 text-base leading-7 text-gray-300 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16">
-        <div v-for="feature in whitepizzas" :key="feature.name" class="relative pl-14">
+        <div v-for="feature in whitepizzas" :key="feature.name" class="relative">
+          <dt class="font-semibold text-white pizza-name">
+            {{ feature.name }}
+          </dt>
+          {{ ' ' }}
+          <dd class="inline pizza-desc">{{ feature.description }}</dd>
+          <dd class="pizza-price flex items-center pt-3">
+            <img :src="feature.icon" class="h-12 w-12 sm:h-12 sm:w-12 text-red-500 mr-1.5" :alt="feature.alt" aria-hidden="true" />
+            € {{ feature.price }}
+          </dd>
+          <dd class="pizza-price flex items-center">
+            <img :src="feature.iconSlice" class="h-8 w-8 sm:h-8 sm:w-8 text-red-500 mr-1.5" :alt="feature.alt" aria-hidden="true" />
+            € {{ feature.price }}
+          </dd>
+        </div>
+      </dl>
+    </div>
+
+    <!-- paninis -->
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto max-w-2xl sm:text-center pt-16">
+        <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl section-title">{{ $t("paninis.title") }}</p>
+        <p class="mt-6 text-lg leading-8 text-neutral-300 section-title-desc">{{ $t("paninis.subtitle") }}</p>
+      </div>
+    </div>
+    <div class="mx-auto mt-16 max-w-7xl px-6 sm:mt-20 md:mt-24 lg:px-8">
+      <dl class="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-10 text-base leading-7 text-gray-300 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16">
+        <div v-for="feature in paninis" :key="feature.name" class="relative pl-14">
           <dt class="font-semibold text-white pizza-name">
             <img :src="feature.icon" class="absolute top-1 left-1 h-8 w-8 sm:h-12 sm:w-12 text-red-500" :alt="feature.alt" aria-hidden="true" />
             {{ feature.name }}
@@ -359,6 +439,8 @@ export default {
         </div>
       </dl>
     </div>
+
+
   </div>
   <!-- Content section end-->
 

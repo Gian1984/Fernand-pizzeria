@@ -19,14 +19,14 @@ function loadLocaleMessages() {
       },
 
       header: {
-        title: "Pizza Vino",
+        title: "L'Artigiano",
         subtitle:"Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.",
         download:"Télécharger carte",
         call:"Appel",
       },
 
       cta:{
-        description:"De l'expérience de Pizza Vino naît le 'nome', la garantie d'une excellente pizza avec des produits de qualité au juste prix. Cette fois-ci, il s'agit uniquement de pizzas à emporter, mais on peut aussi les commander à la part. Vous préférez vous asseoir ? Nous vous attendons chez Pizza Vino ! ",
+        description:"De l'expérience de Pizza Vino naît \" L'Artigiano \", la garantie d'une excellente pizza avec des produits de qualité au juste prix. Cette fois-ci, il s'agit uniquement de pizzas à emporter, mais on peut aussi les commander à la part. Vous préférez vous asseoir ? Nous vous attendons chez Pizza Vino ! ",
         button:"Pizza Vino",
       },
 
@@ -69,6 +69,18 @@ function loadLocaleMessages() {
         PatateTartufo:"Mozzarella, Basilic, Pommes de terre bouillies et Truffe Noire.",
         Mortadella:"Mozzarella, Roquette, Mortadelle, Copeaux de Pecorino Romano*, Pesto de tomates séchées et Pistaches grillées. ( Fromage traditionnel à base de lait entier de brebis, à pâte pressée cuite )",
         Genovese:"Mozzarella, Pesto Génois, Tomates jaunes et rouges de Piennolo del Vesuvio, Copeaux de Ricotta* et Pignons de pin grillés. ( Fromage à pâte fraîche )"
+
+      },
+
+      paninis:{
+        title:"Panini",
+        subtitle:"Espressamente pensate senza salsa di pomodoro per esaltare i sapori tipici di prodotti italiani unici. Una combinazione strabiliante che solleticherà le vostre papille gustative.",
+        SalsicciaFriarelli:"Fior di latte, basilico, salsiccia e friarielli Napoletani.",
+        QuattroFormaggi:"Fior di latte, scamorza affumicata, gorgonzola, scaglie di grana e basilico.",
+        Fresca:"Fior di latte, datterini gialli e rossi, rucola e scaglie di grana.",
+        PatateTartufo:"Fior di latte, basilico, patate lesse e tartufo nero.",
+        Mortadella:"Fior di latte, rucola, mortadella, scaglie di pecorino Romano, pesto di pomodori secchi e pistacchi tostati.",
+        Genovese:"Fior di latte, pesto alla genovese, pomodorini gialli e rossi del Piennolo del Vesuvio, ricottan scaglie di grana e pinoli tostati."
 
       },
 
@@ -132,14 +144,14 @@ function loadLocaleMessages() {
       },
 
       header: {
-        title: "Pizza Vino",
+        title: "L'Artigiano",
         subtitle:"Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.",
         download:"Download menu",
         call:"Call",
       },
 
       cta:{
-        description:"From the experience of Pizza Vino comes 'nome', the guarantee of an excellent pizza with quality products at the right price. This time only takeaway and also orderable by the slice. Would you rather sit down? We are waiting for you at Pizza Vino! ",
+        description:"From the experience of Pizza Vino comes \" L'Artigiano \", the guarantee of an excellent pizza with quality products at the right price. This time only takeaway and also orderable by the slice. Would you rather sit down? We are waiting for you at Pizza Vino! ",
         button:"Pizza Vino",
       },
 
@@ -175,6 +187,18 @@ function loadLocaleMessages() {
 
       whitepizzas:{
         title:"Pizze bianche",
+        subtitle:"Expressly designed without tomato sauce to enhance the typical flavors of unique Italian products. An amazing combination that will tickle your taste buds.",
+        SalsicciaFriarelli:"Fior di latte, Basil, Sausage and Friarielli*. ( Neapolitan Broccoli )",
+        QuattroFormaggi:"Fior di latte, Smoked Scamorza cheese, Gorgonzola cheese, Parmigiano Reggiano Cheese and Basil.",
+        Fresca:"Fior di latte, yellow and red Datterini Tomatoes, Rocket and Parmigiano Reggiano Cheese flakes.",
+        PatateTartufo:"Fior di latte, Basil, boiled Potatoes and Black Truffle.",
+        Mortadella:"Fior di latte, Rocket, Mortadella, Pecorino Romano cheese flakes, Dried Tomato Pesto and Toasted Pistachios.",
+        Genovese:"Fior di latte, Genoese Pesto, yellow and red Tomatoes from \"Piennolo del Vesuvio\", Ricotta cheese flakes and Toasted Pine Nuts."
+
+      },
+
+      paninis:{
+        title:"Paninis",
         subtitle:"Expressly designed without tomato sauce to enhance the typical flavors of unique Italian products. An amazing combination that will tickle your taste buds.",
         SalsicciaFriarelli:"Fior di latte, Basil, Sausage and Friarielli*. ( Neapolitan Broccoli )",
         QuattroFormaggi:"Fior di latte, Smoked Scamorza cheese, Gorgonzola cheese, Parmigiano Reggiano Cheese and Basil.",
@@ -239,14 +263,14 @@ function loadLocaleMessages() {
       },
 
       header: {
-        title: "Pizza Vino",
+        title: "L'Artigiano",
         subtitle:"Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.",
         download:"Scarica il menu",
         call:"Chiama",
       },
 
       cta:{
-        description:"Dall'esperienza di Pizza Vino nasce \"nome\", la garanzia ti un ottima pizza con prodotti di qualità e al giusto prezzo. Questa volta solo da asporto e ordinabile anche al trancio. Preferisci accomodarti? Ti aspettiamo da Pizza Vino! ",
+        description:"Dall'esperienza di Pizza Vino nasce \" L'Artigiano \", la garanzia ti un ottima pizza con prodotti di qualità e al giusto prezzo. Questa volta solo da asporto e ordinabile anche al trancio. Preferisci accomodarti? Ti aspettiamo da Pizza Vino! ",
         button:"Pizza Vino",
       },
 
@@ -282,6 +306,18 @@ function loadLocaleMessages() {
 
       whitepizzas:{
         title:"Pizze bianche",
+        subtitle:"Espressamente pensate senza salsa di pomodoro per esaltare i sapori tipici di prodotti italiani unici. Una combinazione strabiliante che solleticherà le vostre papille gustative.",
+        SalsicciaFriarelli:"Fior di latte, basilico, salsiccia e friarielli Napoletani.",
+        QuattroFormaggi:"Fior di latte, scamorza affumicata, gorgonzola, scaglie di grana e basilico.",
+        Fresca:"Fior di latte, datterini gialli e rossi, rucola e scaglie di grana.",
+        PatateTartufo:"Fior di latte, basilico, patate lesse e tartufo nero.",
+        Mortadella:"Fior di latte, rucola, mortadella, scaglie di pecorino Romano, pesto di pomodori secchi e pistacchi tostati.",
+        Genovese:"Fior di latte, pesto alla genovese, pomodorini gialli e rossi del Piennolo del Vesuvio, ricottan scaglie di grana e pinoli tostati."
+
+      },
+
+      paninis:{
+        title:"Panini",
         subtitle:"Espressamente pensate senza salsa di pomodoro per esaltare i sapori tipici di prodotti italiani unici. Una combinazione strabiliante che solleticherà le vostre papille gustative.",
         SalsicciaFriarelli:"Fior di latte, basilico, salsiccia e friarielli Napoletani.",
         QuattroFormaggi:"Fior di latte, scamorza affumicata, gorgonzola, scaglie di grana e basilico.",
