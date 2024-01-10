@@ -20,13 +20,13 @@ function loadLocaleMessages() {
 
       header: {
         title: "L'Artigiano",
-        subtitle:"Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.",
+        subtitle:"72 heures à lever, un moment pour tomber amoureux !",
         download:"Télécharger carte",
         call:"Appel",
       },
 
       cta:{
-        description:"De l'expérience de Pizza Vino naît \" L'Artigiano \", la garantie d'une excellente pizza avec des produits de qualité au juste prix. Cette fois-ci, il s'agit uniquement de pizzas à emporter, mais on peut aussi les commander à la part. Vous préférez vous asseoir ? Nous vous attendons chez Pizza Vino ! ",
+        description:"Au cœur d'Ixelles, notre pizzeria offre une expérience italienne authentique avec une pâte levée pendant 72 heures, garantissant une légèreté et une digestibilité uniques. Chaque pizza est une œuvre d'art, créée avec des produits de la plus haute qualité et travaillée avec amour et dévouement pour apporter un goût d'Italie dans l'assiette de chaque client. Venez découvrir le vrai goût de la tradition italienne !",
         button:"Pizza Vino",
       },
 
@@ -46,7 +46,6 @@ function loadLocaleMessages() {
         Marinara:"Tomate, Ail, Origan et Basilic.",
         RucolaReggiano:"Tomate, Mozzarella, Roquette et Parmigiano Reggiano.",
         PorchettaFunghi:"Tomate, Basilic, Mozzarella, Porchetta d'Ariccia* et Champignons. ( Charcuterie à base de porc rôti aux épices préparée traditionnellement sur l'ensemble du territoire la commune d'Ariccia )",
-        QuattroStagioni:"Tomate, Basilic, Mozzarella, Porchetta d'Ariccia*, Champignons, Olives Noires et Artichauts au four. ( Charcuterie à base de porc rôti aux épices préparée traditionnellement sur l'ensemble du territoire la commune d'Ariccia )",
         Napoli:"Tomate, Mozzarella, Câpres, Filets d'Anchois de Cetara et Origan.",
         Siciliana:"Tomate, Basilic, Mozzarella, Câpres, Filets d'Anchois de Cetara, Olives Noires et Ail.",
         Capricciosa:"Tomate, Basilic, Mozzarella, Porchetta d'Ariccia*, Champignons, Olives Noires et Artichauts au four. ( Charcuterie à base de porc rôti aux épices préparée traditionnellement sur l'ensemble du territoire la commune d'Ariccia )",
@@ -65,23 +64,31 @@ function loadLocaleMessages() {
         subtitle:"Expressément conçu sans sauce tomate pour rehausser les saveurs typiques des produits italiens uniques. Une combinaison époustouflante qui ravira vos papilles.",
         SalsicciaFriarelli:"Mozzarella, Basilic, Saucisse and Friarielli*. ( Brocoli-rave ou rapini ).",
         QuattroFormaggi:"Mozzarella, Scamorza fumée, Gorgonzola, Copeaux de Parmesan et Basilic.",
-        Fresca:"Mozzarella, Tomates datterini jaunes et rouges, Roquette et Copeaux de Parmesan.",
         PatateTartufo:"Mozzarella, Basilic, Pommes de terre bouillies et Truffe Noire.",
         Mortadella:"Mozzarella, Roquette, Mortadelle, Copeaux de Pecorino Romano*, Pesto de tomates séchées et Pistaches grillées. ( Fromage traditionnel à base de lait entier de brebis, à pâte pressée cuite )",
         Genovese:"Mozzarella, Pesto Génois, Tomates jaunes et rouges de Piennolo del Vesuvio, Copeaux de Ricotta* et Pignons de pin grillés. ( Fromage à pâte fraîche )"
 
       },
 
+      maxipizzas:{
+        title:"Maxi & slice",
+        subtitle:"Espressamente pensate senza salsa di pomodoro per esaltare i sapori tipici di prodotti italiani unici. Una combinazione strabiliante che solleticherà le vostre papille gustative.",
+        Margherita:"Tomate, Basilic et Mozzarella.",
+        Diavola:"Tomate, Basilic, Mozzarella et 'Nduja*. ( Saucisse de porc épicée avec du piment fabriquée en Italie, à l'origine en Calabre )",
+        PorchettaFunghi:"Tomate, Basilic, Mozzarella, Porchetta d'Ariccia* et Champignons. ( Charcuterie à base de porc rôti aux épices préparée traditionnellement sur l'ensemble du territoire la commune d'Ariccia )",
+        QuattroFormaggi:"Mozzarella, Scamorza fumée, Gorgonzola, Copeaux de Parmesan et Basilic.",
+        Suggestione:"Découvrez les suggestions du jour !"
+      },
+
       paninis:{
         title:"Panini",
         subtitle:"Espressamente pensate senza salsa di pomodoro per esaltare i sapori tipici di prodotti italiani unici. Una combinazione strabiliante che solleticherà le vostre papille gustative.",
-        SalsicciaFriarelli:"Fior di latte, basilico, salsiccia e friarielli Napoletani.",
-        QuattroFormaggi:"Fior di latte, scamorza affumicata, gorgonzola, scaglie di grana e basilico.",
-        Fresca:"Fior di latte, datterini gialli e rossi, rucola e scaglie di grana.",
-        PatateTartufo:"Fior di latte, basilico, patate lesse e tartufo nero.",
-        Mortadella:"Fior di latte, rucola, mortadella, scaglie di pecorino Romano, pesto di pomodori secchi e pistacchi tostati.",
-        Genovese:"Fior di latte, pesto alla genovese, pomodorini gialli e rossi del Piennolo del Vesuvio, ricottan scaglie di grana e pinoli tostati."
-
+        Italiano: "Jambon cru,pesto génois, mozzarella de bufflonne, pignons de pin, tomates cœur de bœuf.",
+        Mortadella:"Fior di latte, scamorza affumicata, gorgonzola, scaglie di grana e basilico.",
+        Soppressa:"Soppressa vénitienne ( saucisson ), crème d'artichaut, fromage Asiago.",
+        Piccante:"Crème 'nduja ( Saucisse de porc épicée avec du piment fabriquée en Italie, à l'origine en Calabre ), spianata calabra ( Salami épicé ), aubergines grillées, roquette.",
+        Vegetariano:"À définir",
+        Suggestione:"Découvrez les suggestions du jour !"
       },
 
       secondShort:{
@@ -145,13 +152,13 @@ function loadLocaleMessages() {
 
       header: {
         title: "L'Artigiano",
-        subtitle:"Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.",
+        subtitle:"72 hours of leavening, a moment to fall in love!",
         download:"Download menu",
         call:"Call",
       },
 
       cta:{
-        description:"From the experience of Pizza Vino comes \" L'Artigiano \", the guarantee of an excellent pizza with quality products at the right price. This time only takeaway and also orderable by the slice. Would you rather sit down? We are waiting for you at Pizza Vino! ",
+        description:"In the heart of Ixelles, our pizzeria offers an authentic Italian experience with dough leavened for 72 hours, guaranteeing unique lightness and digestibility. Each pizza is a work of art, created with the highest quality products and processed with love and dedication to bring a taste of Italy to each customer's plate. Come and discover the true taste of Italian tradition!",
         button:"Pizza Vino",
       },
 
@@ -171,7 +178,6 @@ function loadLocaleMessages() {
         Marinara:"Tomato, Garlic, Oregano and Basil.",
         RucolaReggiano:"Tomato, Mozzarella, Rocket and Parmigiano Reggiano Cheese.",
         PorchettaFunghi:"Tomato, Basil, Mozzarella, Porchetta d'Ariccia and Mushrooms.",
-        QuattroStagioni:"Tomato, Basil, Mozzarella, Porchetta d'Ariccia, Mushrooms, Black Olives and Baked Artichokes.",
         Napoli:"Tomato, Mozzarella, Capers, Cetara Anchovy Fillets and Oregano.",
         Siciliana:"Tomato, Basil, Mozzarella, Capers, Cetara Anchovy Fillets, Black Olives and Garlic.",
         Capricciosa:"Tomato, Basil, Mozzarella, Porchetta d'Ariccia, Mushrooms, Black Olives and Baked Artichokes.",
@@ -190,23 +196,31 @@ function loadLocaleMessages() {
         subtitle:"Expressly designed without tomato sauce to enhance the typical flavors of unique Italian products. An amazing combination that will tickle your taste buds.",
         SalsicciaFriarelli:"Fior di latte, Basil, Sausage and Friarielli*. ( Neapolitan Broccoli )",
         QuattroFormaggi:"Fior di latte, Smoked Scamorza cheese, Gorgonzola cheese, Parmigiano Reggiano Cheese and Basil.",
-        Fresca:"Fior di latte, yellow and red Datterini Tomatoes, Rocket and Parmigiano Reggiano Cheese flakes.",
         PatateTartufo:"Fior di latte, Basil, boiled Potatoes and Black Truffle.",
         Mortadella:"Fior di latte, Rocket, Mortadella, Pecorino Romano cheese flakes, Dried Tomato Pesto and Toasted Pistachios.",
         Genovese:"Fior di latte, Genoese Pesto, yellow and red Tomatoes from \"Piennolo del Vesuvio\", Ricotta cheese flakes and Toasted Pine Nuts."
 
       },
 
+      maxipizzas:{
+        title:"Maxi & slice",
+        subtitle:"Expressly designed without tomato sauce to enhance the typical flavors of unique Italian products. An amazing combination that will tickle your taste buds.",
+        Italiano:"Raw ham, buffalo mozzarella, pine nuts, beef heart tomatoes.",
+        Diavola:"Tomato, Basil, Mozzarella and 'Nduja*. ( Spicy, spreadable pork sausage from the region of Calabria )",
+        PorchettaFunghi:"Tomato, Basil, Mozzarella, Porchetta d'Ariccia and Mushrooms.",
+        QuattroFormaggi:"Fior di latte, Smoked Scamorza cheese, Gorgonzola cheese, Parmigiano Reggiano Cheese and Basil.",
+        Suggestione:"Discover the suggestions of the day!",
+      },
+
       paninis:{
         title:"Paninis",
         subtitle:"Expressly designed without tomato sauce to enhance the typical flavors of unique Italian products. An amazing combination that will tickle your taste buds.",
-        SalsicciaFriarelli:"Fior di latte, Basil, Sausage and Friarielli*. ( Neapolitan Broccoli )",
-        QuattroFormaggi:"Fior di latte, Smoked Scamorza cheese, Gorgonzola cheese, Parmigiano Reggiano Cheese and Basil.",
-        Fresca:"Fior di latte, yellow and red Datterini Tomatoes, Rocket and Parmigiano Reggiano Cheese flakes.",
-        PatateTartufo:"Fior di latte, Basil, boiled Potatoes and Black Truffle.",
-        Mortadella:"Fior di latte, Rocket, Mortadella, Pecorino Romano cheese flakes, Dried Tomato Pesto and Toasted Pistachios.",
-        Genovese:"Fior di latte, Genoese Pesto, yellow and red Tomatoes from \"Piennolo del Vesuvio\", Ricotta cheese flakes and Toasted Pine Nuts."
-
+        Italiano:"Raw ham, pesto genovese, buffalo mozzarella, pine nuts, beef heart tomatoes.",
+        Mortadella:"Mortadella, burrata stracciatella ( kind of creamy mozzarella ), dried tomatoes, rocket, pistachio",
+        Soppressa:"Venetian soppressa(salami), artichoke cream, Asiago cheese.",
+        Piccante:"Nduja cream ( Spicy, spreadable pork sausage from the region of Calabria ), spianate piccante ( spicy salami ), grilled aubergines, rocket.",
+        Vegetariano:"to define",
+        Suggestione:"Discover the suggestions of the day!",
       },
 
       secondShort:{
@@ -223,8 +237,8 @@ function loadLocaleMessages() {
 
       review:{
         over:"tripadvisor",
-        title:"To give importance to our customers",
-        subtitle:"we ask you to leave a comment. Because your comments are our best advertisement. Thanks!.",
+        title:"Your opinion is important to us!",
+        subtitle:"Leave a comment. Your comments are our best advertisement. Thanks!.",
         dateOne:"July 16, 2021",
         revOne:"This Resteraunt is just amazing. The Staff is very friendly and polite. If you wanna eat an ORIGINAL italian Pizza and drink a real coffee, don't miss to go there. I will come again.",
         dateTwo:"July 16, 2021",
@@ -264,13 +278,13 @@ function loadLocaleMessages() {
 
       header: {
         title: "L'Artigiano",
-        subtitle:"Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.",
+        subtitle:"72 ore di lievitazione, un attimo per innamorarsi!",
         download:"Scarica il menu",
         call:"Chiama",
       },
 
       cta:{
-        description:"Dall'esperienza di Pizza Vino nasce \" L'Artigiano \", la garanzia ti un ottima pizza con prodotti di qualità e al giusto prezzo. Questa volta solo da asporto e ordinabile anche al trancio. Preferisci accomodarti? Ti aspettiamo da Pizza Vino! ",
+        description:"Nel cuore di Ixelles, la nostra pizzeria offre un'autentica esperienza italiana con un impasto lievitato per 72 ore, garantendo una leggerezza e una digeribilità uniche. Ogni pizza è un'opera d'arte, creata con prodotti di altissima qualità viene lavorata con amore e dedizione, per portare un assaggio dell'Italia nel piatto di ogni cliente. Venite a scoprire il vero sapore della tradizione italiana!",
         button:"Pizza Vino",
       },
 
@@ -290,11 +304,10 @@ function loadLocaleMessages() {
         Marinara:"Pomodoro, aglio, origano e basilico.",
         RucolaReggiano:"Pomodoro, fior di latte, rucola e Parmigiano Reggiano.",
         PorchettaFunghi:"Pomodoro, basilico, fior di latte, porchetta d'Ariccia e funghi.",
-        QuattroStagioni:"Pomodoro, basilico, fior di latte, porchetta d'Ariccia, funghi, olive nere e carciofi al forno.",
         Napoli:"Pomodoro, fior di latte, capperi, filetti di alici di Cetara e origano.",
         Siciliana:"Pomodoro, basilico, fior di latte, capperi, filetti di alici di Cetara, olive nere e aglio.",
         Capricciosa:"Pomodoro, basilico, fior di latte, porchetta d'Ariccia, funghi, olive nere e carciofi al forno.",
-        Diavola:"Pomodoro, basilico, fior di latte e 'Nduja.",
+        Diavola:"Pomodoro, basilico, fior di latte e salamino piccante.",
         Calabrese:"Pomodoro, basilico, scamorza affumicata, salamino piccante, cipolle rosse di Tropea e olive nere.",
         Boscaiola:"Pomodoro, basilico, scamorza affumicata, mascarpone, funghi, rucola e scaglie di grana.",
         BresaolaTartufo:"Pomodoro, fior di latte, rucola, bresaola Punta d'Anca, scaglie di grana e tartufo nero.",
@@ -309,23 +322,32 @@ function loadLocaleMessages() {
         subtitle:"Espressamente pensate senza salsa di pomodoro per esaltare i sapori tipici di prodotti italiani unici. Una combinazione strabiliante che solleticherà le vostre papille gustative.",
         SalsicciaFriarelli:"Fior di latte, basilico, salsiccia e friarielli Napoletani.",
         QuattroFormaggi:"Fior di latte, scamorza affumicata, gorgonzola, scaglie di grana e basilico.",
-        Fresca:"Fior di latte, datterini gialli e rossi, rucola e scaglie di grana.",
         PatateTartufo:"Fior di latte, basilico, patate lesse e tartufo nero.",
         Mortadella:"Fior di latte, rucola, mortadella, scaglie di pecorino Romano, pesto di pomodori secchi e pistacchi tostati.",
         Genovese:"Fior di latte, pesto alla genovese, pomodorini gialli e rossi del Piennolo del Vesuvio, ricottan scaglie di grana e pinoli tostati."
 
       },
 
+      maxipizzas:{
+        title:"Maxi & slice",
+        subtitle:"Espressamente pensate senza salsa di pomodoro per esaltare i sapori tipici di prodotti italiani unici. Una combinazione strabiliante che solleticherà le vostre papille gustative.",
+        Margherita:"Pomodoro, basilico e fior di latte.",
+        Diavola:"Pomodoro, basilico, fior di latte e salamino piccante.",
+        PorchettaFunghi:"Pomodoro, basilico, fior di latte, porchetta d'Ariccia e funghi.",
+        QuattroFormaggi:"Fior di latte, scamorza affumicata, gorgonzola, scaglie di grana e basilico.",
+        Suggestione:"Scopri le suggestioni del giorno!"
+
+      },
+
       paninis:{
         title:"Panini",
         subtitle:"Espressamente pensate senza salsa di pomodoro per esaltare i sapori tipici di prodotti italiani unici. Una combinazione strabiliante che solleticherà le vostre papille gustative.",
-        SalsicciaFriarelli:"Fior di latte, basilico, salsiccia e friarielli Napoletani.",
-        QuattroFormaggi:"Fior di latte, scamorza affumicata, gorgonzola, scaglie di grana e basilico.",
-        Fresca:"Fior di latte, datterini gialli e rossi, rucola e scaglie di grana.",
-        PatateTartufo:"Fior di latte, basilico, patate lesse e tartufo nero.",
-        Mortadella:"Fior di latte, rucola, mortadella, scaglie di pecorino Romano, pesto di pomodori secchi e pistacchi tostati.",
-        Genovese:"Fior di latte, pesto alla genovese, pomodorini gialli e rossi del Piennolo del Vesuvio, ricottan scaglie di grana e pinoli tostati."
-
+        Italiano:"Prosciutto crudo, pesto genovese, mozzarella di bufala, pinoli, pomodori cuore di bue.",
+        Mortadella:"Mortadella, stracciatella di burrata, pomodori secchi, rucola, pistacchio",
+        Soppressa:"Soppressa veneta, crema di carciofi, formaggio asiago.",
+        Piccante:"Crema di 'nduja, spianata calabra, melanzane grigliate, rucola.",
+        Vegetariano:"Fior di latte, pesto alla genovese, pomodorini gialli e rossi del Piennolo del Vesuvio, ricottan scaglie di grana e pinoli tostati.",
+        Suggestione:"",
       },
 
       secondShort:{
