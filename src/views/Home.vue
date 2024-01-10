@@ -341,7 +341,7 @@ export default {
       <div class="mx-auto flex max-w-7xl flex-col items-center gap-y-10 gap-x-8 px-6 sm:gap-y-8 lg:px-8 xl:flex-row">
         <div class="-mt-8 w-full max-w-2xl xl:-mb-8 xl:w-96 xl:flex-none">
           <div class="relative h-full md:-mx-8 xl:mx-0 aspect-auto">
-            <img class="inset-0 h-full w-full xl:h-auto w-full rounded-2xl bg-neutral-700 object-cover shadow-2xl p-1" src="../assets/img/inforna.webp" alt="pizza vino logo" />
+            <img class="inset-0 h-full w-full xl:h-auto w-full rounded-2xl bg-neutral-700 object-cover shadow-2xl p-1" src="../assets/img/fornopaletta.webp" alt="pizza vino logo" />
           </div>
         </div>
         <div class="w-full max-w-2xl xl:max-w-none xl:flex-auto xl:py-24 xl:px-16">

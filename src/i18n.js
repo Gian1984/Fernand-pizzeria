@@ -72,7 +72,7 @@ function loadLocaleMessages() {
 
       maxipizzas:{
         title:"Maxi & slice",
-        subtitle:"Espressamente pensate senza salsa di pomodoro per esaltare i sapori tipici di prodotti italiani unici. Una combinazione strabiliante che solleticherà le vostre papille gustative.",
+        subtitle:"Savourez notre maxi pizza de 50 cm : idéale pour partager des moments savoureux entre amis ou au bureau. Ne manquez pas l'occasion de profiter d'un déjeuner convivial ou d'une pause détente avec nos parts de pizza, idéales pour ceux qui sont pressés mais qui ne veulent pas renoncer à la saveur et à la qualité authentiques.",
         Margherita:"Tomate, Basilic et Mozzarella.",
         Diavola:"Tomate, Basilic, Mozzarella et 'Nduja*. ( Saucisse de porc épicée avec du piment fabriquée en Italie, à l'origine en Calabre )",
         PorchettaFunghi:"Tomate, Basilic, Mozzarella, Porchetta d'Ariccia* et Champignons. ( Charcuterie à base de porc rôti aux épices préparée traditionnellement sur l'ensemble du territoire la commune d'Ariccia )",
@@ -82,7 +82,7 @@ function loadLocaleMessages() {
 
       paninis:{
         title:"Panini",
-        subtitle:"Espressamente pensate senza salsa di pomodoro per esaltare i sapori tipici di prodotti italiani unici. Una combinazione strabiliante che solleticherà le vostre papille gustative.",
+        subtitle:"Découvrez le goût unique de nos sandwichs, préparés avec du pain frais, cuit quotidiennement et levé pendant 72 heures. Laissez-vous tenter par la fraîcheur de nos ingrédients de saison, soigneusement sélectionnés pour vous offrir des saveurs authentiques et intenses. Outre les classiques, nos suggestions vous invitent à explorer de nouveaux délices qui changent périodiquement pour vous surprendre à chaque visite.",
         Italiano: "Jambon cru,pesto génois, mozzarella de bufflonne, pignons de pin, tomates cœur de bœuf.",
         Mortadella:"Fior di latte, scamorza affumicata, gorgonzola, scaglie di grana e basilico.",
         Soppressa:"Soppressa vénitienne ( saucisson ), crème d'artichaut, fromage Asiago.",
@@ -204,7 +204,7 @@ function loadLocaleMessages() {
 
       maxipizzas:{
         title:"Maxi & slice",
-        subtitle:"Expressly designed without tomato sauce to enhance the typical flavors of unique Italian products. An amazing combination that will tickle your taste buds.",
+        subtitle:"Enjoy our 50 cm maxi pizza: perfect for sharing tasty moments with friends or at the office. Don't miss the opportunity to enjoy a convivial lunch or a leisurely break with our pizza slices, ideal for those who are in a hurry but don't want to give up authentic flavour and quality.",
         Italiano:"Raw ham, buffalo mozzarella, pine nuts, beef heart tomatoes.",
         Diavola:"Tomato, Basil, Mozzarella and 'Nduja*. ( Spicy, spreadable pork sausage from the region of Calabria )",
         PorchettaFunghi:"Tomato, Basil, Mozzarella, Porchetta d'Ariccia and Mushrooms.",
@@ -214,7 +214,7 @@ function loadLocaleMessages() {
 
       paninis:{
         title:"Paninis",
-        subtitle:"Expressly designed without tomato sauce to enhance the typical flavors of unique Italian products. An amazing combination that will tickle your taste buds.",
+        subtitle:"Discover the unique taste of our sandwiches, made with fresh bread, baked daily and leavened for 72 hours. Let yourself be tempted by the freshness of our seasonal ingredients, carefully selected to offer you authentic and intense flavours. In addition to the classics, our suggestions invite you to explore new delights that change periodically to surprise you on every visit.",
         Italiano:"Raw ham, pesto genovese, buffalo mozzarella, pine nuts, beef heart tomatoes.",
         Mortadella:"Mortadella, burrata stracciatella ( kind of creamy mozzarella ), dried tomatoes, rocket, pistachio",
         Soppressa:"Venetian soppressa(salami), artichoke cream, Asiago cheese.",
@@ -330,7 +330,7 @@ function loadLocaleMessages() {
 
       maxipizzas:{
         title:"Maxi & slice",
-        subtitle:"Espressamente pensate senza salsa di pomodoro per esaltare i sapori tipici di prodotti italiani unici. Una combinazione strabiliante che solleticherà le vostre papille gustative.",
+        subtitle:"Godetevi la nostra pizza maxi da 50 centimetri: perfetta per condividere momenti gustosi con gli amici o in ufficio. Non lasciatevi sfuggire l'occasione di vivere un pranzo conviviale o di concedervi una pausa piacevole con i nostri tranci di pizza, ideali per chi è di fretta ma non vuole rinunciare al sapore autentico e alla qualità.",
         Margherita:"Pomodoro, basilico e fior di latte.",
         Diavola:"Pomodoro, basilico, fior di latte e salamino piccante.",
         PorchettaFunghi:"Pomodoro, basilico, fior di latte, porchetta d'Ariccia e funghi.",
@@ -341,7 +341,7 @@ function loadLocaleMessages() {
 
       paninis:{
         title:"Panini",
-        subtitle:"Espressamente pensate senza salsa di pomodoro per esaltare i sapori tipici di prodotti italiani unici. Una combinazione strabiliante che solleticherà le vostre papille gustative.",
+        subtitle:"Scoprite il gusto unico dei nostri panini, preparati con pane fresco, cotto giornalmente e lievitato per 72 ore. Lasciatevi tentare dalla freschezza dei nostri ingredienti stagionali, accuratamente selezionati per offrirvi sapori autentici e intensi. Oltre ai classici, le nostre suggestioni vi invitano a esplorare nuove delizie che variano periodicamente per sorprendervi ad ogni visita.",
         Italiano:"Prosciutto crudo, pesto genovese, mozzarella di bufala, pinoli, pomodori cuore di bue.",
         Mortadella:"Mortadella, stracciatella di burrata, pomodori secchi, rucola, pistacchio",
         Soppressa:"Soppressa veneta, crema di carciofi, formaggio asiago.",
