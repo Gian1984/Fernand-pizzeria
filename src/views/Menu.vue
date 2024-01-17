@@ -138,32 +138,6 @@ export default {
             ]
         },
 
-        reviews() {
-            return [
-                {
-                    id: 1,
-                    rating: 5,
-                    content: this.$t('review.revOne'),
-                    date: this.$t('review.dateOne'),
-                    datetime: '2021-07-16',
-                    author: 'Emily Selman',
-                    avatarSrc:
-                        'https://images.unsplash.com/photo-1502685104226-ee32379fefbe?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=256&h=256&q=80',
-                    alt:'user-photo'
-                },
-                {
-                    id: 2,
-                    rating: 5,
-                    content: this.$t('review.revTwo'),
-                    date: this.$t('review.dateTwo'),
-                    datetime: '2021-07-12',
-                    author: 'Hector Gibbons',
-                    avatarSrc:
-                        'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=256&h=256&q=80',
-                    alt:'user-photo'
-                },
-            ]
-        },
 
         whitepizzas() {
             return [
@@ -195,13 +169,7 @@ export default {
                     icon: "./img/newrounded.png",
                     alt:'Pizza icon'
                 },
-                {
-                    name: 'Genovese',
-                    description: this.$t('whitepizzas.Genovese'),
-                    price:'',
-                    icon: "./img/newrounded.png",
-                    alt:'Pizza icon'
-                },
+
             ]
         },
 
@@ -304,31 +272,12 @@ export default {
 <template>
   <!-- Content section start-->
     <div class="bg-neutral-900 py-24 sm:py-32">
-        <div class="mx-auto max-w-7xl px-6 lg:px-8">
-            <div class="mx-auto max-w-2xl sm:text-center">
-                <h2 class="text-lg font-semibold leading-8 tracking-tight text-red-500 before-title uppercase">{{ $t("short.over") }}</h2>
-                <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl section-title">{{ $t("short.title") }}</p>
-                <p class="mt-6 text-lg leading-8 text-neutral-300 section-title-desc">{{ $t("short.subtitle") }}</p>
-            </div>
-        </div>
-        <div class="relative overflow-hidden pt-16">
-            <div class="mx-auto px-0">
-                <div class="relative" aria-hidden="true">
-                    <div class="absolute -inset-x-20 top-0 bg-gradient-to-b from-neutral-900 pt-[12%]" />
-                </div>
-                <img src="../assets/img/pizza-burratina.png" alt="App screenshot" class="mb-[-16%] rounded-xl shadow-2xl h-80 w-full sm:h-auto sm:w-full object-cover" />
-                <div class="relative" aria-hidden="true">
-                    <div class="absolute -inset-x-20 bottom-0 bg-gradient-to-t from-neutral-900 pt-[7%]" />
-                </div>
-            </div>
-        </div>
 
         <!-- red pizza -->
         <div class="mx-auto max-w-7xl px-6 lg:px-8 mt-16">
             <div class="mx-auto max-w-2xl sm:text-center">
-                <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl section-title" id="pizze-red">{{ $t("redpizzas.title") }}</p>
-                <h3 class="text-lg font-semibold leading-8 tracking-tight text-red-500 before-title uppercase">( classic 33cm pizza )</h3>
-                <p class="mt-6 text-lg leading-8 text-neutral-300 section-title-desc">{{ $t("redpizzas.subtitle") }}</p>
+                <p class="text-3xl font-bold tracking-tight text-white sm:text-4xl section-title" id="pizze-red">{{ $t("redpizzas.title") }}</p>
+                <h3 class="mt-6 text-lg font-semibold leading-8 tracking-tight text-red-500 before-title uppercase">( classic 33cm pizza )</h3>
             </div>
         </div>
         <div class="mx-auto mt-16 max-w-7xl px-6 sm:mt-20 md:mt-24 lg:px-8">
@@ -349,9 +298,8 @@ export default {
         <!-- white pizzas -->
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
             <div class="mx-auto max-w-2xl sm:text-center pt-16">
-                <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl section-title">{{ $t("whitepizzas.title") }}</p>
-                <h3 class="text-lg font-semibold leading-8 tracking-tight text-red-500 before-title uppercase">( classic 33cm pizza )</h3>
-                <p class="mt-6 text-lg leading-8 text-neutral-300 section-title-desc">{{ $t("whitepizzas.subtitle") }}</p>
+                <p class="text-3xl font-bold tracking-tight text-white sm:text-4xl section-title">{{ $t("whitepizzas.title") }}</p>
+                <h3 class="mt-6 text-lg font-semibold leading-8 tracking-tight text-red-500 before-title uppercase">( classic 33cm pizza )</h3>
             </div>
         </div>
         <div class="mx-auto mt-16 max-w-7xl px-6 sm:mt-20 md:mt-24 lg:px-8">
@@ -372,9 +320,8 @@ export default {
         <!-- maxi pizzas & slices -->
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
             <div class="mx-auto max-w-2xl sm:text-center pt-16">
-                <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl section-title">{{ $t("maxipizzas.title") }}</p>
-                <h3 class="text-lg font-semibold leading-8 tracking-tight text-red-500 before-title uppercase">( Maxi 50cm pizza or slice of it )</h3>
-                <p class="mt-6 text-lg leading-8 text-neutral-300 section-title-desc">{{ $t("maxipizzas.subtitle") }}</p>
+                <p class="text-3xl font-bold tracking-tight text-white sm:text-4xl section-title">{{ $t("maxipizzas.title") }}</p>
+                <h3 class="mt-6 text-lg font-semibold leading-8 tracking-tight text-red-500 before-title uppercase">( Maxi 50cm pizza or slice of it )</h3>
             </div>
         </div>
         <div class="mx-auto mt-16 max-w-7xl px-6 sm:mt-20 md:mt-24 lg:px-8">
@@ -395,11 +342,14 @@ export default {
         <!-- paninis -->
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
             <div class="mx-auto max-w-2xl sm:text-center pt-16">
-                <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl section-title">{{ $t("paninis.title") }}</p>
-                <h3 class="text-lg font-semibold leading-8 tracking-tight text-red-500 before-title uppercase">( only for lunch )</h3>
-                <p class="mt-6 text-lg leading-8 text-neutral-300 section-title-desc">{{ $t("paninis.subtitle") }}</p>
+                <p class="text-3xl font-bold tracking-tight text-white sm:text-4xl section-title">{{ $t("paninis.title") }}</p>
+                <h3 class="mt-6 text-lg font-semibold leading-8 tracking-tight text-red-500 before-title uppercase">( only for lunch )</h3>
+                <p class="text-lg leading-8 text-neutral-300 section-title-desc">{{ $t("paninis.subtitle") }}</p>
             </div>
         </div>
+
+        <!--
+
         <div class="mx-auto mt-16 max-w-7xl px-6 sm:mt-20 md:mt-24 lg:px-8">
             <dl class="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-10 text-base leading-7 text-gray-300 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16">
                 <div v-for="feature in paninis" :key="feature.name" class="relative pl-14">
@@ -414,6 +364,7 @@ export default {
             </dl>
         </div>
 
+       -->
 
     </div>
   <!-- Content section end-->

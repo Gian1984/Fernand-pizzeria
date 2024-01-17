@@ -219,13 +219,33 @@ html{scroll-behavior:smooth}
 
 @media only screen and (max-width: 768px) {
     .main-title{
-        font-size: 38px !important;
-        line-height: 40px;
+        font-size: 30px !important;
+        line-height: 32px;
     }
 
     .take-away{
         font-size: 20px!important;
         line-height: 22px;
+    }
+
+    .main-sub-title {
+        font-family: 'Homemade Apple', cursive;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .button-header{
+        font-size: 10px!important;
+        padding: 0px 10px!important;
+    }
+    #sub_contact{
+        font-size: 30px !important;
+        line-height: 32px;
+    }
+
+    .contact-desc{
+        font-size: 0.875rem;
+        line-height: 1.25rem;
     }
 }
 

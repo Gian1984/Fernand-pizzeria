@@ -17,44 +17,26 @@ export default {
         {
           id: 1,
           name: this.$t('contact.address'),
-          href:'https://www.google.be/maps/place/PizzaVino/@50.8199996,4.3833578,17z/data=!3m1!4b1!4m5!3m4!1s0x47c3c518e8b6ab6b:0xfd6daa37c3d4bc26!8m2!3d50.8200407!4d4.3856159',
+          href:'https://maps.app.goo.gl/W6otSYKx9A6BNdhw8',
           description:
-              'Avenue des Saisons 15\n' +
-              '1050 Ixelles',
+              'Pl. Fernand Cocq 13' +
+              ' - 1050 Ixelles',
           icon: MapPinIcon,
         },
         {
           id: 2,
           name: this.$t('contact.contact'),
-          href:'tel:0032494693028',
+          href:'tel:0032499646269',
           description:
-              'Tel: 0494 69 30 28',
+              'Tel: 0499 64 62 69',
           icon: PhoneArrowUpRightIcon,
-        },
-        {
-          id: 3,
-          name: 'Facebook',
-          description:
-              ' Pizza Vino Facebook ',
-          href: 'https://www.facebook.com/pizzavinobxl',
-          icon: defineComponent({
-            render: () =>
-                h('svg', { fill: 'currentColor', viewBox: '0 0 24 24' }, [
-                  h('path', {
-                    'fill-rule': 'evenodd',
-                    d:
-                        'M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z',
-                    'clip-rule': 'evenodd',
-                  }),
-                ]),
-          }),
         },
         {
           id: 3,
           name: 'Instagram',
           description:
-              ' Pizza Vino Instagram ',
-          href: 'https://www.instagram.com/pizzavinobxl/',
+              "L'Artigiano della farina Instagram",
+          href: 'https://www.instagram.com/artigiano_della_farina/',
           icon: defineComponent({
             render: () =>
                 h('svg', { fill: 'currentColor', viewBox: '0 0 24 24' }, [
@@ -108,9 +90,8 @@ export default {
           <div class="hidden sm:ml-6 sm:block">
             <div class="flex space-x-4">
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-              <a href="#pizze-red" class="rounded-md bg-neutral-900 px-3 py-2 text-sm font-medium text-white nav-item">{{ $t("nav.pizzas") }}</a>
-              <a href="#vini" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white nav-item" >{{ $t("nav.wines") }}</a>
-              <a href="#contact" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white nav-item">{{ $t("nav.contact") }}</a>
+              <router-link to="/" class="rounded-md bg-neutral-900 px-3 py-2 text-sm font-medium text-white nav-item">{{ $t("nav.home") }}</router-link>
+              <router-link to="/menu" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white nav-item" >{{ $t("nav.menu") }}</router-link>
             </div>
           </div>
         </div>
@@ -184,101 +165,111 @@ export default {
   <router-view/>
 
   <footer class="bg-neutral-900">
-    <div class="py-12 sm:py-44 overflow-hidden mb-10" id="contact-me">
+    <div class="py-8 sm:py-8 overflow-hidden mb-10" id="contact-me">
       <div class="relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-7xl">
-        <div class="relative mt-10 lg:mt-10 lg:grid lg:grid-cols-2 pb-1 lg:gap-8 lg:items-center">
+        <div class="relative lg:grid lg:grid-cols-2 pb-1 lg:gap-8 lg:items-center">
 
 
           <div class="relative" id="contact">
-            <h3 class="text-4xl font-extrabold text-white tracking-tight sm:text-3xl section-title" id="sub_contact" lang="en">
-              {{ $t("contact.title") }}
-            </h3>
-            <p class="text-lg text-white mt-2 contact-desc">
-              {{ $t("contact.desc") }}
-            </p>
-            <dl class="mt-14 space-y-3">
-              <div v-for="item in transferFeatures" :key="item.id" class="relative">
-                <dt>
-                  <a :href="item.href" class="hover:text-gray-300">
-                    <div class="absolute flex items-center justify-center h-12 w-12 rounded-md border-2 border-red-700 text-white hover:bg-red-900">
-                      <component :is="item.icon" class="h-6 w-6" aria-hidden="true" />
-                    </div>
-                    <p class="ml-16 text-lg leading-6 font-medium text-white font-contact-title">{{ item.name }}</p>
-                  </a>
-                </dt>
-                <dd class="ml-16 text-gray-300 text-sm font-contact-desc">
-                  {{ item.description }}
-                </dd>
-              </div>
-            </dl>
-          </div>
+              <!--
+             <h3 class="text-4xl font-extrabold text-white tracking-tight sm:text-3xl section-title" id="sub_contact" lang="en">
+               {{ $t("contact.title") }}
+             </h3>
+             <p class="text-lg text-white mt-2 contact-desc">
+               {{ $t("contact.desc") }}
+             </p>
+               !-->
+             <dl class="mt-14 space-y-3">
+               <div v-for="item in transferFeatures" :key="item.id" class="relative">
+                 <dt>
+                   <a :href="item.href" class="hover:text-gray-300">
+                     <div class="absolute flex items-center justify-center h-12 w-12 rounded-md border-2 border-red-700 text-white hover:bg-red-900">
+                       <component :is="item.icon" class="h-6 w-6" aria-hidden="true" />
+                     </div>
+                     <p class="ml-16 text-lg leading-6 font-medium text-white font-contact-title">{{ item.name }}</p>
+                   </a>
+                 </dt>
+                 <dd class="ml-16 text-gray-300 text-sm font-contact-desc">
+                   {{ item.description }}
+                 </dd>
+               </div>
+             </dl>
+           </div>
 
 
-          <div class="mt-10 -mx-4 relative lg:mt-0 gap-8" aria-hidden="true">
-            <div class="relative mx-5">
-              <h3 class="text-4xl font-extrabold text-white tracking-tight sm:text-3xl section-title" id="sub_opening" lang="en">
-                {{ $t("opening.title") }}
-              </h3>
-              <div class="mt-10 border-t border-gray-200">
-                <dl class="sm:divide-y sm:divide-gray-200">
-                  <div class="py-2 sm:py-3 sm:grid sm:grid-cols-3 sm:gap-4">
-                    <dt class="text-sm font-medium text-gray-300 font-day uppercase">
-                      {{ $t("opening.mon") }}
-                    </dt>
-                    <dd class="mt-1 text-sm text-white sm:mt-0 sm:col-span-2 font-time">
-                      {{ $t("opening.close") }}
-                    </dd>
-                  </div>
-                  <div class="py-2 sm:py-3 sm:grid sm:grid-cols-3 sm:gap-4">
-                    <dt class="text-sm font-medium text-gray-300 font-day uppercase">
-                      {{ $t("opening.tue") }}
-                    </dt>
-                    <dd class="mt-1 text-sm text-white sm:mt-0 sm:col-span-2 font-time">
-                      12:00 – 2:30 pm, 6:00 – 10:30 pm
-                    </dd>
-                  </div>
-                  <div class="py-2 sm:py-3 sm:grid sm:grid-cols-3 sm:gap-4">
-                    <dt class="text-sm font-medium text-gray-300 font-day uppercase">
-                      {{ $t("opening.wed") }}
-                    </dt>
-                    <dd class="mt-1 text-sm text-white sm:mt-0 sm:col-span-2 font-time">
-                      12:00 – 2:30 pm, 6:00 – 10:30 pm
-                    </dd>
-                  </div>
-                  <div class="py-2 sm:py-3 sm:grid sm:grid-cols-3 sm:gap-4">
-                    <dt class="text-sm font-medium text-gray-300 font-day uppercase">
-                      {{ $t("opening.thu") }}
-                    </dt>
-                    <dd class="mt-1 text-sm text-white sm:mt-0 sm:col-span-2 font-time">
-                      12:00 – 2:30 pm, 6:00 – 10:30 pm
-                    </dd>
-                  </div>
-                  <div class="py-2 sm:py-3 sm:grid sm:grid-cols-3 sm:gap-4">
-                    <dt class="text-sm font-medium text-gray-300 font-day uppercase">
-                      {{ $t("opening.fri") }}
-                    </dt>
-                    <dd class="mt-1 text-sm text-white sm:mt-0 sm:col-span-2 font-time">
-                      12:00 – 2:30 pm, 6:00 – 10:30 pm
-                    </dd>
-                  </div>
-                  <div class="py-2 sm:py-3 sm:grid sm:grid-cols-3 sm:gap-4">
-                    <dt class="text-sm font-medium text-gray-300 font-day uppercase">
-                      {{ $t("opening.sat") }}
-                    </dt>
-                    <dd class="mt-1 text-sm text-white sm:mt-0 sm:col-span-2 font-time">
-                      12:00 – 2:30 pm, 6:00 – 10:30 pm
-                    </dd>
-                  </div>
-                  <div class="py-2 sm:py-3 sm:grid sm:grid-cols-3 sm:gap-4">
-                    <dt class="text-sm font-medium text-gray-300 font-day uppercase">
-                      {{ $t("opening.sun") }}
-                    </dt>
-                    <dd class="mt-1 text-sm text-white sm:mt-0 sm:col-span-2 font-time">
-                      12:00 – 2:30 pm, 6:00 – 10:30 pm
-                    </dd>
-                  </div>
-                </dl>
-              </div>
+           <div class="mt-10 -mx-4 relative lg:mt-0 gap-8" aria-hidden="true">
+             <div class="relative mx-5">
+
+                 <h3 class="text-4xl font-extrabold text-white tracking-tight sm:text-3xl section-title" id="sub_contact" lang="en">
+                     {{ $t("contact.title") }}
+                 </h3>
+                 <p class="text-lg text-white mt-2 contact-desc">
+                     {{ $t("contact.desc") }}
+                 </p>
+
+               <!-- <h3 class="text-4xl font-extrabold text-white tracking-tight sm:text-3xl section-title" id="sub_opening" lang="en">
+                 {{ $t("opening.title") }}
+               </h3>
+               <div class="mt-10 border-t border-gray-200">
+                 <dl class="sm:divide-y sm:divide-gray-200">
+                   <div class="py-2 sm:py-3 sm:grid sm:grid-cols-3 sm:gap-4">
+                     <dt class="text-sm font-medium text-gray-300 font-day uppercase">
+                       {{ $t("opening.mon") }}
+                     </dt>
+                     <dd class="mt-1 text-sm text-white sm:mt-0 sm:col-span-2 font-time">
+                       {{ $t("opening.close") }}
+                     </dd>
+                   </div>
+                   <div class="py-2 sm:py-3 sm:grid sm:grid-cols-3 sm:gap-4">
+                     <dt class="text-sm font-medium text-gray-300 font-day uppercase">
+                       {{ $t("opening.tue") }}
+                     </dt>
+                     <dd class="mt-1 text-sm text-white sm:mt-0 sm:col-span-2 font-time">
+                       12:00 – 2:30 pm, 6:00 – 10:30 pm
+                     </dd>
+                   </div>
+                   <div class="py-2 sm:py-3 sm:grid sm:grid-cols-3 sm:gap-4">
+                     <dt class="text-sm font-medium text-gray-300 font-day uppercase">
+                       {{ $t("opening.wed") }}
+                     </dt>
+                     <dd class="mt-1 text-sm text-white sm:mt-0 sm:col-span-2 font-time">
+                       12:00 – 2:30 pm, 6:00 – 10:30 pm
+                     </dd>
+                   </div>
+                   <div class="py-2 sm:py-3 sm:grid sm:grid-cols-3 sm:gap-4">
+                     <dt class="text-sm font-medium text-gray-300 font-day uppercase">
+                       {{ $t("opening.thu") }}
+                     </dt>
+                     <dd class="mt-1 text-sm text-white sm:mt-0 sm:col-span-2 font-time">
+                       12:00 – 2:30 pm, 6:00 – 10:30 pm
+                     </dd>
+                   </div>
+                   <div class="py-2 sm:py-3 sm:grid sm:grid-cols-3 sm:gap-4">
+                     <dt class="text-sm font-medium text-gray-300 font-day uppercase">
+                       {{ $t("opening.fri") }}
+                     </dt>
+                     <dd class="mt-1 text-sm text-white sm:mt-0 sm:col-span-2 font-time">
+                       12:00 – 2:30 pm, 6:00 – 10:30 pm
+                     </dd>
+                   </div>
+                   <div class="py-2 sm:py-3 sm:grid sm:grid-cols-3 sm:gap-4">
+                     <dt class="text-sm font-medium text-gray-300 font-day uppercase">
+                       {{ $t("opening.sat") }}
+                     </dt>
+                     <dd class="mt-1 text-sm text-white sm:mt-0 sm:col-span-2 font-time">
+                       12:00 – 2:30 pm, 6:00 – 10:30 pm
+                     </dd>
+                   </div>
+                   <div class="py-2 sm:py-3 sm:grid sm:grid-cols-3 sm:gap-4">
+                     <dt class="text-sm font-medium text-gray-300 font-day uppercase">
+                       {{ $t("opening.sun") }}
+                     </dt>
+                     <dd class="mt-1 text-sm text-white sm:mt-0 sm:col-span-2 font-time">
+                       12:00 – 2:30 pm, 6:00 – 10:30 pm
+                     </dd>
+                   </div>
+                 </dl>
+               </div> !-->
             </div>
           </div>
         </div>
@@ -292,7 +283,7 @@ export default {
       <div class="mx-auto pt-18">
         <div class="bg-gray-50 pb-5" id="food_delivery_pannel">
           <div class="max-w-xl mx-auto lg:max-w-none">
-            <div class="mt-5 max-w-sm mx-auto grid grid-cols-1 gap-y-5 gap-x-8 sm:max-w-none xl:grid-cols-3">
+            <div class="mt-5 max-w-sm mx-auto grid grid-cols-1 gap-y-5 gap-x-8 sm:max-w-none xl:grid-cols-2">
               <div v-for="delivery in fooddelivery" :key="delivery.name" class="text-center sm:flex sm:text-left lg:block lg:text-center delivey_pannel">
                 <div class="sm:flex-shrink-0">
                   <div class="flow-root">
@@ -315,7 +306,7 @@ export default {
 
     <div class="mx-auto max-w-md px-4 overflow-hidden sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8 py-6">
       <p class="text-center text-base hover:text-gray-400 text-white footer-copyright">
-        &copy; 2022 Pizza Vino - Mic.pi.da s.r.l. - Avenue des Saisons 15, 1050 Ixelles - TVA: BE 0727796146 Phone 0494693028.
+        &copy; 2022 Pizza Vino - Mic.pi.da s.r.l. - Pl. Fernand Cocq 13, 1050 Ixelles - TVA: BE 0727796146 Phone 0499 64 62 69.
       </p>
       <a href="https://www.gianlucatiengo.com/">
         <p class="text-center text-base hover:text-gray-400 text-white underline footer-copyright">
@@ -366,13 +357,7 @@ const fooddelivery = [
     link: 'https://www.ubereats.com/be/store/pizzavino/FMBh-fUqQLaX1ctZnOTC3w',
     imageSrc: './img/Uber-Eats-Logo.webp',
     description: "Crave it? Get it. Search for a favourite restaurant, cuisine or dish.",
-  },
-  {
-    name: 'Order now',
-    link: 'https://www.proxideal.eu/',
-    imageSrc: './img/Proxideal_Logo-01.webp',
-    description: "Vos plats préférés livrés au prix juste.",
-  },
+  }
 ]
 
 
