@@ -17,6 +17,8 @@ html{scroll-behavior:smooth}
 
 .main-sub-title{
     font-family: 'Homemade Apple', cursive;
+    font-size: 25px;
+    line-height: 46px;
 }
 
 .take-away{
@@ -215,6 +217,17 @@ html{scroll-behavior:smooth}
     text-rendering: optimizeLegibility;
 }
 
+@media only screen and (max-width: 768px) {
+    .main-title{
+        font-size: 38px !important;
+        line-height: 40px;
+    }
+
+    .take-away{
+        font-size: 20px!important;
+        line-height: 22px;
+    }
+}
 
 @media only screen and (max-width: 736px) {
 

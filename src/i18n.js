@@ -20,14 +20,9 @@ function loadLocaleMessages() {
 
       header: {
         title: "L'Artigiano",
-        subtitle:"72 heures à lever, un moment pour tomber amoureux !",
-        download:"Télécharger carte",
+        subtitle:"Work in Progress : Nous nous concentrons sur ce que nous faisons le mieux, en nous consacrant avec passion à la création de pains et de pizzas.",
+        download:"Carte",
         call:"Appel",
-      },
-
-      cta:{
-        description:"Au cœur d'Ixelles, notre pizzeria offre une expérience italienne authentique avec une pâte levée pendant 72 heures, garantissant une légèreté et une digestibilité uniques. Chaque pizza est une œuvre d'art, créée avec des produits de la plus haute qualité et travaillée avec amour et dévouement pour apporter un goût d'Italie dans l'assiette de chaque client. Venez découvrir le vrai goût de la tradition italienne !",
-        button:"Pizza Vino",
       },
 
       short:{
@@ -152,14 +147,9 @@ function loadLocaleMessages() {
 
       header: {
         title: "L'Artigiano",
-        subtitle:"72 hours of leavening, a moment to fall in love!",
-        download:"Download menu",
+        subtitle:"Work in Progress : We are focused on doing what we do best, dedicating ourselves with passion to creating bread and pizza.",
+        download:"Menu",
         call:"Call",
-      },
-
-      cta:{
-        description:"In the heart of Ixelles, our pizzeria offers an authentic Italian experience with dough leavened for 72 hours, guaranteeing unique lightness and digestibility. Each pizza is a work of art, created with the highest quality products and processed with love and dedication to bring a taste of Italy to each customer's plate. Come and discover the true taste of Italian tradition!",
-        button:"Pizza Vino",
       },
 
       short:{
@@ -278,15 +268,11 @@ function loadLocaleMessages() {
 
       header: {
         title: "L'Artigiano",
-        subtitle:"72 ore di lievitazione, un attimo per innamorarsi!",
-        download:"Scarica il menu",
+        subtitle:"Work in Progress : Siamo concentrati sul fare ciò che ci riesce meglio, dedicandoci con passione alla creazione di pane e pizza",
+        download:"Menu",
         call:"Chiama",
       },
 
-      cta:{
-        description:"Nel cuore di Ixelles, la nostra pizzeria offre un'autentica esperienza italiana con un impasto lievitato per 72 ore, garantendo una leggerezza e una digeribilità uniche. Ogni pizza è un'opera d'arte, creata con prodotti di altissima qualità viene lavorata con amore e dedizione, per portare un assaggio dell'Italia nel piatto di ogni cliente. Venite a scoprire il vero sapore della tradizione italiana!",
-        button:"Pizza Vino",
-      },
 
       short:{
         over:"Savoir faire",
