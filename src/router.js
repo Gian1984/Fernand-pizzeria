@@ -1,6 +1,7 @@
 
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from "./views/Home.vue"
+import Menu from "./views/Menu.vue"
 
 
 const router = createRouter({
@@ -24,8 +25,24 @@ const router = createRouter({
                 ]
             }
         },
-
-
+        {
+            path: '/menu',
+            name: 'menu',
+            component: Menu,
+            meta: {
+                title: 'Pizza Vino - Menu Page',
+                metaTags: [
+                    {
+                        name: 'description',
+                        content: 'Learning web development is a journey and for this, you would need a road map. One of the biggest challenges faced by new developers when learning web development is not knowing where to start, what to learn, or the path to achieve their goals.'
+                    },
+                    {
+                        property: 'og:description',
+                        content: 'Learning web development is a journey and for this, you would need a road map. One of the biggest challenges faced by new developers when learning web development is not knowing where to start, what to learn, or the path to achieve their goals.'
+                    }
+                ]
+            }
+        },
 
     ],
 })
