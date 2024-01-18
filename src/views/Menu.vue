@@ -271,11 +271,11 @@ export default {
 
 <template>
   <!-- Content section start-->
-    <div class="bg-neutral-900 py-24 sm:py-32">
+    <div class="bg-neutral-900 py-6 sm:py-32">
 
         <!-- red pizza -->
         <div class="mx-auto max-w-7xl px-6 lg:px-8 mt-16">
-            <div class="mx-auto max-w-2xl sm:text-center">
+            <div class="mx-auto max-w-2xl text-center">
                 <p class="text-3xl font-bold tracking-tight text-white sm:text-4xl section-title" id="pizze-red">{{ $t("redpizzas.title") }}</p>
                 <h3 class="mt-6 text-lg font-semibold leading-8 tracking-tight text-red-500 before-title uppercase">( classic 33cm pizza )</h3>
             </div>
@@ -297,7 +297,7 @@ export default {
 
         <!-- white pizzas -->
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
-            <div class="mx-auto max-w-2xl sm:text-center pt-16">
+            <div class="mx-auto max-w-2xl text-center pt-16">
                 <p class="text-3xl font-bold tracking-tight text-white sm:text-4xl section-title">{{ $t("whitepizzas.title") }}</p>
                 <h3 class="mt-6 text-lg font-semibold leading-8 tracking-tight text-red-500 before-title uppercase">( classic 33cm pizza )</h3>
             </div>
@@ -318,8 +318,8 @@ export default {
 
 
         <!-- maxi pizzas & slices -->
-        <div class="mx-auto max-w-7xl px-6 lg:px-8">
-            <div class="mx-auto max-w-2xl sm:text-center pt-16">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8 mb-12">
+            <div class="mx-auto max-w-2xl text-center pt-16">
                 <p class="text-3xl font-bold tracking-tight text-white sm:text-4xl section-title">{{ $t("maxipizzas.title") }}</p>
                 <h3 class="mt-6 text-lg font-semibold leading-8 tracking-tight text-red-500 before-title uppercase">( Maxi 50cm pizza or slice of it )</h3>
             </div>
@@ -329,7 +329,7 @@ export default {
                 <div v-for="feature in maxipizzas" :key="feature.name" class="relative pl-14">
                     <dt class="font-semibold text-white pizza-name">
                         <img :src="feature.icon" class="absolute top-1 left-1 h-8 w-8 sm:h-12 sm:w-12 text-red-500" :alt="feature.alt" aria-hidden="true" />
-                        <img :src="feature.iconSlice" class="absolute top-16 left-1 h-8 w-8 sm:h-12 sm:w-12 text-red-500" :alt="feature.alt" aria-hidden="true" />
+                        <img :src="feature.iconSlice" class="absolute origin-top-right top-10 sm:top-16 left-1 h-8 w-8 sm:h-12 sm:w-12 text-red-500" :alt="feature.alt" aria-hidden="true" />
                         {{ feature.name }}
                     </dt>
                     {{ ' ' }}
@@ -341,7 +341,7 @@ export default {
 
         <!-- paninis -->
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
-            <div class="mx-auto max-w-2xl sm:text-center pt-16">
+            <div class="mx-auto max-w-2xl text-center pt-16">
                 <p class="text-3xl font-bold tracking-tight text-white sm:text-4xl section-title">{{ $t("paninis.title") }}</p>
                 <h3 class="mt-6 text-lg font-semibold leading-8 tracking-tight text-red-500 before-title uppercase">( only for lunch )</h3>
                 <p class="text-lg leading-8 text-neutral-300 section-title-desc">{{ $t("paninis.subtitle") }}</p>

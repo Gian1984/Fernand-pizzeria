@@ -12,6 +12,7 @@ export default {
   },
 
   computed: {
+
     transferFeatures() {
       return [
         {
@@ -134,11 +135,10 @@ export default {
     <DisclosurePanel class="sm:hidden">
       <div class="space-y-1 px-2 pt-2 pb-3">
         <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-        <DisclosureButton as="a" href="#pizze-red" class="block rounded-md bg-neutral-800 px-3 py-2 text-base font-medium text-white nav-item hover:bg-gray-700">{{ $t("nav.pizzas") }}</DisclosureButton>
-        <DisclosureButton as="a" href="#vini" class="block rounded-md bg-neutral-800 px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white nav-item">{{ $t("nav.wines") }}</DisclosureButton>
-        <DisclosureButton as="a" href="#contact" class="block rounded-md bg-neutral-800 px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white nav-item">{{ $t("nav.contact") }}</DisclosureButton>
+        <DisclosureButton  @click="()=>$router.push('/')" class="w-full text-left block rounded-md bg-neutral-800 px-3 py-2 text-base font-medium text-white nav-item hover:bg-gray-700">{{ $t("nav.home") }}</DisclosureButton>
+        <DisclosureButton @click="()=>$router.push('menu')" class="w-full text-left block rounded-md bg-neutral-800 px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white nav-item">{{ $t("nav.menu") }}</DisclosureButton>
       </div>
-      <div class="border-t border-gray-700 pt-4 pb-3">
+      <div class="pt-4 pb-3">
         <div class="flex items-center mx-2.5 bg-neutral-800 hover:bg-gray-700 py-1.5 rounded-md">
           <div class="flex-shrink-0 ml-2">
             <img v-if="homePage()" class="h-10 w-10 rounded-full" id="flag" :src="flag" alt="pizza-vino-language-flag" />
@@ -169,32 +169,6 @@ export default {
       <div class="relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-7xl">
         <div class="relative lg:grid lg:grid-cols-2 pb-1 lg:gap-8 lg:items-center">
 
-
-          <div class="relative" id="contact">
-              <!--
-             <h3 class="text-4xl font-extrabold text-white tracking-tight sm:text-3xl section-title" id="sub_contact" lang="en">
-               {{ $t("contact.title") }}
-             </h3>
-             <p class="text-lg text-white mt-2 contact-desc">
-               {{ $t("contact.desc") }}
-             </p>
-               !-->
-             <dl class="mt-14 space-y-3">
-               <div v-for="item in transferFeatures" :key="item.id" class="relative">
-                 <dt>
-                   <a :href="item.href" class="hover:text-gray-300">
-                     <div class="absolute flex items-center justify-center h-12 w-12 rounded-md border-2 border-red-700 text-white hover:bg-red-900">
-                       <component :is="item.icon" class="h-6 w-6" aria-hidden="true" />
-                     </div>
-                     <p class="ml-16 text-lg leading-6 font-medium text-white font-contact-title">{{ item.name }}</p>
-                   </a>
-                 </dt>
-                 <dd class="ml-16 text-gray-300 text-sm font-contact-desc">
-                   {{ item.description }}
-                 </dd>
-               </div>
-             </dl>
-           </div>
 
 
            <div class="mt-10 -mx-4 relative lg:mt-0 gap-8" aria-hidden="true">
@@ -272,6 +246,35 @@ export default {
                </div> !-->
             </div>
           </div>
+
+
+            <div class="relative" id="contact">
+                <!--
+               <h3 class="text-4xl font-extrabold text-white tracking-tight sm:text-3xl section-title" id="sub_contact" lang="en">
+                 {{ $t("contact.title") }}
+               </h3>
+               <p class="text-lg text-white mt-2 contact-desc">
+                 {{ $t("contact.desc") }}
+               </p>
+                 !-->
+                <dl class="mt-14 space-y-3">
+                    <div v-for="item in transferFeatures" :key="item.id" class="relative">
+                        <dt>
+                            <a :href="item.href" class="hover:text-gray-300">
+                                <div class="absolute flex items-center justify-center h-12 w-12 rounded-md border-2 border-red-700 text-white hover:bg-red-900">
+                                    <component :is="item.icon" class="h-6 w-6" aria-hidden="true" />
+                                </div>
+                                <p class="ml-16 text-lg leading-6 font-medium text-white font-contact-title">{{ item.name }}</p>
+                            </a>
+                        </dt>
+                        <dd class="ml-16 text-gray-300 text-sm font-contact-desc">
+                            {{ item.description }}
+                        </dd>
+                    </div>
+                </dl>
+            </div>
+
+
         </div>
       </div>
     </div>
@@ -284,7 +287,7 @@ export default {
         <div class="bg-gray-50 pb-5" id="food_delivery_pannel">
           <div class="max-w-xl mx-auto lg:max-w-none">
             <div class="mt-5 max-w-sm mx-auto grid grid-cols-1 gap-y-5 gap-x-8 sm:max-w-none xl:grid-cols-2">
-              <div v-for="delivery in fooddelivery" :key="delivery.name" class="text-center sm:flex sm:text-left lg:block lg:text-center delivey_pannel">
+              <div v-for="delivery in fooddelivery" :key="delivery.name" class="text-center md:flex md:text-left lg:block lg:text-center delivey_pannel">
                 <div class="sm:flex-shrink-0">
                   <div class="flow-root">
                     <img class="h-16 mx-auto delivery_img" :src="delivery.imageSrc" :alt="delivery.description" />

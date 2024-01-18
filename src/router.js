@@ -12,15 +12,28 @@ const router = createRouter({
             name: 'home',
             component: Home,
             meta: {
-                title: 'Pizza Vino - Home Page',
+                title: "L'Artigiano della Farina - Accueil",
                 metaTags: [
+
                     {
                         name: 'description',
-                        content: 'Learning web development is a journey and for this, you would need a road map. One of the biggest challenges faced by new developers when learning web development is not knowing where to start, what to learn, or the path to achieve their goals.'
+                        content: "Célébrant l'art de la boulangerie, L'Artigiano della Farina propose une expérience culinaire extraordinaire, transformant avec amour la farine en pizzas et sandwiches sublimes, un véritable voyage de saveurs authentiques."
+                    },
+                    {
+                        name: 'og:title',
+                        content: "L'Artigiano della Farina - Accueil"
+                    },
+                    {
+                        name: 'og:url',
+                        content: "https://www.artigianodellafarina.be"
+                    },
+                    {
+                        name: 'og:type',
+                        content: "website/homepage"
                     },
                     {
                         property: 'og:description',
-                        content: 'Learning web development is a journey and for this, you would need a road map. One of the biggest challenges faced by new developers when learning web development is not knowing where to start, what to learn, or the path to achieve their goals.'
+                        content: "Célébrant l'art de la boulangerie, L'Artigiano della Farina propose une expérience culinaire extraordinaire, transformant avec amour la farine en pizzas et sandwiches sublimes, un véritable voyage de saveurs authentiques."
                     }
                 ]
             }
@@ -30,15 +43,27 @@ const router = createRouter({
             name: 'menu',
             component: Menu,
             meta: {
-                title: 'Pizza Vino - Menu Page',
+                title: "L'Artigiano della Farina - La carte",
                 metaTags: [
                     {
                         name: 'description',
-                        content: 'Learning web development is a journey and for this, you would need a road map. One of the biggest challenges faced by new developers when learning web development is not knowing where to start, what to learn, or the path to achieve their goals.'
+                        content: "Célébrant l'art de la boulangerie, L'Artigiano della Farina propose une expérience culinaire extraordinaire, transformant avec amour la farine en pizzas et sandwiches sublimes, un véritable voyage de saveurs authentiques."
+                    },
+                    {
+                        name: 'og:title',
+                        content: "L'Artigiano della Farina - La carte"
+                    },
+                    {
+                        name: 'og:url',
+                        content: "https://www.artigianodellafarina.be/menu"
+                    },
+                    {
+                        name: 'og:type',
+                        content: "website/menu"
                     },
                     {
                         property: 'og:description',
-                        content: 'Learning web development is a journey and for this, you would need a road map. One of the biggest challenges faced by new developers when learning web development is not knowing where to start, what to learn, or the path to achieve their goals.'
+                        content: "Célébrant l'art de la boulangerie, L'Artigiano della Farina propose une expérience culinaire extraordinaire, transformant avec amour la farine en pizzas et sandwiches sublimes, un véritable voyage de saveurs authentiques."
                     }
                 ]
             }

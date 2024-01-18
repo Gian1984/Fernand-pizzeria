@@ -247,6 +247,25 @@ html{scroll-behavior:smooth}
         font-size: 0.875rem;
         line-height: 1.25rem;
     }
+
+    #logo-artigiano{
+        max-width: 280px;
+        text-align: center;
+        margin: auto;
+    }
+
+    .before-title {
+        font-size: 14px!important;
+    }
+
+    #headlessui-disclosure-panel-3{
+        background-color: #000000!important;
+    }
+
+    .section-title-desc{
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+    }
 }
 
 @media only screen and (max-width: 736px) {
