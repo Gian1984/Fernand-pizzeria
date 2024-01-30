@@ -336,7 +336,7 @@ export default {
                     </dt>
                     {{ ' ' }}
                     <dd class="inline pizza-desc">{{ feature.description }}</dd>
-                    <dd class="pizza-price"> {{ feature.price }} †</dd>
+                    <dd class="pizza-price"> {{ feature.price }} €</dd>
                 </div>
             </dl>
         </div>
