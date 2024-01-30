@@ -236,77 +236,77 @@ export default {
                     name: 'Finocchiona',
                     description: this.$t('paninis.Finocchiona'),
                     price:'10,00',
-                    icon: "./img/sanswitch.png",
+                    icon: "./img/paninoLogo.png",
                     alt:'Paninis Finocchiona icon'
                 },
                 {
                     name: 'Speck',
                     description: this.$t('paninis.Speck'),
                     price:'10,00',
-                    icon: "./img/sanswitch.png",
+                    icon: "./img/paninoLogo.png",
                     alt:'Paninis Speck icon'
                 },
                 {
                     name: 'Piccante',
                     description: this.$t('paninis.Piccante'),
                     price:'10,00',
-                    icon: "./img/sanswitch.png",
+                    icon: "./img/paninoLogo.png",
                     alt:'Paninis Piccante icon'
                 },
                 {
                     name: 'Tricolore',
                     description: this.$t('paninis.Tricolore'),
                     price:'11,00',
-                    icon: "./img/sanswitch.png",
+                    icon: "./img/paninoLogo.png",
                     alt:'Paninis Tricolore icon'
                 },
                 {
                     name: 'Vegetariano',
                     description: this.$t('paninis.Vegetariano'),
                     price:'9,00',
-                    icon: "./img/sanswitch.png",
+                    icon: "./img/paninoLogo.png",
                     alt:'Paninis Vegetariano icon'
                 },
                 {
                     name: 'Bresaola e Tartufo',
                     description: this.$t('paninis.BresaolaTartufo'),
                     price:'12,00',
-                    icon: "./img/sanswitch.png",
+                    icon: "./img/paninoLogo.png",
                     alt:'Paninis icon'
                 },
                 {
                   name: 'Mortadella',
                   description: this.$t('paninis.Mortadella'),
                   price:'10,00',
-                  icon: "./img/sanswitch.png",
+                  icon: "./img/paninoLogo.png",
                   alt:'Paninis Mortadella icon'
                 },
                 {
                   name: 'Caprese',
                   description: this.$t('paninis.Caprese'),
                   price:'9,00',
-                  icon: "./img/sanswitch.png",
+                  icon: "./img/paninoLogo.png",
                   alt:'Paninis Caprese icon'
                 },
                 {
                   name: 'Cotto',
                   description: this.$t('paninis.Cotto'),
                   price:'10,00',
-                  icon: "./img/sanswitch.png",
+                  icon: "./img/paninoLogo.png",
                   alt:'Paninis Cotto icon'
                 },
                 {
                   name: 'Dolce',
                   description: this.$t('paninis.Dolce'),
                   price:'10,00',
-                  icon: "./img/sanswitch.png",
+                  icon: "./img/paninoLogo.png",
                   alt:'Paninis Dolce icon'
                 },
                 {
                   name: 'Vegan',
                   description: this.$t('paninis.Vegan'),
                   price:'10,00',
-                  icon: "./img/sanswitch.png",
+                  icon: "./img/paninoLogo.png",
                   alt:'Paninis Vegan icon'
                 },
             ]
@@ -400,7 +400,7 @@ export default {
             <dl class="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-10 text-base leading-7 text-gray-300 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16">
                 <div v-for="feature in paninis" :key="feature.name" class="relative pl-14">
                     <dt class="font-semibold text-white pizza-name">
-                        <img :src="feature.icon" class="absolute top-1 left-1 h-8 w-8 sm:h-12 sm:w-12 text-red-500" :alt="feature.alt" aria-hidden="true" />
+                        <img :src="feature.icon" class="absolute object-contain top-1 left-1 h-8 w-8 sm:h-12 sm:w-12 text-red-500" :alt="feature.alt" aria-hidden="true" />
                         {{ feature.name }}
                     </dt>
                     {{ ' ' }}
