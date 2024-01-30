@@ -201,8 +201,8 @@ export default {
                     alt:'Pizza icon'
                 },
                 {
-                    name: 'Porchetta funghi',
-                    description: this.$t('maxipizzas.PorchettaFunghi'),
+                    name: 'Prosciutto Funghi',
+                    description: this.$t('maxipizzas.ProsciuttoFunghi'),
                     price:'28,00',
                     priceSlice:'5,00',
                     icon: "./img/newrounded.png",

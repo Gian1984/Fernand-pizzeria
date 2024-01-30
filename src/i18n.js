@@ -59,7 +59,7 @@ function loadLocaleMessages() {
         title:"Maxi & slice",
         Margherita:"Tomate, basilic et mozzarella.",
         Diavola:"Tomate, basilic, mozzarella et salami piquant",
-        PorchettaFunghi:"Tomate, basilic, mozzarella, porchetta d'Ariccia* et champignons. ( Charcuterie à base de porc rôti aux épices préparée traditionnellement sur l'ensemble du territoire la commune d'Ariccia )",
+        ProsciuttoFunghi:"Tomate, basilic, mozzarella, Jambon cuit de haute qualité et champignons.",
         QuattroFormaggi:"Mozzarella, scamorza fumée, Gorgonzola, copeaux de parmesan et basilic.",
         Suggestione:"Découvrez les suggestions du jour !"
       },
@@ -157,7 +157,7 @@ function loadLocaleMessages() {
         title:"Maxi & slice",
         Italiano:"Raw ham, buffalo mozzarella, pine nuts, beef heart tomatoes.",
         Diavola:"Tomato, Basil, Mozzarella and spicy salami",
-        PorchettaFunghi:"Tomato, basil, mozzarella, Porchetta d'Ariccia and mushrooms.",
+        ProsciuttoFunghi:"Tomato, basil, mozzarella, high quality cooked ham and mushrooms.",
         QuattroFormaggi:"Fior di latte, smoked scamorza cheese, Gorgonzola cheese, Parmigiano Reggiano cheese and basil.",
         Suggestione:"Discover the suggestions of the day!",
       },
@@ -248,7 +248,7 @@ function loadLocaleMessages() {
         title:"Maxi & slice",
         Margherita:"Pomodoro, basilico e fior di latte.",
         Diavola:"Pomodoro, basilico, fior di latte e salamino piccante.",
-        PorchettaFunghi:"Pomodoro, basilico, fior di latte, porchetta d'Ariccia e funghi.",
+        ProsciuttoFunghi:"Pomodoro, basilico, fior di latte, prosciutto cotto e funghi.",
         QuattroFormaggi:"Fior di latte, scamorza affumicata, gorgonzola, scaglie di grana e basilico.",
         Suggestione:"Scopri le suggestioni del giorno!"
 
