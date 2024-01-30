@@ -59,7 +59,7 @@ function loadLocaleMessages() {
         title:"Maxi & slice",
         Margherita:"Tomate, basilic et mozzarella.",
         Diavola:"Tomate, basilic, mozzarella et salami piquant",
-        ProsciuttoFunghi:"Tomate, basilic, mozzarella, Jambon cuit de haute qualité et champignons.",
+        ProsciuttoFunghi:"Tomate, basilic, mozzarella, jambon cuit de haute qualité et champignons.",
         QuattroFormaggi:"Mozzarella, scamorza fumée, Gorgonzola, copeaux de parmesan et basilic.",
         Suggestione:"Découvrez les suggestions du jour !"
       },
