@@ -309,14 +309,6 @@ export default {
                   icon: "./img/sanswitch.png",
                   alt:'Paninis Vegan icon'
                 },
-
-                {
-                  name: 'Suggestione',
-                  description: this.$t('paninis.Suggestione'),
-                  price:'',
-                  icon: "./img/sanswitch.png",
-                  alt:'Paninis Caprese icon'
-                },
             ]
         }
     }
