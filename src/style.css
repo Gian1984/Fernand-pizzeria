@@ -21,6 +21,10 @@ html{scroll-behavior:smooth}
     line-height: 46px;
 }
 
+.info-trans-sand{
+    font-family: 'Homemade Apple', cursive;
+}
+
 .take-away{
     font-family: 'Josefin Sans', sans-serif;
     font-size: 40px!important;

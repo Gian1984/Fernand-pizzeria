@@ -298,7 +298,7 @@ export default {
                 {
                   name: 'Dolce',
                   description: this.$t('paninis.Dolce'),
-                  price:'10,00',
+                  price:'7,00',
                   icon: "./img/paninoLogo.png",
                   alt:'Paninis Dolce icon'
                 },
@@ -391,6 +391,7 @@ export default {
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
             <div class="mx-auto max-w-2xl text-center pt-16">
                 <p class="text-3xl font-bold tracking-tight text-white sm:text-4xl section-title">{{ $t("paninis.title") }}</p>
+                <span class="text-white info-trans-sand">{{ $t("paninis.info") }}</span>
                 <h3 class="mt-6 text-lg font-semibold leading-8 tracking-tight text-red-500 before-title uppercase">( only for lunch )</h3>
                 <p class="text-lg leading-8 text-neutral-300 section-title-desc">{{ $t("paninis.subtitle") }}</p>
             </div>
