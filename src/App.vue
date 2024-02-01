@@ -311,7 +311,7 @@ export default {
       <p class="text-center text-base hover:text-gray-400 text-white footer-copyright">
         &copy; 2022 Pizza Vino - Mic.pi.da s.r.l. - Pl. Fernand Cocq 13, 1050 Ixelles - TVA: BE 0727796146 Phone 0499 64 62 69.
       </p>
-      <a href="https://www.gianlucatiengo.com/">
+      <a href="https://gianlucatiengo.com/">
         <p class="text-center text-base hover:text-gray-400 text-white underline footer-copyright">
           Powered by Gianluca Tiengo.
         </p>
