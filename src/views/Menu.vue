@@ -12,98 +12,98 @@ export default {
                 {
                     name: 'Margherita',
                     description: this.$t('redpizzas.Margherita'),
-                    price: '10,00',
+                    price: '11,00',
                     icon: "./img/newrounded.png",
                     alt:'Pizza icon'
                 },
                 {
                     name: 'Regina',
                     description: this.$t('redpizzas.Regina'),
-                    price: '14,00',
+                    price: '15,00',
                     icon: "./img/newrounded.png",
                     alt:'Pizza icon'
                 },
                 {
                     name: 'Principessa',
                     description: this.$t('redpizzas.Principessa'),
-                    price: '12,00',
+                    price: '13,00',
                     icon: "./img/newrounded.png",
                     alt:'Pizza icon'
                 },
                 {
                     name: 'Burrata',
                     description: this.$t('redpizzas.Burrata'),
-                    price: '17,00',
+                    price: '18,00',
                     icon: "./img/newrounded.png",
                     alt:'Pizza icon'
                 },
                 {
                     name: 'Marinara',
                     description: this.$t('redpizzas.Marinara'),
-                    price: '9,00',
+                    price: '10,00',
                     icon: "./img/newrounded.png",
                     alt:'Pizza icon'
                 },
                 {
                     name: 'Rucola Reggiano',
                     description: this.$t('redpizzas.RucolaReggiano'),
-                    price: '13,00',
+                    price: '14,00',
                     icon: "./img/newrounded.png",
                     alt:'Pizza icon'
                 },
                 {
                     name: 'Prosciutto Funghi',
                     description: this.$t('redpizzas.ProsciuttoFunghi'),
-                    price: '15,00',
+                    price: '16,00',
                     icon: "./img/newrounded.png",
                     alt:'Pizza icon'
                 },
                 {
                     name: 'Napoli',
                     description: this.$t('redpizzas.Napoli'),
-                    price: '14,00',
+                    price: '15,00',
                     icon: "./img/newrounded.png",
                     alt:'Pizza icon'
                 },
                 {
                     name: 'Siciliana',
                     description: this.$t('redpizzas.Siciliana'),
-                    price: '15,00',
+                    price: '16,00',
                     icon: "./img/newrounded.png",
                     alt:'Pizza icon'
                 },
                 {
                     name: 'Capricciosa',
                     description: this.$t('redpizzas.Capricciosa'),
-                    price: '16,00',
+                    price: '17,00',
                     icon: "./img/newrounded.png",
                     alt:'Pizza icon'
                 },
                 {
                     name: 'Diavola',
                     description: this.$t('redpizzas.Diavola'),
-                    price: '14,50',
+                    price: '15,50',
                     icon: "./img/newrounded.png",
                     alt:'Pizza icon'
                 },
                 {
                   name: 'Diavola 2.0',
                   description: this.$t('redpizzas.Diavola2'),
-                  price: '18,00',
+                  price: '19,00',
                   icon: "./img/newrounded.png",
                   alt:'Pizza icon'
                 },
                 {
                     name: 'Calabrese',
                     description: this.$t('redpizzas.Calabrese'),
-                    price: '17,00',
+                    price: '18,00',
                     icon: "./img/newrounded.png",
                     alt:'Pizza icon'
                 },
                 {
                     name: 'Boscaiola',
                     description: this.$t('redpizzas.Boscaiola'),
-                    price: '15,00',
+                    price: '16,00',
                     icon: "./img/newrounded.png",
                     alt:'Pizza icon'
                 },
@@ -117,28 +117,28 @@ export default {
                 {
                     name: 'Crudaiola',
                     description: this.$t('redpizzas.Crudaiola'),
-                    price: '19,00',
+                    price: '20,00',
                     icon: "./img/newrounded.png",
                     alt:'Pizza icon'
                 },
                 {
                     name: 'Vegana',
                     description: this.$t('redpizzas.Vegana'),
-                    price: '14,00',
+                    price: '15,00',
                     icon: "./img/newrounded.png",
                     alt:'Pizza icon'
                 },
                 {
                     name: 'Vegetariana',
                     description: this.$t('redpizzas.Vegetariana'),
-                    price: '15,00',
+                    price: '16,00',
                     icon: "./img/newrounded.png",
                     alt:'Pizza icon'
                 },
                 {
                     name: 'Calzone',
                     description: this.$t('redpizzas.Calzone'),
-                    price: '18,00',
+                    price: '19,00',
                     icon: "./img/newrounded.png",
                     alt:'Pizza icon'
                 },
@@ -151,14 +151,14 @@ export default {
                 {
                     name: 'Salsiccia Friarelli',
                     description: this.$t('whitepizzas.SalsicciaFriarelli'),
-                    price:'16,00',
+                    price:'17,00',
                     icon: "./img/newrounded.png",
                     alt:'Pizza icon'
                 },
                 {
                     name: '4 Formaggi',
                     description: this.$t('whitepizzas.QuattroFormaggi'),
-                    price:'15,00',
+                    price:'16,00',
                     icon: "./img/newrounded.png",
                     alt:'Pizza icon'
                 },
@@ -172,7 +172,7 @@ export default {
                 {
                     name: 'Mortadella',
                     description: this.$t('whitepizzas.Mortadella'),
-                    price:'19,00',
+                    price:'20,00',
                     icon: "./img/newrounded.png",
                     alt:'Pizza icon'
                 },
@@ -185,7 +185,7 @@ export default {
                 {
                     name: 'Margherita',
                     description: this.$t('maxipizzas.Margherita'),
-                    price:'23,00',
+                    price:'24,00',
                     priceSlice:'4,00',
                     icon: "./img/newrounded.png",
                     iconSlice: "./img/slice.png",
@@ -194,7 +194,7 @@ export default {
                 {
                     name: 'Diavola',
                     description: this.$t('maxipizzas.Diavola'),
-                    price:'28,00',
+                    price:'29,00',
                     priceSlice:'5,00',
                     icon: "./img/newrounded.png",
                     iconSlice: "./img/slice.png",
@@ -212,7 +212,7 @@ export default {
                 {
                     name: 'Quattro formaggi',
                     description: this.$t('maxipizzas.QuattroFormaggi'),
-                    price:'28,00',
+                    price:'29,00',
                     priceSlice:'5,00',
                     icon: "./img/newrounded.png",
                     iconSlice: "./img/slice.png",
@@ -221,7 +221,7 @@ export default {
                 {
                     name: 'Suggestione',
                     description: this.$t('maxipizzas.Suggestione'),
-                    price:'34,00',
+                    price:'35,00',
                     priceSlice:'6,00',
                     icon: "./img/newrounded.png",
                     iconSlice: "./img/slice.png",
