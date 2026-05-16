@@ -16,6 +16,15 @@ const flag = computed(() => ({
   it: '/img/flag/italy.png',
 }[locale.value] || '/img/flag/italy.png'))
 
+// Orari di apertura: etichette giorno localizzate via i18n,
+// orari numerici universali (24h, non tradotti).
+const openingHours = computed(() => [
+  { days: `${t('opening.mon')}–${t('opening.thu')}`, time: '11:30–14:30 · 18:00–22:30' },
+  { days: t('opening.fri'), time: '11:30–14:30 · 18:00–23:00' },
+  { days: t('opening.sat'), time: '12:00–14:30 · 18:00–23:00' },
+  { days: t('opening.sun'), time: '13:00–22:00' },
+])
+
 const InstagramIcon = defineComponent({
   render: () =>
     h('svg', { fill: 'currentColor', viewBox: '0 0 24 24' }, [
@@ -163,7 +172,7 @@ function scrolltotop() {
 
 
 
-           <div class="mt-10 -mx-4 relative lg:mt-0 gap-8" aria-hidden="true">
+           <div class="mt-10 -mx-4 relative lg:mt-0 gap-8">
              <div class="relative mx-5">
 
                  <h3 class="text-4xl font-extrabold text-white tracking-tight sm:text-3xl section-title" id="sub_contact" lang="en">
@@ -173,69 +182,22 @@ function scrolltotop() {
                      {{ $t("contact.desc") }}
                  </p>
 
-               <!-- <h3 class="text-4xl font-extrabold text-white tracking-tight sm:text-3xl section-title" id="sub_opening" lang="en">
-                 {{ $t("opening.title") }}
-               </h3>
-               <div class="mt-10 border-t border-gray-200">
-                 <dl class="sm:divide-y sm:divide-gray-200">
-                   <div class="py-2 sm:py-3 sm:grid sm:grid-cols-3 sm:gap-4">
-                     <dt class="text-sm font-medium text-gray-300 font-day uppercase">
-                       {{ $t("opening.mon") }}
-                     </dt>
-                     <dd class="mt-1 text-sm text-white sm:mt-0 sm:col-span-2 font-time">
-                       {{ $t("opening.close") }}
-                     </dd>
-                   </div>
-                   <div class="py-2 sm:py-3 sm:grid sm:grid-cols-3 sm:gap-4">
-                     <dt class="text-sm font-medium text-gray-300 font-day uppercase">
-                       {{ $t("opening.tue") }}
-                     </dt>
-                     <dd class="mt-1 text-sm text-white sm:mt-0 sm:col-span-2 font-time">
-                       12:00 – 2:30 pm, 6:00 – 10:30 pm
-                     </dd>
-                   </div>
-                   <div class="py-2 sm:py-3 sm:grid sm:grid-cols-3 sm:gap-4">
-                     <dt class="text-sm font-medium text-gray-300 font-day uppercase">
-                       {{ $t("opening.wed") }}
-                     </dt>
-                     <dd class="mt-1 text-sm text-white sm:mt-0 sm:col-span-2 font-time">
-                       12:00 – 2:30 pm, 6:00 – 10:30 pm
-                     </dd>
-                   </div>
-                   <div class="py-2 sm:py-3 sm:grid sm:grid-cols-3 sm:gap-4">
-                     <dt class="text-sm font-medium text-gray-300 font-day uppercase">
-                       {{ $t("opening.thu") }}
-                     </dt>
-                     <dd class="mt-1 text-sm text-white sm:mt-0 sm:col-span-2 font-time">
-                       12:00 – 2:30 pm, 6:00 – 10:30 pm
-                     </dd>
-                   </div>
-                   <div class="py-2 sm:py-3 sm:grid sm:grid-cols-3 sm:gap-4">
-                     <dt class="text-sm font-medium text-gray-300 font-day uppercase">
-                       {{ $t("opening.fri") }}
-                     </dt>
-                     <dd class="mt-1 text-sm text-white sm:mt-0 sm:col-span-2 font-time">
-                       12:00 – 2:30 pm, 6:00 – 10:30 pm
-                     </dd>
-                   </div>
-                   <div class="py-2 sm:py-3 sm:grid sm:grid-cols-3 sm:gap-4">
-                     <dt class="text-sm font-medium text-gray-300 font-day uppercase">
-                       {{ $t("opening.sat") }}
-                     </dt>
-                     <dd class="mt-1 text-sm text-white sm:mt-0 sm:col-span-2 font-time">
-                       12:00 – 2:30 pm, 6:00 – 10:30 pm
-                     </dd>
-                   </div>
-                   <div class="py-2 sm:py-3 sm:grid sm:grid-cols-3 sm:gap-4">
-                     <dt class="text-sm font-medium text-gray-300 font-day uppercase">
-                       {{ $t("opening.sun") }}
-                     </dt>
-                     <dd class="mt-1 text-sm text-white sm:mt-0 sm:col-span-2 font-time">
-                       12:00 – 2:30 pm, 6:00 – 10:30 pm
-                     </dd>
-                   </div>
-                 </dl>
-               </div> !-->
+                 <h3 class="text-4xl font-extrabold text-white tracking-tight sm:text-3xl section-title mt-10" id="sub_opening">
+                     {{ $t("opening.title") }}
+                 </h3>
+                 <div class="mt-6 border-t border-gray-700">
+                   <dl class="sm:divide-y sm:divide-gray-700">
+                     <div v-for="row in openingHours" :key="row.days" class="py-2 sm:py-3 sm:grid sm:grid-cols-3 sm:gap-4">
+                       <dt class="text-sm font-medium text-gray-300 font-day uppercase">
+                         {{ row.days }}
+                       </dt>
+                       <dd class="mt-1 text-sm text-white sm:mt-0 sm:col-span-2 font-time">
+                         {{ row.time }}
+                       </dd>
+                     </div>
+                   </dl>
+                 </div>
+
             </div>
           </div>
 
