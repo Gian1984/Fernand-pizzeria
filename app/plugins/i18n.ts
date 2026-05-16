@@ -3,12 +3,13 @@ import { messages } from '~/i18n/messages'
 
 // vue-i18n come plugin Nuxt (niente @nuxtjs/i18n): la lingua resta un toggle
 // client-side, NESSUN prefisso URL. Gli URL restano solo / e /menu (QR code).
-// legacy:true mantiene $t/this.$t/$i18n.locale come nella SPA originale;
-// allowComposition:true abilita useI18n() nei <script setup>.
+//
+// Modalità Composition (legacy:false): useI18n() nei <script setup> risolve
+// correttamente i messaggi (in legacy+allowComposition tornava stringa vuota
+// in SSR). globalInjection:true mantiene $t nei template come prima.
 export default defineNuxtPlugin(({ vueApp }) => {
   const i18n = createI18n({
-    legacy: true,
-    allowComposition: true,
+    legacy: false,
     globalInjection: true,
     locale: 'fr',
     fallbackLocale: 'fr',
