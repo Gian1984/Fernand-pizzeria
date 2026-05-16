@@ -1,7 +1,26 @@
-# Vue 3 + Vite
+# L'Artigiano della Farina
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Sito vetrina della pizzeria, **Nuxt 4** (SSG / sito statico).
 
-## Recommended IDE Setup
+- 2 pagine: `/` (home) e `/menu`. **Gli URL non devono cambiare** (QR code in circolazione).
+- i18n: `vue-i18n` come plugin (`app/plugins/i18n.ts`), lingua switchata client-side
+  **senza prefisso URL** (FR / EN / IT). Default FR.
+- SEO/head per pagina via `useSeoMeta` / `useHead` (`app/composables/useSeo.js`),
+  renderizzato lato server.
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## Sviluppo
+
+```bash
+npm install
+npm run dev          # http://localhost:3000
+```
+
+## Build statica (deploy)
+
+```bash
+npm run generate     # output statico in .output/public/
+npm run preview      # anteprima della build
+```
+
+Deploy: caricare il contenuto di `.output/public/` sull'hosting statico
+(come si faceva con `dist/` della vecchia SPA).

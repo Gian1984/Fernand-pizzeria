@@ -1,0 +1,160 @@
+<script setup>
+import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n({ useScope: 'global' })
+
+usePageSeo({ path: '/menu', title: "L'Artigiano della Farina - La carte" })
+
+const redpizzas = computed(() => [
+  { name: 'Margherita', description: t('redpizzas.Margherita'), price: '11,00', icon: '/img/newrounded.png', alt: 'Pizza icon' },
+  { name: 'Regina', description: t('redpizzas.Regina'), price: '15,00', icon: '/img/newrounded.png', alt: 'Pizza icon' },
+  { name: 'Principessa', description: t('redpizzas.Principessa'), price: '13,00', icon: '/img/newrounded.png', alt: 'Pizza icon' },
+  { name: 'Burrata', description: t('redpizzas.Burrata'), price: '18,00', icon: '/img/newrounded.png', alt: 'Pizza icon' },
+  { name: 'Marinara', description: t('redpizzas.Marinara'), price: '10,00', icon: '/img/newrounded.png', alt: 'Pizza icon' },
+  { name: 'Rucola Reggiano', description: t('redpizzas.RucolaReggiano'), price: '14,00', icon: '/img/newrounded.png', alt: 'Pizza icon' },
+  { name: 'Prosciutto Funghi', description: t('redpizzas.ProsciuttoFunghi'), price: '16,00', icon: '/img/newrounded.png', alt: 'Pizza icon' },
+  { name: 'Napoli', description: t('redpizzas.Napoli'), price: '15,00', icon: '/img/newrounded.png', alt: 'Pizza icon' },
+  { name: 'Siciliana', description: t('redpizzas.Siciliana'), price: '16,00', icon: '/img/newrounded.png', alt: 'Pizza icon' },
+  { name: 'Capricciosa', description: t('redpizzas.Capricciosa'), price: '17,00', icon: '/img/newrounded.png', alt: 'Pizza icon' },
+  { name: 'Diavola', description: t('redpizzas.Diavola'), price: '15,50', icon: '/img/newrounded.png', alt: 'Pizza icon' },
+  { name: 'Diavola 2.0', description: t('redpizzas.Diavola2'), price: '19,00', icon: '/img/newrounded.png', alt: 'Pizza icon' },
+  { name: 'Calabrese', description: t('redpizzas.Calabrese'), price: '18,00', icon: '/img/newrounded.png', alt: 'Pizza icon' },
+  { name: 'Boscaiola', description: t('redpizzas.Boscaiola'), price: '16,00', icon: '/img/newrounded.png', alt: 'Pizza icon' },
+  { name: 'Bresaola e tartufo', description: t('redpizzas.BresaolaTartufo'), price: '20,00', icon: '/img/newrounded.png', alt: 'Pizza icon' },
+  { name: 'Crudaiola', description: t('redpizzas.Crudaiola'), price: '20,00', icon: '/img/newrounded.png', alt: 'Pizza icon' },
+  { name: 'Vegana', description: t('redpizzas.Vegana'), price: '15,00', icon: '/img/newrounded.png', alt: 'Pizza icon' },
+  { name: 'Vegetariana', description: t('redpizzas.Vegetariana'), price: '16,00', icon: '/img/newrounded.png', alt: 'Pizza icon' },
+  { name: 'Calzone', description: t('redpizzas.Calzone'), price: '19,00', icon: '/img/newrounded.png', alt: 'Pizza icon' },
+])
+
+const whitepizzas = computed(() => [
+  { name: 'Salsiccia Friarelli', description: t('whitepizzas.SalsicciaFriarelli'), price: '17,00', icon: '/img/newrounded.png', alt: 'Pizza icon' },
+  { name: '4 Formaggi', description: t('whitepizzas.QuattroFormaggi'), price: '16,00', icon: '/img/newrounded.png', alt: 'Pizza icon' },
+  { name: 'Patate & Tartufo', description: t('whitepizzas.PatateTartufo'), price: '20,00', icon: '/img/newrounded.png', alt: 'Pizza icon' },
+  { name: 'Mortadella', description: t('whitepizzas.Mortadella'), price: '20,00', icon: '/img/newrounded.png', alt: 'Pizza icon' },
+])
+
+const maxipizzas = computed(() => [
+  { name: 'Margherita', description: t('maxipizzas.Margherita'), price: '24,00', priceSlice: '4,00', icon: '/img/newrounded.png', iconSlice: '/img/slice.png', alt: 'Pizza icon' },
+  { name: 'Diavola', description: t('maxipizzas.Diavola'), price: '29,00', priceSlice: '5,00', icon: '/img/newrounded.png', iconSlice: '/img/slice.png', alt: 'Pizza icon' },
+  { name: 'Prosciutto Funghi', description: t('maxipizzas.ProsciuttoFunghi'), price: '28,00', priceSlice: '5,00', icon: '/img/newrounded.png', iconSlice: '/img/slice.png', alt: 'Pizza icon' },
+  { name: 'Quattro formaggi', description: t('maxipizzas.QuattroFormaggi'), price: '29,00', priceSlice: '5,00', icon: '/img/newrounded.png', iconSlice: '/img/slice.png', alt: 'Pizza icon' },
+  { name: 'Suggestione', description: t('maxipizzas.Suggestione'), price: '35,00', priceSlice: '6,00', icon: '/img/newrounded.png', iconSlice: '/img/slice.png', alt: 'Pizza icon' },
+])
+
+const paninis = computed(() => [
+  { name: 'Finocchiona', description: t('paninis.Finocchiona'), price: '10,00', icon: '/img/paninoLogo.png', alt: 'Paninis Finocchiona icon' },
+  { name: 'Speck', description: t('paninis.Speck'), price: '10,00', icon: '/img/paninoLogo.png', alt: 'Paninis Speck icon' },
+  { name: 'Piccante', description: t('paninis.Piccante'), price: '10,00', icon: '/img/paninoLogo.png', alt: 'Paninis Piccante icon' },
+  { name: 'Tricolore', description: t('paninis.Tricolore'), price: '11,00', icon: '/img/paninoLogo.png', alt: 'Paninis Tricolore icon' },
+  { name: 'Vegetariano', description: t('paninis.Vegetariano'), price: '9,00', icon: '/img/paninoLogo.png', alt: 'Paninis Vegetariano icon' },
+  { name: 'Bresaola e Tartufo', description: t('paninis.BresaolaTartufo'), price: '12,00', icon: '/img/paninoLogo.png', alt: 'Paninis icon' },
+  { name: 'Mortadella', description: t('paninis.Mortadella'), price: '10,00', icon: '/img/paninoLogo.png', alt: 'Paninis Mortadella icon' },
+  { name: 'Caprese', description: t('paninis.Caprese'), price: '9,00', icon: '/img/paninoLogo.png', alt: 'Paninis Caprese icon' },
+  { name: 'Cotto', description: t('paninis.Cotto'), price: '10,00', icon: '/img/paninoLogo.png', alt: 'Paninis Cotto icon' },
+  { name: 'Dolce', description: t('paninis.Dolce'), price: '7,00', icon: '/img/paninoLogo.png', alt: 'Paninis Dolce icon' },
+  { name: 'Vegan', description: t('paninis.Vegan'), price: '10,00', icon: '/img/paninoLogo.png', alt: 'Paninis Vegan icon' },
+])
+</script>
+
+<template>
+  <!-- Content section start-->
+    <div class="bg-neutral-900 py-6 sm:py-32">
+
+        <!-- red pizza -->
+        <div class="mx-auto max-w-7xl px-6 lg:px-8 mt-16">
+            <div class="mx-auto max-w-2xl text-center">
+                <p class="text-3xl font-bold tracking-tight text-white sm:text-4xl section-title" id="pizze-red">{{ $t("redpizzas.title") }}</p>
+                <h3 class="mt-6 text-lg font-semibold leading-8 tracking-tight text-red-500 before-title uppercase">( classic 33cm pizza )</h3>
+            </div>
+        </div>
+        <div class="mx-auto mt-16 max-w-7xl px-6 sm:mt-20 md:mt-24 lg:px-8">
+            <dl class="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-10 text-base leading-7 text-gray-300 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16">
+                <div v-for="feature in redpizzas" :key="feature.name" class="relative pl-14">
+                    <dt class="font-semibold text-white pizza-name">
+                        <img :src="feature.icon" class="absolute top-1 left-1 h-8 w-8 sm:h-8 sm:w-8 text-red-500" :alt="feature.alt" aria-hidden="true" />
+                        {{ feature.name }}
+                    </dt>
+                    {{ ' ' }}
+                    <dd class="inline pizza-desc">{{ feature.description }}</dd>
+                    <dd class="pizza-price"> {{ feature.price }} €</dd>
+                </div>
+            </dl>
+        </div>
+
+
+        <!-- white pizzas -->
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+            <div class="mx-auto max-w-2xl text-center pt-16">
+                <p class="text-3xl font-bold tracking-tight text-white sm:text-4xl section-title">{{ $t("whitepizzas.title") }}</p>
+                <h3 class="mt-6 text-lg font-semibold leading-8 tracking-tight text-red-500 before-title uppercase">( classic 33cm pizza )</h3>
+            </div>
+        </div>
+        <div class="mx-auto mt-16 max-w-7xl px-6 sm:mt-20 md:mt-24 lg:px-8">
+            <dl class="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-10 text-base leading-7 text-gray-300 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16">
+                <div v-for="feature in whitepizzas" :key="feature.name" class="relative pl-14">
+                    <dt class="font-semibold text-white pizza-name">
+                        <img :src="feature.icon" class="absolute top-1 left-1 h-8 w-8 sm:h-12 sm:w-12 text-red-500" :alt="feature.alt" aria-hidden="true" />
+                        {{ feature.name }}
+                    </dt>
+                    {{ ' ' }}
+                    <dd class="inline pizza-desc">{{ feature.description }}</dd>
+                    <dd class="pizza-price"> {{ feature.price }} €</dd>
+                </div>
+            </dl>
+        </div>
+
+
+        <!-- maxi pizzas & slices -->
+        <div class="mx-auto max-w-7xl px-6 lg:px-8 mb-12">
+            <div class="mx-auto max-w-2xl text-center pt-16">
+                <p class="text-3xl font-bold tracking-tight text-white sm:text-4xl section-title">{{ $t("maxipizzas.title") }}</p>
+                <h3 class="mt-6 text-lg font-semibold leading-8 tracking-tight text-red-500 before-title uppercase">( Maxi 50cm pizza or slice of it )</h3>
+            </div>
+        </div>
+        <div class="mx-auto mt-16 max-w-7xl px-6 sm:mt-20 md:mt-24 lg:px-8">
+            <dl class="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-10 text-base leading-7 text-gray-300 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16">
+                <div v-for="feature in maxipizzas" :key="feature.name" class="relative pl-14">
+                    <dt class="font-semibold text-white pizza-name">
+                        <img :src="feature.icon" class="absolute top-1 left-1 h-8 w-8 sm:h-12 sm:w-12 text-red-500" :alt="feature.alt" aria-hidden="true" />
+                        <img :src="feature.iconSlice" class="absolute origin-top-right top-10 sm:top-16 left-1 h-8 w-8 sm:h-12 sm:w-12 text-red-500" :alt="feature.alt" aria-hidden="true" />
+                        {{ feature.name }}
+                    </dt>
+                    {{ ' ' }}
+                    <dd class="inline pizza-desc">{{ feature.description }}</dd>
+                    <dd class="pizza-price">Maxi: {{ feature.price }} €</dd>
+                    <dd class="pizza-price">Slice: {{ feature.priceSlice}} €</dd>
+                </div>
+            </dl>
+        </div>
+
+        <!-- paninis -->
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+            <div class="mx-auto max-w-2xl text-center pt-16">
+                <p class="text-3xl font-bold tracking-tight text-white sm:text-4xl section-title">{{ $t("paninis.title") }}</p>
+                <span class="text-white info-trans-sand">{{ $t("paninis.info") }}</span>
+                <h3 class="mt-6 text-lg font-semibold leading-8 tracking-tight text-red-500 before-title uppercase">( only for lunch )</h3>
+                <p class="text-lg leading-8 text-neutral-300 section-title-desc">{{ $t("paninis.subtitle") }}</p>
+            </div>
+        </div>
+
+        <div class="mx-auto mt-16 max-w-7xl px-6 sm:mt-20 md:mt-24 lg:px-8">
+            <dl class="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-10 text-base leading-7 text-gray-300 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16">
+                <div v-for="feature in paninis" :key="feature.name" class="relative pl-14">
+                    <dt class="font-semibold text-white pizza-name">
+                        <img :src="feature.icon" class="absolute object-contain top-1 left-1 h-8 w-8 sm:h-12 sm:w-12 text-red-500" :alt="feature.alt" aria-hidden="true" />
+                        {{ feature.name }}
+                    </dt>
+                    {{ ' ' }}
+                    <dd class="inline pizza-desc">{{ feature.description }}</dd>
+                    <dd class="pizza-price"> {{ feature.price }} €</dd>
+                </div>
+            </dl>
+        </div>
+
+
+
+    </div>
+  <!-- Content section end-->
+</template>

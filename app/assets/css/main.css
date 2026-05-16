@@ -1,10 +1,13 @@
-/* ./src/index.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 
 html{scroll-behavior:smooth}
+
+.hed-min-h{
+    min-height: 1000px;
+}
 
 .main-title{
     font-family: 'Fredericka the Great', cursive;
@@ -222,6 +225,10 @@ html{scroll-behavior:smooth}
 }
 
 @media only screen and (max-width: 768px) {
+    .hed-min-h{
+        min-height: 770px;
+    }
+
     .main-title{
         font-size: 30px !important;
         line-height: 32px;
@@ -295,5 +302,3 @@ html{scroll-behavior:smooth}
         flex: 7;
     }
 }
-
-
