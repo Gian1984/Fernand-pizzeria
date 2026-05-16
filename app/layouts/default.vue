@@ -6,6 +6,10 @@ import { useI18n } from 'vue-i18n'
 
 const { t, locale } = useI18n({ useScope: 'global' })
 
+// Le recensioni si mostrano solo in home, sotto il blocco delivery.
+const route = useRoute()
+const isHome = computed(() => route.path === '/')
+
 // Anno corrente: calcolato in setup -> coerente fra SSR e client (no mismatch).
 const currentYear = new Date().getFullYear()
 
@@ -260,6 +264,8 @@ function scrolltotop() {
       </div>
     </div>
 
+
+    <ReviewsSection v-if="isHome" />
 
     <div class="mx-auto max-w-md px-4 overflow-hidden sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8 py-6">
       <p class="text-center text-base hover:text-gray-400 text-white footer-copyright">

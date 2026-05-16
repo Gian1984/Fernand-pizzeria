@@ -71,6 +71,15 @@ export const messages = {
       Vegan: "Aubergines et courgettes grillées, champignons sautés, roquette, tomates semi-séchées",
     },
 
+    reviews: {
+      title: "Avis",
+      subtitle: "Ce que disent nos clients sur Google et Uber Eats.",
+      count: "avis",
+      all: "Tous les avis sur Google",
+      from: "Avis Google",
+      more: "Plus",
+    },
+
     contact: {
       title: "Contact",
       desc: "Cliquez sur les icônes pour nous trouver sur une carte ou sur les réseaux sociaux. Vous souhaitez commander une pizza ou un sandwich ? Cliquez sur le téléphone ! Nous t'attendons!",
@@ -159,6 +168,15 @@ export const messages = {
       Cotto: "Ham, sautéed mushrooms, fontina cheese.",
       Dolce: "Nutella and pistachio",
       Vegan: "Grilled aubergines and courgettes, sautéed mushrooms, rocket, semi-dried tomatoes",
+    },
+
+    reviews: {
+      title: "Reviews",
+      subtitle: "What our customers say on Google and Uber Eats.",
+      count: "reviews",
+      all: "All reviews on Google",
+      from: "Google review",
+      more: "More",
     },
 
     contact: {
@@ -261,6 +279,15 @@ export const messages = {
       revTwo: "Ristorante tipico italiano, bellissimo ! Erano le migliori pizze che abbiamo mangiato nella nostra vita, con prodotti freschi ! Il servizio è stato perfetto, il cameriere era così gentile, carino! Possibile mangiare vegan ! Ancora grazie di tutto ! Era davvero delizioso ! Ci vediamo presto.",
       dateThree: "July 16, 2021",
       revThree: "Des vrais italiens, un décor moderne. La pizza avec de la vraie farine italienne et du bon jambon fumé (on le voit avec son étiquette italienne dans le frigo à l'entrée). La pate est fine. Le prix est raisonable vu la qualité des produits.",
+    },
+
+    reviews: {
+      title: "Recensioni",
+      subtitle: "Cosa dicono i clienti su Google e Uber Eats.",
+      count: "recensioni",
+      all: "Tutte le recensioni su Google",
+      from: "Recensione Google",
+      more: "Altro",
     },
 
     contact: {
