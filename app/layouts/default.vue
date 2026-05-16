@@ -171,13 +171,13 @@ function scrolltotop() {
 
   <footer class="bg-neutral-900">
     <div class="py-8 sm:py-8 overflow-hidden mb-10" id="contact-me">
-      <div class="relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-7xl">
+      <div class="relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-5xl">
         <div class="relative lg:grid lg:grid-cols-2 pb-1 lg:gap-8 lg:items-center">
 
 
 
            <div class="mt-10 -mx-4 relative lg:mt-0 gap-8">
-             <div class="relative mx-5">
+             <div class="relative mx-5 text-center">
 
                  <h3 class="text-4xl font-extrabold text-white tracking-tight sm:text-3xl section-title" id="sub_contact" lang="en">
                      {{ $t("contact.title") }}
@@ -190,7 +190,7 @@ function scrolltotop() {
           </div>
 
 
-            <div class="relative" id="contact">
+            <div class="relative lg:flex lg:justify-center" id="contact">
                 <!--
                <h3 class="text-4xl font-extrabold text-white tracking-tight sm:text-3xl section-title" id="sub_contact" lang="en">
                  {{ $t("contact.title") }}
@@ -199,7 +199,7 @@ function scrolltotop() {
                  {{ $t("contact.desc") }}
                </p>
                  !-->
-                <dl class="mt-14 space-y-3">
+                <dl class="mt-14 space-y-3 lg:w-72">
                     <div v-for="item in transferFeatures" :key="item.id" class="relative">
                         <dt>
                             <a :href="item.href" class="hover:text-gray-300">
