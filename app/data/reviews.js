@@ -1,10 +1,8 @@
 // Recensioni Google (UGC reale, testo lasciato in lingua originale).
 // Il testo viene troncato nel componente con "… More" che linka a Google.
 
-// Link alla scheda Google del locale (stesso place verificato già usato per la
-// mappa). Per un link diretto "scrivi recensione" si può sostituire con un
-// g.page/r/<id>/review se disponibile.
-export const GOOGLE_REVIEWS_URL = 'https://maps.app.goo.gl/W6otSYKx9A6BNdhw8'
+// Link alla scheda recensioni Google del locale.
+export const GOOGLE_REVIEWS_URL = 'https://share.google/Dd8lYHYrWFEGm4gTh'
 
 // Valutazioni aggregate (da aggiornare periodicamente a mano).
 export const ratings = [

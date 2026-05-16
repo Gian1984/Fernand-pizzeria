@@ -1,20 +1,21 @@
 <script setup>
+import { computed } from 'vue'
 import { StarIcon } from '@heroicons/vue/20/solid'
 import { useI18n } from 'vue-i18n'
 import { googleReviews, ratings, GOOGLE_REVIEWS_URL } from '~/data/reviews'
 
 const { t } = useI18n({ useScope: 'global' })
 
-// Tronca al confine di parola; il testo completo è su Google ("… More").
-function truncate(text, max = 150) {
-  if (text.length <= max) return text
-  const cut = text.slice(0, max)
-  return cut.slice(0, cut.lastIndexOf(' ')).trim()
-}
+// Due righe: indici pari e dispari. Ogni track è duplicato (x2) per il
+// loop infinito senza salti (translateX -50% = esattamente una copia).
+const rowOne = computed(() => googleReviews.filter((_, i) => i % 2 === 0))
+const rowTwo = computed(() => googleReviews.filter((_, i) => i % 2 === 1))
+const rowOneLoop = computed(() => [...rowOne.value, ...rowOne.value])
+const rowTwoLoop = computed(() => [...rowTwo.value, ...rowTwo.value])
 </script>
 
 <template>
-  <section class="bg-neutral-900 py-16 sm:py-20">
+  <section class="bg-neutral-900 py-16 sm:py-20 overflow-hidden">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
 
       <!-- Header -->
@@ -50,41 +51,130 @@ function truncate(text, max = 150) {
           {{ $t('reviews.all') }}
         </a>
       </div>
+    </div>
 
-      <!-- Griglia recensioni -->
-      <ul class="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        <li
-          v-for="(review, idx) in googleReviews"
-          :key="idx"
-          class="rounded-lg border border-neutral-700 bg-black/40 p-5"
-        >
-          <div class="flex items-center justify-between">
-            <span class="text-white review-author">{{ review.author }}</span>
-            <span class="flex">
-              <StarIcon
-                v-for="i in 5"
-                :key="i"
-                class="h-4 w-4"
-                :class="i <= review.rating ? 'text-red-500' : 'text-neutral-600'"
-                aria-hidden="true"
-              />
-            </span>
-          </div>
-          <p class="mt-1 text-xs text-neutral-400 review-time">
-            {{ $t('reviews.from') }} · {{ review.timeAgo }}
-          </p>
-          <p class="mt-3 text-sm text-neutral-300 review-content">
-            {{ truncate(review.text) }}<!--
-            -->{{ truncate(review.text) !== review.text ? '…' : '' }}
+    <!-- Slider: due righe, direzioni opposte -->
+    <div class="mt-12 space-y-6">
+      <div class="marquee">
+        <ul class="marquee__track marquee__track--left">
+          <li
+            v-for="(review, idx) in rowOneLoop"
+            :key="'r1-' + idx"
+            class="marquee__card rounded-lg border border-neutral-700 bg-black/40 p-5"
+          >
+            <div class="flex items-center justify-between">
+              <span class="text-white review-author">{{ review.author }}</span>
+              <span class="flex">
+                <StarIcon
+                  v-for="i in 5"
+                  :key="i"
+                  class="h-4 w-4"
+                  :class="i <= review.rating ? 'text-red-500' : 'text-neutral-600'"
+                  aria-hidden="true"
+                />
+              </span>
+            </div>
+            <p class="mt-1 text-xs text-neutral-400 review-time">
+              {{ $t('reviews.from') }} · {{ review.timeAgo }}
+            </p>
+            <p class="mt-3 text-sm text-neutral-300 review-content line-clamp-4">
+              {{ review.text }}
+            </p>
             <a
               :href="GOOGLE_REVIEWS_URL"
               target="_blank"
               rel="noopener noreferrer"
-              class="text-red-500 hover:text-red-400 whitespace-nowrap"
-            >{{ $t('reviews.more') }}</a>
-          </p>
-        </li>
-      </ul>
+              class="mt-2 inline-block text-sm text-red-500 hover:text-red-400"
+            >… {{ $t('reviews.more') }}</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="marquee">
+        <ul class="marquee__track marquee__track--right">
+          <li
+            v-for="(review, idx) in rowTwoLoop"
+            :key="'r2-' + idx"
+            class="marquee__card rounded-lg border border-neutral-700 bg-black/40 p-5"
+          >
+            <div class="flex items-center justify-between">
+              <span class="text-white review-author">{{ review.author }}</span>
+              <span class="flex">
+                <StarIcon
+                  v-for="i in 5"
+                  :key="i"
+                  class="h-4 w-4"
+                  :class="i <= review.rating ? 'text-red-500' : 'text-neutral-600'"
+                  aria-hidden="true"
+                />
+              </span>
+            </div>
+            <p class="mt-1 text-xs text-neutral-400 review-time">
+              {{ $t('reviews.from') }} · {{ review.timeAgo }}
+            </p>
+            <p class="mt-3 text-sm text-neutral-300 review-content line-clamp-4">
+              {{ review.text }}
+            </p>
+            <a
+              :href="GOOGLE_REVIEWS_URL"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="mt-2 inline-block text-sm text-red-500 hover:text-red-400"
+            >… {{ $t('reviews.more') }}</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </section>
 </template>
+
+<style scoped>
+.marquee {
+  overflow: hidden;
+}
+
+.marquee__track {
+  display: flex;
+  gap: 1.5rem;
+  width: max-content;
+  padding: 0 0.75rem;
+}
+
+.marquee__track--left {
+  animation: marquee-left 70s linear infinite;
+}
+
+.marquee__track--right {
+  animation: marquee-right 70s linear infinite;
+}
+
+/* Pausa al passaggio del mouse */
+.marquee:hover .marquee__track {
+  animation-play-state: paused;
+}
+
+.marquee__card {
+  width: 20rem;
+  flex-shrink: 0;
+}
+
+@keyframes marquee-left {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@keyframes marquee-right {
+  from { transform: translateX(-50%); }
+  to { transform: translateX(0); }
+}
+
+/* Accessibilità: chi preferisce meno animazioni può scorrere a mano */
+@media (prefers-reduced-motion: reduce) {
+  .marquee {
+    overflow-x: auto;
+  }
+  .marquee__track {
+    animation: none;
+  }
+}
+</style>

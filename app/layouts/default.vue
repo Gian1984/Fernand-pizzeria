@@ -186,22 +186,6 @@ function scrolltotop() {
                      {{ $t("contact.desc") }}
                  </p>
 
-                 <h3 class="text-4xl font-extrabold text-white tracking-tight sm:text-3xl section-title mt-10" id="sub_opening">
-                     {{ $t("opening.title") }}
-                 </h3>
-                 <div class="mt-6 border-t border-gray-700">
-                   <dl class="sm:divide-y sm:divide-gray-700">
-                     <div v-for="row in openingHours" :key="row.days" class="py-2 sm:py-3 sm:grid sm:grid-cols-3 sm:gap-4">
-                       <dt class="text-sm font-medium text-gray-300 font-day uppercase">
-                         {{ row.days }}
-                       </dt>
-                       <dd class="mt-1 text-sm text-white sm:mt-0 sm:col-span-2 font-time">
-                         {{ row.time }}
-                       </dd>
-                     </div>
-                   </dl>
-                 </div>
-
             </div>
           </div>
 
@@ -233,6 +217,24 @@ function scrolltotop() {
             </div>
 
 
+        </div>
+
+        <div class="mt-16 mx-auto max-w-3xl">
+          <h3 class="text-4xl font-extrabold text-white tracking-tight sm:text-3xl section-title text-center" id="sub_opening">
+            {{ $t("opening.title") }}
+          </h3>
+          <div class="mt-6 border-t border-gray-700">
+            <dl class="divide-y divide-gray-700">
+              <div v-for="row in openingHours" :key="row.days" class="py-3 grid grid-cols-2 gap-4">
+                <dt class="text-sm font-medium text-gray-300 font-day uppercase">
+                  {{ row.days }}
+                </dt>
+                <dd class="text-sm text-white font-time text-right">
+                  {{ row.time }}
+                </dd>
+              </div>
+            </dl>
+          </div>
         </div>
       </div>
     </div>
