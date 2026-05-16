@@ -4,7 +4,11 @@ import { useI18n } from 'vue-i18n'
 
 const { t } = useI18n({ useScope: 'global' })
 
-usePageSeo({ path: '/menu', title: "L'Artigiano della Farina - La carte" })
+usePageSeo({
+  path: '/menu',
+  title: "La carte - Pizze, ciabatta & take-away | L'Artigiano della Farina",
+  description: "La carte de L'Artigiano della Farina à Ixelles : pizze rosse et bianche, maxi & slice, ciabatta. Pizzas artisanales et sandwiches italiens à emporter.",
+})
 
 const redpizzas = computed(() => [
   { name: 'Margherita', description: t('redpizzas.Margherita'), price: '11,00', icon: '/img/newrounded.png', alt: 'Pizza icon' },
@@ -73,7 +77,7 @@ const paninis = computed(() => [
             <dl class="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-10 text-base leading-7 text-gray-300 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16">
                 <div v-for="feature in redpizzas" :key="feature.name" class="relative pl-14">
                     <dt class="font-semibold text-white pizza-name">
-                        <img :src="feature.icon" class="absolute top-1 left-1 h-8 w-8 sm:h-8 sm:w-8 text-red-500" :alt="feature.alt" aria-hidden="true" />
+                        <img loading="lazy" decoding="async" :src="feature.icon" class="absolute top-1 left-1 h-8 w-8 sm:h-8 sm:w-8 text-red-500" :alt="feature.alt" aria-hidden="true" />
                         {{ feature.name }}
                     </dt>
                     {{ ' ' }}
@@ -95,7 +99,7 @@ const paninis = computed(() => [
             <dl class="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-10 text-base leading-7 text-gray-300 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16">
                 <div v-for="feature in whitepizzas" :key="feature.name" class="relative pl-14">
                     <dt class="font-semibold text-white pizza-name">
-                        <img :src="feature.icon" class="absolute top-1 left-1 h-8 w-8 sm:h-12 sm:w-12 text-red-500" :alt="feature.alt" aria-hidden="true" />
+                        <img loading="lazy" decoding="async" :src="feature.icon" class="absolute top-1 left-1 h-8 w-8 sm:h-12 sm:w-12 text-red-500" :alt="feature.alt" aria-hidden="true" />
                         {{ feature.name }}
                     </dt>
                     {{ ' ' }}
@@ -117,8 +121,8 @@ const paninis = computed(() => [
             <dl class="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-10 text-base leading-7 text-gray-300 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16">
                 <div v-for="feature in maxipizzas" :key="feature.name" class="relative pl-14">
                     <dt class="font-semibold text-white pizza-name">
-                        <img :src="feature.icon" class="absolute top-1 left-1 h-8 w-8 sm:h-12 sm:w-12 text-red-500" :alt="feature.alt" aria-hidden="true" />
-                        <img :src="feature.iconSlice" class="absolute origin-top-right top-10 sm:top-16 left-1 h-8 w-8 sm:h-12 sm:w-12 text-red-500" :alt="feature.alt" aria-hidden="true" />
+                        <img loading="lazy" decoding="async" :src="feature.icon" class="absolute top-1 left-1 h-8 w-8 sm:h-12 sm:w-12 text-red-500" :alt="feature.alt" aria-hidden="true" />
+                        <img loading="lazy" decoding="async" :src="feature.iconSlice" class="absolute origin-top-right top-10 sm:top-16 left-1 h-8 w-8 sm:h-12 sm:w-12 text-red-500" :alt="feature.alt" aria-hidden="true" />
                         {{ feature.name }}
                     </dt>
                     {{ ' ' }}
@@ -143,7 +147,7 @@ const paninis = computed(() => [
             <dl class="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-10 text-base leading-7 text-gray-300 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16">
                 <div v-for="feature in paninis" :key="feature.name" class="relative pl-14">
                     <dt class="font-semibold text-white pizza-name">
-                        <img :src="feature.icon" class="absolute object-contain top-1 left-1 h-8 w-8 sm:h-12 sm:w-12 text-red-500" :alt="feature.alt" aria-hidden="true" />
+                        <img loading="lazy" decoding="async" :src="feature.icon" class="absolute object-contain top-1 left-1 h-8 w-8 sm:h-12 sm:w-12 text-red-500" :alt="feature.alt" aria-hidden="true" />
                         {{ feature.name }}
                     </dt>
                     {{ ' ' }}

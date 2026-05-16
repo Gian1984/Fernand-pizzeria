@@ -1,15 +1,11 @@
-// Porting della logica SEO che prima stava in src/router.js (beforeEach + DOM
-// injection lato client). Ora i tag sono renderizzati lato server (SSG).
+// SEO/head per pagina, renderizzato lato server (SSG).
 export const BASE_URL = 'https://www.artigianodellafarina.be'
 
-// Immagini per OG/JSON-LD: ora servite davvero da /img/seo/ (prima 404).
-const SEO_IMAGE_OG = `${BASE_URL}/img/seo/logoartigiano_1500.png`
-const SEO_IMAGE_LOGO = `${BASE_URL}/img/seo/logoartigiano_500.png`
-const LOCALES = ['fr', 'en', 'it']
-
-// Descrizione condivisa (identica a quella della SPA originale).
-export const SITE_DESCRIPTION =
-  "Célébrant l'art de la boulangerie, L'Artigiano della Farina propose une expérience culinaire extraordinaire, transformant avec amour la farine en pizzas et sandwiches sublimes, un véritable voyage de saveurs authentiques."
+// Immagini OG generate da scripts/generate-og.php (sfondo nero + logo hero).
+// 1.91:1 per le card social, 1:1 per lo structured data di Google.
+const OG_IMAGE = `${BASE_URL}/img/seo/og-default.png`
+const OG_IMAGE_SQUARE = `${BASE_URL}/img/seo/og-square.png`
+const OG_IMAGE_ALT = "Logo L'Artigiano della Farina"
 
 export function restaurantJsonLd(routePath) {
   return {
@@ -17,7 +13,8 @@ export function restaurantJsonLd(routePath) {
     '@type': 'Restaurant',
     name: "L'Artigiano della Farina",
     url: `${BASE_URL}${routePath}`,
-    image: SEO_IMAGE_LOGO,
+    // Più immagini (quadrata + wide): consigliato per i rich result Google.
+    image: [OG_IMAGE_SQUARE, OG_IMAGE],
     telephone: '+32 499 64 62 69',
     priceRange: '$$',
     servesCuisine: ['Italian', 'Pizza', 'Sandwiches'],
@@ -28,6 +25,13 @@ export function restaurantJsonLd(routePath) {
       postalCode: '1050',
       addressCountry: 'BE',
     },
+    // Coordinate di Place Fernand Cocq, Ixelles (approssimate — da verificare
+    // con quelle esatte del locale su Google Maps).
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: 50.8366,
+      longitude: 4.3709,
+    },
     sameAs: [
       'https://www.instagram.com/artigiano_della_farina/',
       'https://maps.app.goo.gl/W6otSYKx9A6BNdhw8',
@@ -36,31 +40,36 @@ export function restaurantJsonLd(routePath) {
   }
 }
 
-// Imposta titolo, meta OG/Twitter, canonical, hreflang e JSON-LD per la pagina.
-export function usePageSeo({ path, title }) {
+// Imposta titolo, meta OG/Twitter, canonical e JSON-LD per la pagina.
+// Niente hreflang: le lingue non hanno URL propri (switch client-side),
+// quindi gli alternate sarebbero tutti uguali e scorretti.
+export function usePageSeo({ path, title, description }) {
   const url = `${BASE_URL}${path}`
 
   useSeoMeta({
     title,
-    description: SITE_DESCRIPTION,
+    description,
     ogSiteName: "L'Artigiano della Farina",
     ogTitle: title,
-    ogDescription: SITE_DESCRIPTION,
+    ogDescription: description,
     ogType: 'website',
     ogUrl: url,
-    ogImage: SEO_IMAGE_OG,
+    ogLocale: 'fr_BE',
+    ogImage: OG_IMAGE,
+    ogImageWidth: 1200,
+    ogImageHeight: 630,
+    ogImageAlt: OG_IMAGE_ALT,
     twitterCard: 'summary_large_image',
     twitterTitle: title,
-    twitterDescription: SITE_DESCRIPTION,
-    twitterImage: SEO_IMAGE_OG,
+    twitterDescription: description,
+    twitterImage: OG_IMAGE,
+    twitterImageAlt: OG_IMAGE_ALT,
     robots: 'index,follow,max-image-preview:large',
   })
 
   useHead({
     link: [
       { rel: 'canonical', href: url },
-      ...LOCALES.map(lang => ({ rel: 'alternate', hreflang: lang, href: url })),
-      { rel: 'alternate', hreflang: 'x-default', href: url },
     ],
     script: [
       {

@@ -4,7 +4,11 @@ import gsap from 'gsap'
 import lavagna from '~/assets/img/lavagna.webp'
 import logoArtigiano from '~/assets/img/logoartigiano_1000.png'
 
-usePageSeo({ path: '/', title: "L'Artigiano della Farina - Accueil" })
+usePageSeo({
+  path: '/',
+  title: "L'Artigiano della Farina - Pizzeria artisanale à Ixelles",
+  description: "Pizzeria et boulangerie artisanale à Ixelles (Bruxelles). Pizzas, ciabatta et take-away préparés avec passion par L'Artigiano della Farina, Pl. Fernand Cocq.",
+})
 
 // Hook JS della <transition> sul logo: gira solo client-side dopo l'hydration.
 const slide = (el, done) => {

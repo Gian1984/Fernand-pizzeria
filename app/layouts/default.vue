@@ -282,7 +282,7 @@ function scrolltotop() {
               <div v-for="delivery in fooddelivery" :key="delivery.name" class="text-center md:flex md:text-left lg:block lg:text-center delivey_pannel">
                 <div class="sm:flex-shrink-0">
                   <div class="flow-root">
-                    <img class="h-16 mx-auto delivery_img" :src="delivery.imageSrc" :alt="delivery.description" />
+                    <img loading="lazy" decoding="async" class="h-16 mx-auto delivery_img" :src="delivery.imageSrc" :alt="delivery.description" />
                   </div>
                 </div>
                 <div class="sm:mt-0 sm:ml-3 lg:ml-0" id="order_button">
