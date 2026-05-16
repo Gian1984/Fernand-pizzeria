@@ -32,6 +32,16 @@ export function restaurantJsonLd(routePath) {
       latitude: 50.8366,
       longitude: 4.3709,
     },
+    openingHoursSpecification: [
+      // Pranzo
+      { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'], opens: '11:30', closes: '14:30' },
+      { '@type': 'OpeningHoursSpecification', dayOfWeek: 'Saturday', opens: '12:00', closes: '14:30' },
+      // Cena
+      { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday'], opens: '18:00', closes: '22:30' },
+      { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Friday', 'Saturday'], opens: '18:00', closes: '23:00' },
+      // Domenica: orario continuato
+      { '@type': 'OpeningHoursSpecification', dayOfWeek: 'Sunday', opens: '13:00', closes: '22:00' },
+    ],
     sameAs: [
       'https://www.instagram.com/artigiano_della_farina/',
       'https://maps.app.goo.gl/W6otSYKx9A6BNdhw8',
