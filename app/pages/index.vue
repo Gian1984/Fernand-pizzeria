@@ -66,5 +66,6 @@ const slide = (el, done) => {
     </div>
   </div>
 
+  <AboutSection />
 
 </template>
