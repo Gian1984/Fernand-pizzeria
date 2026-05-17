@@ -3,6 +3,9 @@ import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton } from 
 import { XMarkIcon, ChevronRightIcon, MapPinIcon, PhoneArrowUpRightIcon, Bars2Icon } from '@heroicons/vue/24/outline'
 import { defineComponent, h, computed } from 'vue'
 import { useI18n } from 'vue-i18n'
+import { GOOGLE_REVIEWS_URL } from '~/data/reviews'
+
+const INSTAGRAM_URL = 'https://www.instagram.com/artigiano_della_farina/'
 
 const { t, locale } = useI18n({ useScope: 'global' })
 
@@ -177,7 +180,7 @@ function scrolltotop() {
 
 
            <div class="mt-10 -mx-4 relative lg:mt-0 gap-8">
-             <div class="relative mx-5 text-center">
+             <div class="relative mx-5 text-left">
 
                  <h3 class="text-4xl font-extrabold text-white tracking-tight sm:text-3xl section-title" id="sub_contact" lang="en">
                      {{ $t("contact.title") }}
@@ -219,7 +222,7 @@ function scrolltotop() {
 
         </div>
 
-        <div class="mt-16 mx-auto max-w-3xl">
+        <div class="mt-16">
           <h3 class="text-4xl font-extrabold text-white tracking-tight sm:text-3xl section-title text-center" id="sub_opening">
             {{ $t("opening.title") }}
           </h3>
@@ -268,6 +271,17 @@ function scrolltotop() {
 
 
     <ReviewsSection v-if="isHome" />
+
+    <div class="flex items-center justify-center gap-8 pt-12">
+      <a :href="INSTAGRAM_URL" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="text-white hover:text-gray-300">
+        <component :is="InstagramIcon" class="h-7 w-7" aria-hidden="true" />
+      </a>
+      <a :href="GOOGLE_REVIEWS_URL" target="_blank" rel="noopener noreferrer" aria-label="Avis Google" class="text-white hover:text-gray-300">
+        <svg viewBox="0 0 24 24" fill="currentColor" class="h-7 w-7" aria-hidden="true">
+          <path d="M12.545 10.239v3.821h5.445c-.712 2.315-2.647 3.972-5.445 3.972a6.033 6.033 0 1 1 0-12.064c1.498 0 2.866.549 3.921 1.453l2.814-2.814A9.969 9.969 0 0 0 12.545 2C7.021 2 2.543 6.477 2.543 12s4.478 10 10.002 10c8.396 0 10.249-7.85 9.426-11.748l-9.426-.013z" />
+        </svg>
+      </a>
+    </div>
 
     <div class="mx-auto max-w-md px-4 overflow-hidden sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8 py-6">
       <p class="text-center text-base hover:text-gray-400 text-white footer-copyright">

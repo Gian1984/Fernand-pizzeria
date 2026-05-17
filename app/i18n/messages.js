@@ -9,7 +9,7 @@ export const messages = {
 
     header: {
       title: "L'Artigiano",
-      subtitle: "Work in Progress : Nous nous concentrons sur ce que nous faisons le mieux, en nous consacrant avec passion à la création de pains et de pizzas.",
+      subtitle: "Nous nous concentrons sur ce que nous faisons le mieux, en nous consacrant avec passion à la création de pains et de pizzas.",
       download: "Carte",
       call: "Appel",
     },
@@ -108,7 +108,7 @@ export const messages = {
 
     header: {
       title: "L'Artigiano",
-      subtitle: "Work in Progress : We are focused on doing what we do best, dedicating ourselves with passion to creating bread and pizza.",
+      subtitle: "We are focused on doing what we do best, dedicating ourselves with passion to creating bread and pizza.",
       download: "Menu",
       call: "Call",
     },
@@ -207,7 +207,7 @@ export const messages = {
 
     header: {
       title: "L'Artigiano",
-      subtitle: "Work in Progress : Siamo concentrati sul fare ciò che ci riesce meglio, dedicandoci con passione alla creazione di pane e pizza",
+      subtitle: "Siamo concentrati sul fare ciò che ci riesce meglio, dedicandoci con passione alla creazione di pane e pizza",
       download: "Menu",
       call: "Chiama",
     },
