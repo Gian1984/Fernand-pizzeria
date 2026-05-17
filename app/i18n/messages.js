@@ -16,7 +16,7 @@ export const messages = {
 
     about: {
       title: "Notre savoir-faire",
-      text: "Une pâte légère, maturée de 48 à 72 heures et réalisée avec des ingrédients de haute qualité d'origine italienne : une corniche prononcée et bien alvéolée, une pizza savoureuse et facile à digérer. C'est cette même pâte qui donne vie au pain de nos paninis. La cuisson dans un four rotatif Valoriani gaz / bois à 450 °C préserve les saveurs authentiques de la tomate et de la fiordilatte. Un savoir-faire reconnu : Vera Pizza Napoletana, Slow Food, Gambero Rosso, Witaly.",
+      text: "Une pâte légère et longuement levée, maturée de 48 à 72 heures : une corniche prononcée et bien alvéolée, une pizza savoureuse et facile à digérer. C'est cette même pâte qui donne vie au pain de nos paninis. Et ce sont les ingrédients que nous ajoutons par-dessus, de haute qualité et d'origine italienne, qui font toute la différence.",
     },
 
     redpizzas: {
@@ -120,7 +120,7 @@ export const messages = {
 
     about: {
       title: "Our craft",
-      text: "A light dough, matured for 48 to 72 hours and made with high-quality ingredients of Italian origin: a pronounced, well-aerated cornicione and a tasty pizza that is easy to digest. The very same dough makes the bread for our paninis. Baking in a Valoriani gas / wood rotary oven at 450°C preserves the authentic flavours of tomato and fiordilatte. A craft recognised by Vera Pizza Napoletana, Slow Food, Gambero Rosso, Witaly.",
+      text: "A light, slow-risen dough, matured for 48 to 72 hours: a pronounced, well-aerated cornicione and a tasty pizza that is easy to digest. The very same dough makes the bread for our paninis. And it is the ingredients we add on top, high quality and of Italian origin, that make all the difference.",
     },
 
     redpizzas: {
@@ -224,7 +224,7 @@ export const messages = {
 
     about: {
       title: "Il nostro saper fare",
-      text: "Un impasto leggero, maturato dalle 48 alle 72 ore e realizzato con ingredienti di alta qualità di origine italiana: un cornicione pronunciato e ben alveolato, una pizza saporita e facile da digerire. È lo stesso impasto a dare vita al pane dei nostri panini. La cottura nel forno rotativo Valoriani gas / legna a 450°C preserva i sapori autentici del pomodoro e della fiordilatte. Un saper fare riconosciuto: Vera Pizza Napoletana, Slow Food, Gambero Rosso, Witaly.",
+      text: "Un impasto leggero e a lunga lievitazione, maturato dalle 48 alle 72 ore: un cornicione pronunciato e ben alveolato, una pizza saporita e facile da digerire. È lo stesso impasto a dare vita al pane dei nostri panini. E sono gli ingredienti che aggiungiamo sopra, di alta qualità e di origine italiana, a fare la differenza.",
     },
 
     redpizzas: {
